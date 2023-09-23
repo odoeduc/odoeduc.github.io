@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>C Programming Lesson Plan - QnA</title>
+    <meta name="description" content="C Programming Lesson Plan, C Programming Full Course for free 🕹️, , , , Bro Code, 2021-10-07T14:00:10.000000Z, 20, Learn C programming if you know nothing about it., myurlpro.com, 2560 x 1706, jpeg, , 20, c-programming-lesson-plan, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="C Programming Lesson Plan - QnA" />
+    <meta property="og:description" content="C Programming Lesson Plan, C Programming Full Course for free 🕹️, , , , Bro Code, 2021-10-07T14:00:10.000000Z, 20, Learn C programming if you know nothing about it., myurlpro.com, 2560 x 1706, jpeg, , 20, c-programming-lesson-plan, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="C Programming Lesson Plan - QnA" />
+    <meta name="twitter:description" content="C Programming Lesson Plan, C Programming Full Course for free 🕹️, , , , Bro Code, 2021-10-07T14:00:10.000000Z, 20, Learn C programming if you know nothing about it., myurlpro.com, 2560 x 1706, jpeg, , 20, c-programming-lesson-plan, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://odoeduc.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://odoeduc.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://odoeduc.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://odoeduc.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://odoeduc.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">C Programming Lesson Plan</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">jerenrecososa</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=C+Programming+Lesson+Plan" alt="C Programming Lesson Plan">
+                    </div>
+                    <p></p>
+                    <p>what do you call of a program that needs plan and details of the range of your physical exercise and the amount of time each exercise? a. lesson plan b. school plan c. exercise plan d. house plan​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-do-you-call-of-a-program-that-needs-plan-and-details-of-the-range-of-your-physical-exercise-and-the-amount-of-time-each-exercise-a-lesson-plan-b-school-plan-c-exercise-plan-d-house-plan">1.
+                                            what do you call of a program that needs plan and details of the range of your physical exercise and the amount of time each exercise? a. lesson plan b. school plan c. exercise plan d. house plan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#evaluation-d-easy-1-in-setting-a-goal-what-you-should-consider-to-your-goal-a-valid-c-smart-b-comfortable-2-writing-what-you-want-to-achieve-determines-that-your-goal-is-a-measurable-c-ach">2.
+                                            EVALUATION: d. easy 1. In setting a goal what you should consider to your goal? a. Valid c. smart b. Comfortable 2. Writing what you want to achieve determines that your goal is ? a. Measurable c. achievable b. Specific d. relevant 3. What do you call of a program that needs plan and details of the range of your physical exercises and the amount of time each exercise? a. Lesson plan C. exercise plan b. School plan d. house plan 4. It refers to the most basic of all fitness training principle. a. Principle of over load c. principle of specificity b. Principle of progression d. principle of recovery 5. What fitness principle aims to lessen boredom and overcome periods where there seem to be little progress? a. Principle of variation c. principle of recovery b. Principle of overload d. principle of progression​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#direction-choose-the-adverb-of-manner-in-the-following-sen-tences1-my-teacher-explains-the-lesson-clearly-a-teacher-b-explainsc-clearly2-she-gently-holds-her-babys-hand-a-sheb-gentlyc">3.
+                                            Direction: Choose the adverb of manner in the following sen-
+tences:
+1. My teacher explains the lesson clearly.
+a teacher b. explains
+c. clearly
+2. She gently holds her baby's hand.
+a she
+b. gently
+c. holds
+3. In a medium bowl, vigorously stir together all the remaining
+ingredients
+a. medium
+b. bow c. vigorously
+4. The president carefully explained his plans and upcoming
+programs
+a President
+b. carefully C. upcoming
+5. Madie slowly but accurately answered the activities in her
+English module.
+a Madie
+b. accurately
+c. answered</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-is-the-most-priority-in-the-research-processselect-onea-recognize-the-problemb-establish-the-hypothesisc-finalize-the-titled-scout-the-necessary-sourceswhich-of-the-following-statements-is-t">4.
+                                            Which is the most priority in the research process?Select one:a.Recognize the problemb.Establish the hypothesisc. Finalize the titled. Scout the necessary sourcesWhich of the following statements is true based on the question: which of these is a way to build the general knowledge of a research topic?I. Read a good recent textbook chapter.II. Look for the recent publication before reading a material.III. Find and use a reader on the topic in question.Select one:a.II onlyb.III onlyc.I and IIId.II and IIIe.None of the choicesf.All of the choicesg.I onlyh.I and IIWhat is the best description of research rationale?Select one:a.Reasons for conducting the researchb.Location of the researchc.The scope and delimitation of researchd.Similar to research hypothesisIts hypotheses are Specific, testable, stated prior to particular study.Select one:a.Qualitativeb.Quantitativec.None of the choicesd.All of the choicesResearch isSelect one:a.investigating, analyzing and synthesizing new information from various sourcesb.the activity anyone who has good reputation and integrityc.any organized inquiry carried out to provide information for solving problemsd.triggers one to find the true meaning of knowledgeWhich word was developed from the everyday life of man?Select one:a.Qualitativeb.Socialc.Scienced.QuantitativeHypothesis refers to theSelect one:a.Outcome of an experimentb.A tentative statement about the relationshipc.A form of research biasd.Conclusion drawn from the experimentWhat is the classification of research areas?Select one:a.Engineering, profession and scienceb.Education, profession and administrationc.Education, business and scienced.Economics, governance and societyIt is objective, replicable and reliable.Select one:a.All of the choicesb.None of the choicesc.Quantitatived.QualitativeIt lets the meaning emerge from the participants.Select one:a.Qualitative Researchb.Quantitative Researchc.Statement of the Problemd.Scope and Delimitatione.Significance of the StudyWhich of the following is not a characteristic of qualitative research?Select one:a.Important contextb.Flexible designc.Inductive approachd.Presence of absolute truthWhat is an example of qualitative research?Select one:a.Case studyb.Descriptive researchc.Historical researchd.Correlational researchWhich of the following is not a thesis statement?Select one:a.Man’s greatest treasures are the lessons he learned.b.Coffee is now considered a health drink.c.The Israeli-Hebollah conflict in Lebanon has placed the UN in the difficult position.d.The wanton cutting down of trees.It provides observed effects (interpreted by researchers) of a program on a problem or condition.Select one:a.Qualitativeb.All of the choicesc.Quantitatived.None of the choicesWhat subject involves the everyday life?Select one:a.Mathematicsb.Businessc.Social scienced.HumanitiesWhen you write a research paper, your goal is toSelect one:a.Motivate your reader to learn more about the subjectb.Save your reader time.c.Persuade your reader.d.Inform your reader.It is considered valid and reliable.Select one:a.All of the choicesb.None of the choicesc.Qualitatived.QuantitativeWhat question does qualitative research answer?Select one:a.Whenb.Whyc.Howd.WhichIn formulating research questions, the _____________ governs the entire study.Select one:a.Statement of the problemb.Sub-problemc.Major problemd.TitleWhat characteristic of qualitative research is mentioned here? The data and the researcher’s interpretation of the data – hinge greatly on the contexts from which the data are obtained (Roller &amp; Lavraks, 2015).Select one:a.Inductive approachb.Presence of absolute truthc.Flexible designd.Importance of contextWhat is the research experience?Select one:a.researcher’s achievementsb.one’s research knowledgec.researcher’s expertised.researcher’s personal aspectsIt is a formal, objective, systematic process in which numerical data are used to obtain information about the world.Select one:a.Statement of the Problemb.Qualitative Researchc.Significance of the Studyd.Quantitative Researche.Scope and DelimitationTime expenditure on research is lighter on the planning end and heavier during the analysis phase.Select one:a.Qualitativeb.All of the choicesc.Quantitatived.None of the choicesWhat research purpose could be used in this title, Dogs: Intervention for Children with Disabilities in Manila?Select one:a.Appliedb.none of the choicesc.both choices are correctd.Pure/basicWhich is a good argument in the research hypothesis?Select one:a.More students get sick during the final week of testing than at other times.b.A dog can be trained to alert a human if the telephone is ringing.c.The amount of sun exposure is good to a plant.d.Childhood obesity is alarming nowadays.Sana po matulungan niyo ko.AMA school​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#choose-the-correct-idiomatic-expression-from-the-given-choices-below-1-there-is-a-blank-for-every-hardships-that-we-experience-2-education-is-blank-because-it-is-our-weapon-to-succes-3-as-a-bread">5.
+                                            choose the correct idiomatic expression from the given choices below.1.There is a (blank) for every hardships that we experience. 2.Education is (blank) because it is our weapon to succes.3.As a breadwinner of her family, she has a (blank).4.She (blank) in preparing a disaster plan.5.Charity make sure to (blank) before doing an outreach program.6.The exam is a (blank) because the students studied their lessons well.7.She is (blank) even she has many achievements. 8.You need to (blank) when there is a calamity. 9.The students (blank) before the examination day.10.We saw our loved ones (blank) because of pandemic.a. once in a blue moon           f. get ducks in a row b. a lot on her plate                 g. pull yourself together c. worth its weight in gold       h. down to earth d. hit the books                         i. piece of cake e. blessing in disguise             j. know the ropespa answer naman po:)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-%e2%80%9cduring-the-old-normal-teachers-take-charge-of-the-education-of-students-they-prepare-lesson-plans-and-conduct-face-to-face-lectures-and-activities-teachers-facilitate-the-building-of-co">6.
+                                            1. “During the old normal, teachers take charge of the education of students. They prepare lesson plans and conduct face-to-face lectures and activities. Teachers facilitate the building of communities of inquiry and learning wherein students can collaborate with each other to broaden and deepen their understanding of their lessons.”What is the main idea? *A. The main idea is impliedB. During the old normal, teachers take charge of the education of students.C. They prepare lesson plans and conduct face-to-face lectures and activities.D. Teachers facilitate the building of communities of inquiry and learning wherein students can collaborate with each other to broaden and deepen their understanding of their lessons. This is a required question2. “Today, the virus is still ravaging the country and among those that are drastically affected is the education sector. For instance, the production of learning modules in time for the opening of classes forced educators to find additional funding sources for the printing and reproduction. Some teachers had to cross rivers to distribute these modules to the homes of their students. Other education institutions needed to suspend their remote learning activities because not everyone has access to the needed facilities, especially students from poor families.”What is the main idea? *A. Today, the virus is still ravaging the country and among those that are drastically affected is the education sector.B. For instance, the production of learning modules in time for the opening of classes forced educators to find additional funding sources for the printing and reproduction.C. Some teachers had to cross rivers to distribute these modules to the homes of their students.D. Other education institutions needed to suspend their remote learning activities because not everyone has access to the needed facilities, especially students from poor families.3. “Ensuring the mental health of students and teachers during the COVID-19 pandemic is a big challenge for the Department of Education. This prompted DepEd to further strengthen its psychosocial support program by partnering with the Psychological Association of the Philippines. Earlier, they sought the help of the religious sector after receiving information that there was an alarming increase in suicides. They call for the unity of family in battling boredom and uneasiness especially in this trying times." Find the sentence that does not support the main idea. *A. They call for the unity of family in battling boredom and uneasiness especially in this trying times.B. Earlier, they sought the help of the religious sector after receiving information that there was an alarming increase in suicides.C. This prompted DepEd to further strengthen its psychosocial support program by partnering with the Psychological Association of the Philippines.D. Ensuring the mental health of students and teachers during the COVID-19 pandemic is a big challenge for the Department of Education. This is a required question4. “Online learning during pandemic is not without its disadvantages. Some students tend to lose focus since distractions are abundant at home. Parents worry about having to shell out money for additional remote-learning-related expenses. Teachers are doing more work without the increase in compensation.” Which is the topic sentence of the paragraph? *A. The first sentenceB. The second sentenceC. The third sentenceD. The fourth sentence5. “There were a lot of challenges in face-to-face classroom-based online learning. It would be impossible for it to supply all students at these public schools the gadgets necessary for online learning during the pandemic. In addition, even if there was some way to provide them with laptops, smartphones, or tablets, the telecommunications infrastructure of the country is ill-equipped to cater to the internet connectivity needs of everyone. Unfortunately, teachers are the ones who suffer the most because they are required to reproduce these modules in spite of tight budgets.”Find the sentence that does not support the main idea *A. There were a lot of challenges in face-to-face classroom-based online learning.B. It would be impossible for it to supply all students at these public schools the gadgets necessary for online learning during the pandemic.C. In addition, even if there was some way to provide them with laptops, smartphones, or tablets, the telecommunications infrastructure of the country is ill-equipped to cater to the internet connectivity needs of everyone.D. Unfortunately, teachers are the ones who suffer the most because they are required to reproduce these modules in spite of tight budgets.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-is-an-individualized-education-program-iep-a-a-standardized-education-plan-b-a-teacher%e2%80%99s-lesson-plan-c-a-specialized-education-plan-for-students-with-disabilities-d-a-plan-that">7.
+                                            1. What is an Individualized Education Program (IEP)? A. A standardized education plan B. A teacher’s lesson plan C. A specialized education plan for students with disabilities D. A plan that only focuses on academic achievements 2. What is the purpose of an IEP? A. To provide students with a strict curriculum B. To accommodate students’ individual needs C. To force students to conform to the school’s standards D. To save schools money on resources3. Who develops an IEP? A. The student B. The school administration C. The student’s parents and teachers D. The state education department 4. What is the goal of the IEP team? A. To provide the best education possible B. To make the student conform to the school’s standards C. To create a unique curriculum for the student D. To make the process as time-efficient as possible 5. How often must the IEP team meet to review and update the student’s plan? A. Once a year B. Once every 5 years C. As needed D. Never 6. What is an IEP goal? A. A goal shared by all students in a class B. A goal specific to an individual student’s needs C. A goal set by the state education department D. A goal chosen by the student 7. What is an accommodation? A. A change made to the curriculum for all students B. A change made to the curriculum for one student to meet their needs C. A punishment for a misbehaving student D. A reward for a high-achieving student 8. What is a modification? A. A change made to the curriculum for all students B. A change made to the curriculum for one student to meet their needs C. A punishment for a misbehaving student D. A reward for a high-achieving student 9. What is the least restrictive environment? A. A classroom with only students with disabilities B. A classroom with only gifted students C. A classroom with a combination of students of varying abilities D. A classroom where the teacher has complete control 10. What is the role of the parents in the IEP process? A. To create the entire plan B. To attend meetings and provide input C. To sign the final plan D. To stay completely uninvolved 11. What is the role of the student in the IEP process? A. To create the entire plan B. To attend meetings and provide input C. To sign the final plan D. To stay completely uninvolved 12. What is the role of the special education teacher in the IEP process? A. To create the entire plan B. To attend meetings and provide input C. To sign the final plan D. To stay completely uninvolved 13. What is the role of the general education teacher in the IEP process? A. To create the entire plan B. To attend meetings and provide input C. To sign the final plan D. To stay completely uninvolved 14. Who should be present at an IEP meeting? A. Only the student and parents B. Only the student and teachers C. All members of the IEP team D. Only the parents 15. What happens if the parent does not agree with the IEP plan? A. The student cannot attend school B. The parent is forced to accept it C. The IEP team must continue to work together to create a plan that everyone agrees to D. No actions can be taken 16. What is a progress report? A. A summary of the student’s grades B. A report on the student’s behaviorC. A report on the student’s progress towards their goals D. A summary of the teacher’s lesson plan 17. How often must progress reports be given to the parents? A. Once a week B. Once a month C. Once a year D. As needed 18. What should be included in a progress report? A. Only grades B. Only behavior C. Information on progress towards goals, grades, and behavior D. Nothing, it’s not necessary 19. What is a behavior intervention plan? A. A plan to change a student’s behavior deemed problematic B. A plan to encourage a student to continue good behavior C. A punishment for a misbehaving student D. A reward for a high-achieving student 20. What should be included in a behavior intervention plan? A. Only punishments for bad behavior B. Only rewards for good behavior C. Goals and strategies to help the student develop better behavior D. A plan to isolate the student pls i need your answer test ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#andloe1-what-do-you-call-anything-which-supplies-informationa-database-b-source-c-works-citedd-book2-what-do-we-call-that-information-which-is-trusted-and-accuratea-reliableb-relevant-c-source">8.
+                                            andloe1. What do you call anything which supplies information?A database B. source C. works citedD. book2. What do we call that information which is trusted and accurate?A reliableB relevant C. sourceD glossary3. What information source records information thru writing and has pages bound together?A. magazineB websites C bookD. newspaper4. Another information source which refers to short collection of factual entries written bydifferent contributors?A encyclopedia B. dictionary C bibleD. magazine5. An information source which is a collection of articles about current events, usuallypublished dailyA magazineB bookC. newspaperD. dictionary6. Which of the following is not a primary source?A movie reviews B. interviews C. legal documents D. creative writing7. From the story, "The Myth of Daedalus and Icarus' who is the king who tried to killDaedalus?A King Solomon B. King Minos C. King Arthur D. King John8. Who built the famous maze in the Kingdom?B. TheseusA IcarusC. Daedalus D. Izinotaur9. Who is the princess who had helped Theseus escape from the maze?A Princess Diane B. Princess Ariadne C. Princess Sophia D. Princess Sarah10. What's the name of the monster being taken cared of by the King?C. WaloD. GoriB. CyclopA Minctaur11. What did Daedalus invented so they can escape from Crete?C. artificial wings D. parachuteA airplaneB. Ship12. What happened to Icarus at the end of the story?C. lostD reincarnatedA diedB. become King13. What a djectives best describes the characteristics of Daedalus?A seniusD faithfulB cowardC. brave14. What lesson in life cam we derive from their myths?Obey your parentsB. Be courageous always15. Wrat is the name of the sea where Icarus had fallen?D. Be loyalB. Philippine SeaJave a child?Be honest alwaysА AC. 38%China SeaC Mediterranean SeaD Icarian Sea16. From the topic on Teenage Pregnancy, what is the percentage of girls below 18 whoeady50%B. 75%D. 25%17. According to US Department of Health, they put up a project research and programyoung moms. Why?A help teenage momsB. build stable life planC. lessen pregnancyD. All of the above18. What is the highest percentage rate of African-American youth with regards of Tnancy?A 50%B. 75%C. 78%D. 80%_ 19. What happened to those teen mothers who move out of their family?A live in povertyB. become depressedC. children suffersD. all of the above20. When is the exact year that US start their initiative to solve the increasingpregnancy?A. 2018B. 2015C 2013D. 2010​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-4-our-activity-sheet-after-taking-this-short-test-you-will-see-your-score-take-note-of-the-items-that-you-were-s-out-how-much-you-already-know-about-the-lessons-in-this-module-write-the-letter-o">9.
+                                            3 4. our activity sheet. After taking this short test you will see your score. Take note of the items that you were s out how much you already know about the lessons in this module. Write the letter of your answe able to correctly answer and look for the right answer as you go through this module. 1. Which of the following refers to the study of products and services that have an effect on health and decisions on how to spend time and money? A. Consumer Health B. Consumer Education C. Consumer Health Education D. Health Education are concepts, steps, or advices that various sources give to aid the health status of an individual A. Healthcare B. Health Information C. Health services D. Health Products What I know 3 are items that we consume to improve our well-being, like medicines, food, and clothes A. Health Products B. Services C. Health Information D. Commodity are actions, procedures and programs we avail from various providers to appraise the health conditions of individuals through screening &amp; examination, cure and treat disorders, provide safety, and emergency care. A. Health services B. Health professionals C. Health facilities D. Health Insurance person is a health care practitioner who specializes on problems of the teeth A. Cardiologist B. Neurologist C. Ophthalmologist D. Dentist are individuals who are licensed to practice medicine and other allied health programs. A. Technologist B. Health worker C. Physician D. Nurse is ar on where people undergo medical diagnosis care and treatment Aalls C. Hospital D. School 8.' owing health care provider offers medical services that are availed through a prepaid ? 8. HMO C. DTI D. FDA w of financial agreement is undertaken between an insurance company and an individual or group payment of healthcare cost? A. Health Insurance B. Health Protection C. Health Plan D. Health Coverage 4 J. Which of the following is not a healthcare provider? A. doctors B. Superintendent C. administrative staff D. technologist and technicians 5. 6. 7 PAGE​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#10-what-is-analysis-a-a-sentence-that-grabs-your-reader%e2%80%99s-attention-b-explanation-of-the-meaning-of-evidence-c-a-statement-used-in-the-last-paragraph-d-all-of-the-above11-what-the-missi">10.
+                                            10. What is analysis? a. A sentence that grabs your reader’s attention b. Explanation of the meaning of evidence c. A statement used in the last paragraph d. All of the above11. What the missing word that completes the Analogy? You are the _______of my eyes a. Sugar b. Apple c. Soda d. Food 12. What is the name of the last paragraph found in an Argumentative Essay? a. Introduction b. Counterclaim c. Body d. Conclusion13. Which evidence below best matches which claim? The teachers often stay late at work, plan and grade student work at home and spend many hours on weekends planning lessons for the week. a. Teachers are very important. b. Teachers work very hard. c. Teachers are very knowledgeable. d. Teachers respect students. 14. Which piece of evidence best supports the claim that- students should have sports in middle school? a. “Research shows that sports increase students’ interest in school.” b. “Including sports program is expensive.” c. “School sports include volleyball and soccer.” d. “Schools that have sports class are popular.”15. Which of the following cannot be used as evidence? a. Expert’s opinion b. Prior knowledge c. Reliable books and articles d. Superstitious beliefs​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-in-your-own-words-explain-briefly-the-difference-between-the-three-methods-of-feeding-which-of-these-feeding-methods-will-you-use-justify-your-response-b-calculate-the-fcr-of-the-following-sh">11.
+                                            A. In your own words, explain briefly the difference between the three methods of feeding. Which of these feeding methods will you use? Justify your response.
+B. Calculate the FCR of the following: Show your solution.
+1. Mang Jethro wants to know if pig A is a good meat converter. He decided to keep track of its feeding for a month. He weighed it before beginning the program. He discovered that its current weight is 25 kilograms. He fed it ad libitum for a month, resulting in 125 kilograms of feed consumption. The pig was weighed for the second time and came in at 45 kilograms. How much is its FCR? What does it imply?
+2. Mang Jethro subjected another pig to the same program. The pig is 40 kilograms in weight. Feed consumption for a month is 200 kilos, and the animal has gained a total weight of 100 kilograms. How much is its FCR? What does it imply?
+3. Which of the two hogs can give more meat? Why do you say so? What shall we do with the other one?
+C. Mang Jerico has been raising 125 layers in his farm for the past 8 months. He observed that some of them began to climb the nest while others did not. He realized that the layers would lay their eggs at any time, so he planned to build their nest according to the recommended size mentioned in our lesson ( LG1 - nest ).
+Questions:
+1. How many nests should he build to accommodate these 125 layers?
+2. What size should the nest be? Why?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-it-is-a-document-or-letter-publicly-declaring-the-position-or-program-a-set-ofideas-opinions-or-views-and-can-also-lay-out-a-plan-of-action-and-is-oftenpolitical-in-nature-a-research-paperc-a">12.
+                                            (2. It is a document or letter publicly declaring the position or program, a set ofideas, opinions, or views and can also lay out a plan of action and is oftenpolitical in nature.a. Research Paperc. Abstract​)ENGLISH FOR ACADEMIC AND PROFESSIONAL PURPOSESWhat I know:1.B 4.A2.D 5.B3.C 6.AWhat’s New:obesity, poverty, climate change, drugs, bullyingWhat’s More:1.The issue is about how technology has changed people’s lives, behavior and moral outlook.The writer’s stand: He is not against technological developments in fact it improves man’s way of living, but he also reminds us that same technology will advance evil and harm. Therefore, use technology wisely for the common good.2. At the comfort of technological products man has found his comfort zone to dwell and slowly forgetting the value of real human interactions that eventually changes man’s mind, culture and outlook in life.3. Personal experienceReal-life scenario happening around4. The author reiterates his stand about the issue and leave a strong statement for a call to action.What I have Learned: I thought that figures of speech are tools that writers use to create images, or paint pictures, in the mind.I learned that I need to study hard in my module and I was surprised that I need to answer it directly and properly, thanks all of the teachers to give this lesson.What I can do: ( no answers )Lesson 2What’s More: (no answers)What I have Learned:POSITION PAPERCHOSEN ISSUE» Has the covid19 pandemic changed the world for its best or for its worst?TITLE» The Devastating Effects of COVID 19 Pandemic «ANSWERPosition: The Covid19 pandemic changed the world for its worstThe world these past 7 months, is experiencing one of the darkest times of its dense history because of the abrupt existence of a very detrimental COVID19 (Corona Virus Disease 2019) that originated in Wuhan, China, due to human negligence and lack of sanitation.This virus is very much contagious, that is why it became a global epidemic (occurring worldwide, or over a very wide area, crossing international boundaries and usually affecting a large number of people) in just 3 months! The Philippine government didn’t impose travel bans and stringent safety protocols fast enough to prevent the virus from entering the country, the slacking and inattentiveness of the government caused some massive consequences to the entire nation.Since the Philippines is only a developing country or a so-called third-world country, the government could not very much contain the effects of the deadly pandemic, imposing lockdowns and keeping people to go out of their houses and huddling together were not enough to prevent more than 8,500 people to perish within 8 months and a worldwide death or 2.1 million people.Note: Please do expound this position paper, I already provided the most important parts, you just have to add more to strengthen your position regarding the issue.Assesment:1.TRUE2.TRUE 3.TRUE4.TRUE5.FALSE6.TRUE7.FALSE8.TRUE9.TRUE10.TRUEII.1.a position paper presents one side of an arguable opinion about an issue. The goal of a position paper is to convince the audience that your opinion is valid and defensible. Ideas that you are considering need to be carefully examined in choosing a topic, developing your argument, and organizing your paper.2. Consider the situation. ...Clarify your thinking. ...Construct a claim. ...Collect evidence. ...Consider key objections. ...Craft your argument. ...Confirm your main point.</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="what-do-you-call-of-a-program-that-needs-plan-and-details-of-the-range-of-your-physical-exercise-and-the-amount-of-time-each-exercise-a-lesson-plan-b-school-plan-c-exercise-plan-d-house-plan">
+                            1. what do you call of a program that needs plan and details of the range of your physical exercise and the amount of time each exercise? a. lesson plan b. school plan c. exercise plan d. house plan​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>C. exercise plan</p><p></p><p></p><p></p><p>i hope it helps ^^</p><p></p><p><strong>Answer:</strong></p><p><strong>C</strong><strong> </strong><strong>.</strong><strong> </strong><strong>exerci</strong><strong>se</strong><strong> </strong><strong>plan</strong></p><p></p><p><strong>#</strong><strong>carry</strong><strong>us</strong><strong>onl</strong><strong>earn</strong><strong>i</strong><strong>ng</strong><strong>☆</strong></p><br />
+                                            <h2 class="ez-toc-section" id="evaluation-d-easy-1-in-setting-a-goal-what-you-should-consider-to-your-goal-a-valid-c-smart-b-comfortable-2-writing-what-you-want-to-achieve-determines-that-your-goal-is-a-measurable-c-ach">
+                            2. EVALUATION: d. easy 1. In setting a goal what you should consider to your goal? a. Valid c. smart b. Comfortable 2. Writing what you want to achieve determines that your goal is ? a. Measurable c. achievable b. Specific d. relevant 3. What do you call of a program that needs plan and details of the range of your physical exercises and the amount of time each exercise? a. Lesson plan C. exercise plan b. School plan d. house plan 4. It refers to the most basic of all fitness training principle. a. Principle of over load c. principle of specificity b. Principle of progression d. principle of recovery 5. What fitness principle aims to lessen boredom and overcome periods where there seem to be little progress? a. Principle of variation c. principle of recovery b. Principle of overload d. principle of progression​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>Explanation:</strong></p><p>  </p><br />
+                                            <h2 class="ez-toc-section" id="direction-choose-the-adverb-of-manner-in-the-following-sen-tences1-my-teacher-explains-the-lesson-clearly-a-teacher-b-explainsc-clearly2-she-gently-holds-her-babys-hand-a-sheb-gentlyc">
+                            3. Direction: Choose the adverb of manner in the following sen-
+tences:
+1. My teacher explains the lesson clearly.
+a teacher b. explains
+c. clearly
+2. She gently holds her baby's hand.
+a she
+b. gently
+c. holds
+3. In a medium bowl, vigorously stir together all the remaining
+ingredients
+a. medium
+b. bow c. vigorously
+4. The president carefully explained his plans and upcoming
+programs
+a President
+b. carefully C. upcoming
+5. Madie slowly but accurately answered the activities in her
+English module.
+a Madie
+b. accurately
+c. answered</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. c</p><p>2. b</p><p>3. c</p><p>4. b</p><p>5. b</p><p></p><p><strong>Explanation:</strong></p><p>hope it's help:)</p><p>ps. all of them are correct</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="which-is-the-most-priority-in-the-research-processselect-onea-recognize-the-problemb-establish-the-hypothesisc-finalize-the-titled-scout-the-necessary-sourceswhich-of-the-following-statements-is-t">
+                            4. Which is the most priority in the research process?Select one:a.Recognize the problemb.Establish the hypothesisc. Finalize the titled. Scout the necessary sourcesWhich of the following statements is true based on the question: which of these is a way to build the general knowledge of a research topic?I. Read a good recent textbook chapter.II. Look for the recent publication before reading a material.III. Find and use a reader on the topic in question.Select one:a.II onlyb.III onlyc.I and IIId.II and IIIe.None of the choicesf.All of the choicesg.I onlyh.I and IIWhat is the best description of research rationale?Select one:a.Reasons for conducting the researchb.Location of the researchc.The scope and delimitation of researchd.Similar to research hypothesisIts hypotheses are Specific, testable, stated prior to particular study.Select one:a.Qualitativeb.Quantitativec.None of the choicesd.All of the choicesResearch isSelect one:a.investigating, analyzing and synthesizing new information from various sourcesb.the activity anyone who has good reputation and integrityc.any organized inquiry carried out to provide information for solving problemsd.triggers one to find the true meaning of knowledgeWhich word was developed from the everyday life of man?Select one:a.Qualitativeb.Socialc.Scienced.QuantitativeHypothesis refers to theSelect one:a.Outcome of an experimentb.A tentative statement about the relationshipc.A form of research biasd.Conclusion drawn from the experimentWhat is the classification of research areas?Select one:a.Engineering, profession and scienceb.Education, profession and administrationc.Education, business and scienced.Economics, governance and societyIt is objective, replicable and reliable.Select one:a.All of the choicesb.None of the choicesc.Quantitatived.QualitativeIt lets the meaning emerge from the participants.Select one:a.Qualitative Researchb.Quantitative Researchc.Statement of the Problemd.Scope and Delimitatione.Significance of the StudyWhich of the following is not a characteristic of qualitative research?Select one:a.Important contextb.Flexible designc.Inductive approachd.Presence of absolute truthWhat is an example of qualitative research?Select one:a.Case studyb.Descriptive researchc.Historical researchd.Correlational researchWhich of the following is not a thesis statement?Select one:a.Man’s greatest treasures are the lessons he learned.b.Coffee is now considered a health drink.c.The Israeli-Hebollah conflict in Lebanon has placed the UN in the difficult position.d.The wanton cutting down of trees.It provides observed effects (interpreted by researchers) of a program on a problem or condition.Select one:a.Qualitativeb.All of the choicesc.Quantitatived.None of the choicesWhat subject involves the everyday life?Select one:a.Mathematicsb.Businessc.Social scienced.HumanitiesWhen you write a research paper, your goal is toSelect one:a.Motivate your reader to learn more about the subjectb.Save your reader time.c.Persuade your reader.d.Inform your reader.It is considered valid and reliable.Select one:a.All of the choicesb.None of the choicesc.Qualitatived.QuantitativeWhat question does qualitative research answer?Select one:a.Whenb.Whyc.Howd.WhichIn formulating research questions, the _____________ governs the entire study.Select one:a.Statement of the problemb.Sub-problemc.Major problemd.TitleWhat characteristic of qualitative research is mentioned here? The data and the researcher’s interpretation of the data – hinge greatly on the contexts from which the data are obtained (Roller &amp; Lavraks, 2015).Select one:a.Inductive approachb.Presence of absolute truthc.Flexible designd.Importance of contextWhat is the research experience?Select one:a.researcher’s achievementsb.one’s research knowledgec.researcher’s expertised.researcher’s personal aspectsIt is a formal, objective, systematic process in which numerical data are used to obtain information about the world.Select one:a.Statement of the Problemb.Qualitative Researchc.Significance of the Studyd.Quantitative Researche.Scope and DelimitationTime expenditure on research is lighter on the planning end and heavier during the analysis phase.Select one:a.Qualitativeb.All of the choicesc.Quantitatived.None of the choicesWhat research purpose could be used in this title, Dogs: Intervention for Children with Disabilities in Manila?Select one:a.Appliedb.none of the choicesc.both choices are correctd.Pure/basicWhich is a good argument in the research hypothesis?Select one:a.More students get sick during the final week of testing than at other times.b.A dog can be trained to alert a human if the telephone is ringing.c.The amount of sun exposure is good to a plant.d.Childhood obesity is alarming nowadays.Sana po matulungan niyo ko.AMA school​</h2><br />
+                        <p><strong>Answer:</strong></p><p>
+<strong>Which is a good argument in the research hypothesis?
+</strong></p><p><strong>d.Childhood obesity is alarming nowadays.</strong></p><p><strong></strong></p><p>sorry yan lang po alam kong sagot sa mga katanungan nyo</p><p>GOODLUCK PO SA MAY EXAMS NAYON NAWAY MAKAPASA TAYO SA KABILA NG PANDEMYA NA NARARANASAN NATIN NGAYON</p><br />
+                                            <h2 class="ez-toc-section" id="choose-the-correct-idiomatic-expression-from-the-given-choices-below-1-there-is-a-blank-for-every-hardships-that-we-experience-2-education-is-blank-because-it-is-our-weapon-to-succes-3-as-a-bread">
+                            5. choose the correct idiomatic expression from the given choices below.1.There is a (blank) for every hardships that we experience. 2.Education is (blank) because it is our weapon to succes.3.As a breadwinner of her family, she has a (blank).4.She (blank) in preparing a disaster plan.5.Charity make sure to (blank) before doing an outreach program.6.The exam is a (blank) because the students studied their lessons well.7.She is (blank) even she has many achievements. 8.You need to (blank) when there is a calamity. 9.The students (blank) before the examination day.10.We saw our loved ones (blank) because of pandemic.a. once in a blue moon           f. get ducks in a row b. a lot on her plate                 g. pull yourself together c. worth its weight in gold       h. down to earth d. hit the books                         i. piece of cake e. blessing in disguise             j. know the ropespa answer naman po:)​</h2><br />
+                        <p><strong>Answer:</strong></p><p>tingin ka po sa answers ko, ung mga letters pareho po kayo ng question gayahin nyo nalang </p><br />
+                                            <h2 class="ez-toc-section" id="1-%e2%80%9cduring-the-old-normal-teachers-take-charge-of-the-education-of-students-they-prepare-lesson-plans-and-conduct-face-to-face-lectures-and-activities-teachers-facilitate-the-building-of-co">
+                            6. 1. “During the old normal, teachers take charge of the education of students. They prepare lesson plans and conduct face-to-face lectures and activities. Teachers facilitate the building of communities of inquiry and learning wherein students can collaborate with each other to broaden and deepen their understanding of their lessons.”What is the main idea? *A. The main idea is impliedB. During the old normal, teachers take charge of the education of students.C. They prepare lesson plans and conduct face-to-face lectures and activities.D. Teachers facilitate the building of communities of inquiry and learning wherein students can collaborate with each other to broaden and deepen their understanding of their lessons. This is a required question2. “Today, the virus is still ravaging the country and among those that are drastically affected is the education sector. For instance, the production of learning modules in time for the opening of classes forced educators to find additional funding sources for the printing and reproduction. Some teachers had to cross rivers to distribute these modules to the homes of their students. Other education institutions needed to suspend their remote learning activities because not everyone has access to the needed facilities, especially students from poor families.”What is the main idea? *A. Today, the virus is still ravaging the country and among those that are drastically affected is the education sector.B. For instance, the production of learning modules in time for the opening of classes forced educators to find additional funding sources for the printing and reproduction.C. Some teachers had to cross rivers to distribute these modules to the homes of their students.D. Other education institutions needed to suspend their remote learning activities because not everyone has access to the needed facilities, especially students from poor families.3. “Ensuring the mental health of students and teachers during the COVID-19 pandemic is a big challenge for the Department of Education. This prompted DepEd to further strengthen its psychosocial support program by partnering with the Psychological Association of the Philippines. Earlier, they sought the help of the religious sector after receiving information that there was an alarming increase in suicides. They call for the unity of family in battling boredom and uneasiness especially in this trying times." Find the sentence that does not support the main idea. *A. They call for the unity of family in battling boredom and uneasiness especially in this trying times.B. Earlier, they sought the help of the religious sector after receiving information that there was an alarming increase in suicides.C. This prompted DepEd to further strengthen its psychosocial support program by partnering with the Psychological Association of the Philippines.D. Ensuring the mental health of students and teachers during the COVID-19 pandemic is a big challenge for the Department of Education. This is a required question4. “Online learning during pandemic is not without its disadvantages. Some students tend to lose focus since distractions are abundant at home. Parents worry about having to shell out money for additional remote-learning-related expenses. Teachers are doing more work without the increase in compensation.” Which is the topic sentence of the paragraph? *A. The first sentenceB. The second sentenceC. The third sentenceD. The fourth sentence5. “There were a lot of challenges in face-to-face classroom-based online learning. It would be impossible for it to supply all students at these public schools the gadgets necessary for online learning during the pandemic. In addition, even if there was some way to provide them with laptops, smartphones, or tablets, the telecommunications infrastructure of the country is ill-equipped to cater to the internet connectivity needs of everyone. Unfortunately, teachers are the ones who suffer the most because they are required to reproduce these modules in spite of tight budgets.”Find the sentence that does not support the main idea *A. There were a lot of challenges in face-to-face classroom-based online learning.B. It would be impossible for it to supply all students at these public schools the gadgets necessary for online learning during the pandemic.C. In addition, even if there was some way to provide them with laptops, smartphones, or tablets, the telecommunications infrastructure of the country is ill-equipped to cater to the internet connectivity needs of everyone.D. Unfortunately, teachers are the ones who suffer the most because they are required to reproduce these modules in spite of tight budgets.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.C</p><p>2.A</p><p>3.D</p><p>4.B</p><p>5.C</p><p>thanks me later</p><br />
+                                            <h2 class="ez-toc-section" id="1-what-is-an-individualized-education-program-iep-a-a-standardized-education-plan-b-a-teacher%e2%80%99s-lesson-plan-c-a-specialized-education-plan-for-students-with-disabilities-d-a-plan-that">
+                            7. 1. What is an Individualized Education Program (IEP)? A. A standardized education plan B. A teacher’s lesson plan C. A specialized education plan for students with disabilities D. A plan that only focuses on academic achievements 2. What is the purpose of an IEP? A. To provide students with a strict curriculum B. To accommodate students’ individual needs C. To force students to conform to the school’s standards D. To save schools money on resources3. Who develops an IEP? A. The student B. The school administration C. The student’s parents and teachers D. The state education department 4. What is the goal of the IEP team? A. To provide the best education possible B. To make the student conform to the school’s standards C. To create a unique curriculum for the student D. To make the process as time-efficient as possible 5. How often must the IEP team meet to review and update the student’s plan? A. Once a year B. Once every 5 years C. As needed D. Never 6. What is an IEP goal? A. A goal shared by all students in a class B. A goal specific to an individual student’s needs C. A goal set by the state education department D. A goal chosen by the student 7. What is an accommodation? A. A change made to the curriculum for all students B. A change made to the curriculum for one student to meet their needs C. A punishment for a misbehaving student D. A reward for a high-achieving student 8. What is a modification? A. A change made to the curriculum for all students B. A change made to the curriculum for one student to meet their needs C. A punishment for a misbehaving student D. A reward for a high-achieving student 9. What is the least restrictive environment? A. A classroom with only students with disabilities B. A classroom with only gifted students C. A classroom with a combination of students of varying abilities D. A classroom where the teacher has complete control 10. What is the role of the parents in the IEP process? A. To create the entire plan B. To attend meetings and provide input C. To sign the final plan D. To stay completely uninvolved 11. What is the role of the student in the IEP process? A. To create the entire plan B. To attend meetings and provide input C. To sign the final plan D. To stay completely uninvolved 12. What is the role of the special education teacher in the IEP process? A. To create the entire plan B. To attend meetings and provide input C. To sign the final plan D. To stay completely uninvolved 13. What is the role of the general education teacher in the IEP process? A. To create the entire plan B. To attend meetings and provide input C. To sign the final plan D. To stay completely uninvolved 14. Who should be present at an IEP meeting? A. Only the student and parents B. Only the student and teachers C. All members of the IEP team D. Only the parents 15. What happens if the parent does not agree with the IEP plan? A. The student cannot attend school B. The parent is forced to accept it C. The IEP team must continue to work together to create a plan that everyone agrees to D. No actions can be taken 16. What is a progress report? A. A summary of the student’s grades B. A report on the student’s behaviorC. A report on the student’s progress towards their goals D. A summary of the teacher’s lesson plan 17. How often must progress reports be given to the parents? A. Once a week B. Once a month C. Once a year D. As needed 18. What should be included in a progress report? A. Only grades B. Only behavior C. Information on progress towards goals, grades, and behavior D. Nothing, it’s not necessary 19. What is a behavior intervention plan? A. A plan to change a student’s behavior deemed problematic B. A plan to encourage a student to continue good behavior C. A punishment for a misbehaving student D. A reward for a high-achieving student 20. What should be included in a behavior intervention plan? A. Only punishments for bad behavior B. Only rewards for good behavior C. Goals and strategies to help the student develop better behavior D. A plan to isolate the student pls i need your answer test ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.c</p><p>2.c</p><p>3.c</p><p>4.a</p><p>5.b</p><p>6.b</p><p>7.b</p><p>8.b</p><p>9.c</p><p>10.b</p><p>11.b</p><p>12d</p><p>13.a</p><p>14.d</p><p>15.a</p><p>16.c</p><p>17.c</p><p>18.a</p><p>19.a</p><p>20.c</p><p><strong>Explanation:</strong></p><p>sorry if wrong hope its help you</p><br />
+                                            <h2 class="ez-toc-section" id="andloe1-what-do-you-call-anything-which-supplies-informationa-database-b-source-c-works-citedd-book2-what-do-we-call-that-information-which-is-trusted-and-accuratea-reliableb-relevant-c-source">
+                            8. andloe1. What do you call anything which supplies information?A database B. source C. works citedD. book2. What do we call that information which is trusted and accurate?A reliableB relevant C. sourceD glossary3. What information source records information thru writing and has pages bound together?A. magazineB websites C bookD. newspaper4. Another information source which refers to short collection of factual entries written bydifferent contributors?A encyclopedia B. dictionary C bibleD. magazine5. An information source which is a collection of articles about current events, usuallypublished dailyA magazineB bookC. newspaperD. dictionary6. Which of the following is not a primary source?A movie reviews B. interviews C. legal documents D. creative writing7. From the story, "The Myth of Daedalus and Icarus' who is the king who tried to killDaedalus?A King Solomon B. King Minos C. King Arthur D. King John8. Who built the famous maze in the Kingdom?B. TheseusA IcarusC. Daedalus D. Izinotaur9. Who is the princess who had helped Theseus escape from the maze?A Princess Diane B. Princess Ariadne C. Princess Sophia D. Princess Sarah10. What's the name of the monster being taken cared of by the King?C. WaloD. GoriB. CyclopA Minctaur11. What did Daedalus invented so they can escape from Crete?C. artificial wings D. parachuteA airplaneB. Ship12. What happened to Icarus at the end of the story?C. lostD reincarnatedA diedB. become King13. What a djectives best describes the characteristics of Daedalus?A seniusD faithfulB cowardC. brave14. What lesson in life cam we derive from their myths?Obey your parentsB. Be courageous always15. Wrat is the name of the sea where Icarus had fallen?D. Be loyalB. Philippine SeaJave a child?Be honest alwaysА AC. 38%China SeaC Mediterranean SeaD Icarian Sea16. From the topic on Teenage Pregnancy, what is the percentage of girls below 18 whoeady50%B. 75%D. 25%17. According to US Department of Health, they put up a project research and programyoung moms. Why?A help teenage momsB. build stable life planC. lessen pregnancyD. All of the above18. What is the highest percentage rate of African-American youth with regards of Tnancy?A 50%B. 75%C. 78%D. 80%_ 19. What happened to those teen mothers who move out of their family?A live in povertyB. become depressedC. children suffersD. all of the above20. When is the exact year that US start their initiative to solve the increasingpregnancy?A. 2018B. 2015C 2013D. 2010​</h2><br />
+                        1. B<br />2. A<br />3. C<br />4. A<br />5. C<br />6. <br />7. <br />8. <br />9. <br />10. <br />d ko na alam ung iba sorry<br /><br />
+                                            <h2 class="ez-toc-section" id="3-4-our-activity-sheet-after-taking-this-short-test-you-will-see-your-score-take-note-of-the-items-that-you-were-s-out-how-much-you-already-know-about-the-lessons-in-this-module-write-the-letter-o">
+                            9. 3 4. our activity sheet. After taking this short test you will see your score. Take note of the items that you were s out how much you already know about the lessons in this module. Write the letter of your answe able to correctly answer and look for the right answer as you go through this module. 1. Which of the following refers to the study of products and services that have an effect on health and decisions on how to spend time and money? A. Consumer Health B. Consumer Education C. Consumer Health Education D. Health Education are concepts, steps, or advices that various sources give to aid the health status of an individual A. Healthcare B. Health Information C. Health services D. Health Products What I know 3 are items that we consume to improve our well-being, like medicines, food, and clothes A. Health Products B. Services C. Health Information D. Commodity are actions, procedures and programs we avail from various providers to appraise the health conditions of individuals through screening &amp; examination, cure and treat disorders, provide safety, and emergency care. A. Health services B. Health professionals C. Health facilities D. Health Insurance person is a health care practitioner who specializes on problems of the teeth A. Cardiologist B. Neurologist C. Ophthalmologist D. Dentist are individuals who are licensed to practice medicine and other allied health programs. A. Technologist B. Health worker C. Physician D. Nurse is ar on where people undergo medical diagnosis care and treatment Aalls C. Hospital D. School 8.' owing health care provider offers medical services that are availed through a prepaid ? 8. HMO C. DTI D. FDA w of financial agreement is undertaken between an insurance company and an individual or group payment of healthcare cost? A. Health Insurance B. Health Protection C. Health Plan D. Health Coverage 4 J. Which of the following is not a healthcare provider? A. doctors B. Superintendent C. administrative staff D. technologist and technicians 5. 6. 7 PAGE​</h2><br />
+                        <p><strong>Answer:</strong></p><p>need Rin Po thank you mwa</p><br />
+                                            <h2 class="ez-toc-section" id="10-what-is-analysis-a-a-sentence-that-grabs-your-reader%e2%80%99s-attention-b-explanation-of-the-meaning-of-evidence-c-a-statement-used-in-the-last-paragraph-d-all-of-the-above11-what-the-missi">
+                            10. 10. What is analysis? a. A sentence that grabs your reader’s attention b. Explanation of the meaning of evidence c. A statement used in the last paragraph d. All of the above11. What the missing word that completes the Analogy? You are the _______of my eyes a. Sugar b. Apple c. Soda d. Food 12. What is the name of the last paragraph found in an Argumentative Essay? a. Introduction b. Counterclaim c. Body d. Conclusion13. Which evidence below best matches which claim? The teachers often stay late at work, plan and grade student work at home and spend many hours on weekends planning lessons for the week. a. Teachers are very important. b. Teachers work very hard. c. Teachers are very knowledgeable. d. Teachers respect students. 14. Which piece of evidence best supports the claim that- students should have sports in middle school? a. “Research shows that sports increase students’ interest in school.” b. “Including sports program is expensive.” c. “School sports include volleyball and soccer.” d. “Schools that have sports class are popular.”15. Which of the following cannot be used as evidence? a. Expert’s opinion b. Prior knowledge c. Reliable books and articles d. Superstitious beliefs​</h2><br />
+                        <p><strong>Answer:</strong></p><p>10. d</p><p>11.  b</p><p>12. d</p><p>13. b</p><p>14. c</p><p>15. d</p><br />
+                                            <h2 class="ez-toc-section" id="a-in-your-own-words-explain-briefly-the-difference-between-the-three-methods-of-feeding-which-of-these-feeding-methods-will-you-use-justify-your-response-b-calculate-the-fcr-of-the-following-sh">
+                            11. A. In your own words, explain briefly the difference between the three methods of feeding. Which of these feeding methods will you use? Justify your response.
+B. Calculate the FCR of the following: Show your solution.
+1. Mang Jethro wants to know if pig A is a good meat converter. He decided to keep track of its feeding for a month. He weighed it before beginning the program. He discovered that its current weight is 25 kilograms. He fed it ad libitum for a month, resulting in 125 kilograms of feed consumption. The pig was weighed for the second time and came in at 45 kilograms. How much is its FCR? What does it imply?
+2. Mang Jethro subjected another pig to the same program. The pig is 40 kilograms in weight. Feed consumption for a month is 200 kilos, and the animal has gained a total weight of 100 kilograms. How much is its FCR? What does it imply?
+3. Which of the two hogs can give more meat? Why do you say so? What shall we do with the other one?
+C. Mang Jerico has been raising 125 layers in his farm for the past 8 months. He observed that some of them began to climb the nest while others did not. He realized that the layers would lay their eggs at any time, so he planned to build their nest according to the recommended size mentioned in our lesson ( LG1 - nest ).
+Questions:
+1. How many nests should he build to accommodate these 125 layers?
+2. What size should the nest be? Why?</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>1. Mang Jethro wants to know if pig A is a good meat converter. He decided to keep track of its feeding for a month. He weighed it before beginning the program. He discovered that its current weight is 25 kilograms. He fed it ad libitum for a month, resulting in 125 kilograms of feed consumption. The pig was weighed for the second time and came in at 45 kilograms. What is its FCR? What does it imply?</strong></p><p><strong>-It’s FCR is 6.25, Because it’s initial weight is 25 then it was fed ad libitum for a month and that is 125 of the feed consumption the total weight gained at the end of the month was 45kg, To get the fcr you have to minus the initial weight and the final weight resulting in 20kg then divide the feed consumption which is 125kg so 125kg divided by 20 equals 6.25 is the FCR</strong></p><p><strong>2. Mang Jethro subjected another pig to the same program. The pig is 40 kilograms in weight. Feed consumption for a month is 200 kilos, and the animal has gained a total weight of 100 kilograms. What is its FCR? What does it imply?</strong></p><p><strong>-The FCR is 3.33, same done in the first one the initial weight is 40kg then it had 200kg of feed consumption fot the entire month, 100 minus 40 is 60, so 60kg is it’s weight gained then 200 divided by 60 is 3.33333333333 but since you cannot round it off it will be 3.33 or 3.3</strong></p><p><strong>3.  Which of the two hogs can give more meat? Why do you say so? What shall we do with the other one?</strong></p><p><strong>-The second one, had gained more weight than the first one meaning it can produce good quality meat. For the first one you can sell it for a much more cheaper price than the second one </strong></p><p><strong>di ko po alam for the C po but here hope it helps</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="2-it-is-a-document-or-letter-publicly-declaring-the-position-or-program-a-set-ofideas-opinions-or-views-and-can-also-lay-out-a-plan-of-action-and-is-oftenpolitical-in-nature-a-research-paperc-a">
+                            12. (2. It is a document or letter publicly declaring the position or program, a set ofideas, opinions, or views and can also lay out a plan of action and is oftenpolitical in nature.a. Research Paperc. Abstract​)ENGLISH FOR ACADEMIC AND PROFESSIONAL PURPOSESWhat I know:1.B 4.A2.D 5.B3.C 6.AWhat’s New:obesity, poverty, climate change, drugs, bullyingWhat’s More:1.The issue is about how technology has changed people’s lives, behavior and moral outlook.The writer’s stand: He is not against technological developments in fact it improves man’s way of living, but he also reminds us that same technology will advance evil and harm. Therefore, use technology wisely for the common good.2. At the comfort of technological products man has found his comfort zone to dwell and slowly forgetting the value of real human interactions that eventually changes man’s mind, culture and outlook in life.3. Personal experienceReal-life scenario happening around4. The author reiterates his stand about the issue and leave a strong statement for a call to action.What I have Learned: I thought that figures of speech are tools that writers use to create images, or paint pictures, in the mind.I learned that I need to study hard in my module and I was surprised that I need to answer it directly and properly, thanks all of the teachers to give this lesson.What I can do: ( no answers )Lesson 2What’s More: (no answers)What I have Learned:POSITION PAPERCHOSEN ISSUE» Has the covid19 pandemic changed the world for its best or for its worst?TITLE» The Devastating Effects of COVID 19 Pandemic «ANSWERPosition: The Covid19 pandemic changed the world for its worstThe world these past 7 months, is experiencing one of the darkest times of its dense history because of the abrupt existence of a very detrimental COVID19 (Corona Virus Disease 2019) that originated in Wuhan, China, due to human negligence and lack of sanitation.This virus is very much contagious, that is why it became a global epidemic (occurring worldwide, or over a very wide area, crossing international boundaries and usually affecting a large number of people) in just 3 months! The Philippine government didn’t impose travel bans and stringent safety protocols fast enough to prevent the virus from entering the country, the slacking and inattentiveness of the government caused some massive consequences to the entire nation.Since the Philippines is only a developing country or a so-called third-world country, the government could not very much contain the effects of the deadly pandemic, imposing lockdowns and keeping people to go out of their houses and huddling together were not enough to prevent more than 8,500 people to perish within 8 months and a worldwide death or 2.1 million people.Note: Please do expound this position paper, I already provided the most important parts, you just have to add more to strengthen your position regarding the issue.Assesment:1.TRUE2.TRUE 3.TRUE4.TRUE5.FALSE6.TRUE7.FALSE8.TRUE9.TRUE10.TRUEII.1.a position paper presents one side of an arguable opinion about an issue. The goal of a position paper is to convince the audience that your opinion is valid and defensible. Ideas that you are considering need to be carefully examined in choosing a topic, developing your argument, and organizing your paper.2. Consider the situation. ...Clarify your thinking. ...Construct a claim. ...Collect evidence. ...Consider key objections. ...Craft your argument. ...Confirm your main point.</h2><br />
+                        <p><strong>Answer:</strong></p><p>Planting abaca can also minimize erosion and sedimentation problems in coastal areas which are important breeding places for sea fishes. The water holding capacity of the soil will be improved and floods and landslides will also be prevented. Abaca waste materials are used as organic fertilizer.Planting abaca can also minimize erosion and sedimentation problems in coastal areas which are important breeding places for sea fishes. The water holding capacity of the soil will be improved and floods and landslides will also be prevented. Abaca waste materials are used as organic fertilizer.Planting abaca can also minimize erosion and sedimentation problems in coastal areas which are important breeding places for sea fishes. The water holding capacity of the soil will be improved and floods and landslides will also be prevented. Abaca waste materials are used as organic fertilizer.Planting abaca can also minimize erosion and sedimentation problems in coastal areas which are important breeding places for sea fishes. The water holding capacity of the soil will be improved and floods and landslides will also be prevented. Abaca waste materials are used as organic fertilizer.Planting abaca can also minimize erosion and sedimentation problems in coastal areas which are important breeding places for sea fishes. The water holding capacity of the soil will be improved and floods and landslides will also be prevented. Abaca waste materials are used as organic fertilizer.Planting abaca can also minimize erosion and sedimentation problems in coastal areas which are important breeding places for sea fishes. The water holding capacity of the soil will be improved and floods and landslides will also be prevented. Abaca waste materials are used as organic fertilizer.</p><p><strong>Explanation:</strong></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>physical_education</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/c-major-7th.html">C Major 7th</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/ohm-s-law-experiment-lab-report-conclusion.html">Ohm s Law Experiment Lab Report Conclusion</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/buy-comparison-essay.html">Buy Comparison Essay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/which-statement-below-supports-the-bohr-s-model-of-the-atom.html">Which Statement Below Supports The Bohr s Model Of The Atom</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/the-server-s-score-is-always-first-tennis.html">The Server s Score Is Always First Tennis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/driver-s-license-age-limit.html">Driver s License Age Limit</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/orion-s-belt-meaning.html">Orion s Belt Meaning</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/hero-tales-definition.html">Hero Tales Definition</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/liquid-nitrogen-and-chlorine.html">Liquid Nitrogen And Chlorine</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/complete-the-information-below-using-stocks.html">Complete The Information Below Using Stocks</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/how-many-litres-in-64-oz.html">How Many Litres In 64 Oz</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/peer-pressure-questionnaire.html">Peer Pressure Questionnaire</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/what-are-the-bony-landmarks-of-the-abdominopelvic-cavity.html">What Are The Bony Landmarks Of The Abdominopelvic Cavity</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/gcf-of-56-and-84.html">Gcf Of 56 And 84</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/how-are-these-ideas-connected-with-each-other.html">How Are These Ideas Connected With Each Other</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/making-connections-worksheet.html">Making Connections Worksheet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/throw-and-catch.html">Throw And Catch</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/8-squared.html">8 Squared</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/baptist-separation-of-church-and-state.html">Baptist Separation Of Church And State</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/production-of-heat.html">Production Of Heat</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://odoeduc.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://odoeduc.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

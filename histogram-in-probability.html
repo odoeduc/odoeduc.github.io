@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Histogram In Probability - QnA</title>
+    <meta name="description" content="Histogram In Probability, , , , , , , 0, Using a Histogram to deliver Product and Process ImprovementPresentationEZE, www.presentationeze.com, 960 x 720, jpeg, , 20, histogram-in-probability, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Histogram In Probability - QnA" />
+    <meta property="og:description" content="Histogram In Probability, , , , , , , 0, Using a Histogram to deliver Product and Process ImprovementPresentationEZE, www.presentationeze.com, 960 x 720, jpeg, , 20, histogram-in-probability, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Histogram In Probability - QnA" />
+    <meta name="twitter:description" content="Histogram In Probability, , , , , , , 0, Using a Histogram to deliver Product and Process ImprovementPresentationEZE, www.presentationeze.com, 960 x 720, jpeg, , 20, histogram-in-probability, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://odoeduc.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://odoeduc.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://odoeduc.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://odoeduc.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://odoeduc.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Histogram In Probability</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">patree315</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Histogram+In+Probability" alt="Histogram In Probability">
+                    </div>
+                    <p></p>
+                    <p>How do you make a histogram for a probability distribution? Give the steps inconstructing a histogram for probability distribution.​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-do-you-make-a-histogram-for-a-probability-distribution-give-the-steps-inconstructing-a-histogram-for-probability-distribution-%e2%80%8b">1.
+                                            How do you make a histogram for a probability distribution? Give the steps inconstructing a histogram for probability distribution.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-do-you-make-a-histogram-for-a-probability-distribution-give-the-steps-inconstructing-a-histogram-for-probability-distribution-%e2%80%8b">2.
+                                            How do you make a histogram for a probability distribution? Give the steps inconstructing a histogram for probability distribution. ​.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-probability-histogram%e2%80%8b">3.
+                                            what is probability histogram​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-which-of-the-following-cannot-be-expressed-by-the-pmf-a-tabular-form-b-formula-form-c-probability-form-d-graphical-from-2-what-so-you-call-to-the-resulting-graph-of-the-pmf-a-probability-hi">4.
+                                            1 . which of the following cannot be expressed by the pmf ?a. tabular form b. formula form c. probability form d. graphical from 2.what so you call to the resulting graph of the pmf? a. probability histogram b. probable histograph c. probability history d. probable history ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#supposed-4-coins-are-tossel-let-x-be-the-r-v-representing-the-no-heds-construct-a-probability-distribution-and-draw-the-histogram-%e2%80%8b">5.
+                                            Supposed 4 coins are tossel. Let X be the R.V. representing the no. Heds Construct a Probability Distribution and draw the Histogram.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-is-histogram-used-in-illustrating-probability-distribution%e2%80%8b">6.
+                                            why is histogram used in illustrating probability distribution​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#construct-a-probability-distribution-for-the-data-and-draw-a-histogram-of-the-distribution-%e2%80%8b">7.
+                                            construct a probability distribution for the data and draw a histogram of the distribution. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-construct-the-probabilityhistogram-3pv210012%e2%80%8b">8.
+                                            5. Construct the probabilityhistogram.3P(V)210012​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-a-pair-of-dice-is-rolled-let-x-be-the-random-variable-representing-the-sum-of-the-number-of-dots-on-the-top-faces-find-the-values-of-the-random-variable-x-construct-the-frequency-of-distribution">9.
+                                            2. A pair of dice is rolled. Let X be the random variable representing the sum of the number of dots on the top faces. Find the values of the random variable X. Construct the frequency of distribution, the probability distribution of the random variable, and the probability histogram on a separate sheet. 2. A pair of dice is rolled . Let X be the random variable representing the sum of the number of dots on the top faces . Find the values of the random variable X. Construct the frequency of distribution , the probability distribution of the random variable , and the probability histogram on a separate sheet .​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#9-it-associates-to-any-given-number-the-probability-that-the-random-variable-will-be-equal-to-that-number-a-probability-mass-function-b-probability-histogram-c-continuous-random-variable-d-discr">10.
+                                            9. It associates to any given number the probability that the random variable will be equal to that number. a. Probability Mass Function b. Probability histogram c. Continuous Random Variable d. Discrete Random Variable​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#il-construct-a-probability-distribution-and-draw-a-histogram-for-the-data-of-the-probability-distribution-1-the-probability-that-a-customer-of-a-fast-food-chain-will-order-0-1-or-2-pieces-of-chicken">11.
+                                            Il.Construct a probability distribution and draw a histogram for the data of the probability distribution 1. The probability that a customer of a fast food chain will order 0, 1 or 2 pieces of chicken are 0.20, 0.25, and 0 30, respectively​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#three-coins-are-tossed-let-x-be-the-number-of-heads-obtained-construct-a-probability-distribution-and-histogram-for-x">12.
+                                            Three coins are tossed. Let X be the number of heads obtained. Construct a probability distribution and histogram for X.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-a-bar-graph-but-has-no-spaces-in-between-the-bars-investigate-the-heights-of-the-bars-and-compare-it-with-the-probabilities-written-in-the-table-above-a-graph-b-histogram-c-random-histogram-d">13.
+                                            1. A bar graph but has no spaces in between the bars. Investigate the heights of the bars and compare it with the probabilities written in the table above. a. Graph b. Histogram c. Random Histogram d. Discrete Graph 2. The mean of a probability distribution is the same as the expected value of a discrete random variable of a probability distribution. a. True b. False c. Both d. Neither ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#given-a-set-of-number-1-to-6-construct-the-following-distributions-and-comparea-histogram-of-the-probability-distribution-b-histogram-of-sample-means-where-two-cards-are-drawn-from-the-populatio">14.
+                                            Given a set of number 1 to 6. Construct the following distributions and compare:
+a. Histogram of the probability distribution.
+b. Histogram of sample means where two cards are drawn from the population.
+c. Histogram of sample means where three cards are drawn from the population.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#%d1%85-1-3-5-px-0-1-0-3-0-6-construct-a-probability-histogram-of-the-above-table-%e2%80%8b">15.
+                                            Х 1 3 5 P(X) 0.1 0.3 0.6 construct a probability histogram of the above table.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-graph-the-data-using-probability-histogram%e2%80%8b">16.
+                                            1. Graph the data using probability histogram​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#constract-a-probability-distribution-make-a-histogram-of-the-probability-distribution-find-the-mean-variance-and-standard-diviation-of-data-to-be-use-the-number-of-the-sum-of-6-of-2-dice-rolling-it-fi">17.
+                                            Constract a probability distribution make a histogram of the probability distribution find the mean variance and standard diviation of data to be use the number of the sum of 6 of 2 dice rolling it five times​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-it-is-a-graph-that-displays-the-possible-values-of-discrete-random-variable-on-the-horizontal-axis-and-the-probabilities-of-those-values-on-the-vertical-axis-a-bar-graph-b-line-graph-c-pie-char">18.
+                                            8. It is a graph that displays the possible values of discrete random variable on the horizontal axis and the probabilities of those values on the vertical axis. a. Bar graph b. Line Graph c. Pie Chart d. Probability histogram​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-illustrate-the-probability-histogram-of-the-sampling-distribution-of-themeans-%e2%80%8b">19.
+                                            2. Illustrate the probability histogram of the sampling distribution of themeans.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-probabilities-that-a-printer-produces-0-1-2-and-3-misprints-are-42-28-18-and-12-respectively-construct-the-probability-mass-function-and-its-corresponding-histogram-solve-for-the-mean-var">20.
+                                            The probabilities that a printer produces 0, 1, 2, and 3 misprints are 42%, 28%, 18%, and 12% respectively. Construct the probability mass function and its corresponding histogram, solve for the mean, variance and standard deviation.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#box-a-contain-numbers-1357-and-box-b-contain-numbers-2468-write-the-probability-distribution-and-draw-the-histogram%e2%80%8b">21.
+                                            Box A contain numbers 1,3,5,7 and Box B contain numbers 2,4,6,8. Write the probability distribution and draw the histogram​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#using-the-sample-in-a-family-of-four-children-construct-a-probability-distribution-of-the-random-variable-z-representing-the-number-of-boys-draw-the-histogram-of-the-probability-distribution">22.
+                                            Using the sample in a family of four children, construct a probability distribution of the random variable Z representing the number of boys. Draw the histogram of the probability distribution​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-make-a-histogram-of-the-given-probability-distribution-b-compute-the-mean-and-variance-of-the-distribution-c-illustrate-the-distribution-using-the-properties-of-normal-curve%e2%80%8b">23.
+                                            a. make a histogram of the given probability distribution b. compute the mean and variance of the distribution c. illustrate the distribution using the properties of normal curve​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-what-is-the-probability-that-3-or-more-copies-will-be-demanded-in-a-particular-day-b-what-is-the-probability-that-the-demand-will-be-at-least-2-but-not-more-than-6-c-draw-the-histogram-of-the-p">24.
+                                            a) What is the probability that 3 or more copies will be demanded in a particular day? b) What is the probability that the demand will be at least 2 but not more than 6? c) Draw the histogram of the probability distribution.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-how-do-you-make-the-histogram-for-a-probability-distributions%e2%80%8b">25.
+                                            2. How do you make the histogram for a probability distributions?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#construct-the-probability-mass-function-of-the-discrete-random-variable-x-that-has-four-values-1234-assuming-that-the-value-has-an-equal-probability-histogram-and-describe-the-pmf-%e2%80%8b">26.
+                                            Construct the probability mass function of the discrete random variable X that has four values ( 1,2,3,4 ). Assuming that the value has an equal probability histogram and describe the pmf.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#draw-the-histogram-of-tge-probability-distribution%e2%80%8b">27.
+                                            Draw the histogram of tge probability distribution​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#construct-the-probability-distriibution-and-its-corresponding-histogram-also-determine-the-following">28.
+                                            Construct the probability distriibution and its corresponding histogram. Also,  determine the following</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#20230321-1538-a-given-the-possible-outcomes-and-value-of-the-random-variable-construct-the-probability-mass-function-of-a-discrete-random-variable-and-its-corresponding-histogram-1-number-of-re">29.
+                                            2023/03/21 15:38 A. Given the possible outcomes and value of the random variable, construct the probability mass function of a discrete random variable and its corresponding histogram. 1. Number of Red Balls Possible Outcomes RR RB BR BB Probability Mass Function 0.8 0.6 0.4 0.2 0 The Histogram for the Probability Distribution of the Discrete Random Variable X 0 Value of the Random Variable X 2 1 Histogram 1 1 0 2 3​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#part-2-illustrative-problem%e2%80%a2construct-the-probability-distribution-of-the-given-problem%e2%80%a2draw-the-histogram-of-the-problem%e2%80%a2calculate-the-mean-variance-and-standard-deviatio">30.
+                                            Part 2: Illustrative Problem•	Construct the probability distribution of the given problem•	Draw the histogram of the problem•	Calculate the mean, variance and standard deviation​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="how-do-you-make-a-histogram-for-a-probability-distribution-give-the-steps-inconstructing-a-histogram-for-probability-distribution-%e2%80%8b">
+                            1. How do you make a histogram for a probability distribution? Give the steps inconstructing a histogram for probability distribution.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>example</p><p>x={ 2,3,4,5}</p><p>P(x=x)= x/14</p><p></p><p>Probability distribution table:</p><p>x          2.     3.     4.     5</p><p>P(x=x) 2/14. 3/14. 4/14. 5/14</p><p><strong>Step-by-step explanation:</strong></p><p>P(x=2) =2/14</p><p>P(x=3)= 3/14</p><p>P(x=4)=  4/14</p><p>P(x=5)=. 5/14</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="how-do-you-make-a-histogram-for-a-probability-distribution-give-the-steps-inconstructing-a-histogram-for-probability-distribution-%e2%80%8b">
+                            2. How do you make a histogram for a probability distribution? Give the steps inconstructing a histogram for probability distribution. ​.</h2><br />
+                        <p><strong>Answer:</strong></p><p>To make a histogram, follow these steps:</p><p>1.)On the vertical axis, place frequencies. Label this axis "Frequency".</p><p>2.)On the horizontal axis, place the lower value of each interval. ...</p><p>3.)Draw a bar extending from the lower value of each interval to the lower value of the next interval.</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-probability-histogram%e2%80%8b">
+                            3. what is probability histogram​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A probability histogram is a graphical representation of a probability distribution, showing the likelihood of different outcomes on the horizontal axis and the frequency or probability on the vertical axis. It is similar to a regular histogram, but the vertical axis represents probability rather than frequency. It is used to display the probability distribution of a continuous or discrete random variable.</p><br />
+                                            <h2 class="ez-toc-section" id="1-which-of-the-following-cannot-be-expressed-by-the-pmf-a-tabular-form-b-formula-form-c-probability-form-d-graphical-from-2-what-so-you-call-to-the-resulting-graph-of-the-pmf-a-probability-hi">
+                            4. 1 . which of the following cannot be expressed by the pmf ?a. tabular form b. formula form c. probability form d. graphical from 2.what so you call to the resulting graph of the pmf? a. probability histogram b. probable histograph c. probability history d. probable history ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D  graphical form one of the not representive in pmf</p><br />
+                                            <h2 class="ez-toc-section" id="supposed-4-coins-are-tossel-let-x-be-the-r-v-representing-the-no-heds-construct-a-probability-distribution-and-draw-the-histogram-%e2%80%8b">
+                            5. Supposed 4 coins are tossel. Let X be the R.V. representing the no. Heds Construct a Probability Distribution and draw the Histogram.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The probability distribution table is as </p><p></p><p>Outcome (X)  | Probability (P(X))</p><p>0              | 1/16 </p><p>1              | 2/16</p><p>2              | 3/16</p><p>3              | 4/16</p><p>4              | 6/16</p><p></p><p>Histogram:</p><p></p><p>![alt text](https://raw.githubusercontent.com/themlproject/ML-Concepts/master/media/histogram_coin_toss.png)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="why-is-histogram-used-in-illustrating-probability-distribution%e2%80%8b">
+                            6. why is histogram used in illustrating probability distribution​</h2><br />
+                        <p></p><p><strong>Step-by-step explanation:</strong></p><p>It is just a standard way to plot the distributions.</p><p></p><p>It is just a standard way to plot the distributions.Theoretically, a point is more adequate to symbolize a single numerical value, e.g. P(x=2) = 2/14. Nonetheless, and despite not having an intrinsic value within themselves, it is visually easier and quicker to represent the values with bars.</p><br />
+                                            <h2 class="ez-toc-section" id="construct-a-probability-distribution-for-the-data-and-draw-a-histogram-of-the-distribution-%e2%80%8b">
+                            7. construct a probability distribution for the data and draw a histogram of the distribution. ​</h2><br />
+                        <p> </p><p></p><p> hope it's help tignan mo na lng po</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="5-construct-the-probabilityhistogram-3pv210012%e2%80%8b">
+                            8. 5. Construct the probabilityhistogram.3P(V)210012​</h2><br />
+                        <p><strong>Answer:</strong></p><p>p(v) </p><p>p 310</p><p>v 012</p><p>--------</p><p>322</p><p><strong>Explanation:</strong></p><p>bacause thank you</p><br />
+                                            <h2 class="ez-toc-section" id="2-a-pair-of-dice-is-rolled-let-x-be-the-random-variable-representing-the-sum-of-the-number-of-dots-on-the-top-faces-find-the-values-of-the-random-variable-x-construct-the-frequency-of-distribution">
+                            9. 2. A pair of dice is rolled. Let X be the random variable representing the sum of the number of dots on the top faces. Find the values of the random variable X. Construct the frequency of distribution, the probability distribution of the random variable, and the probability histogram on a separate sheet. 2. A pair of dice is rolled . Let X be the random variable representing the sum of the number of dots on the top faces . Find the values of the random variable X. Construct the frequency of distribution , the probability distribution of the random variable , and the probability histogram on a separate sheet .​</h2><br />
+                        <p><strong>Answer:</strong></p><p>X- 2x2² dice X-292</p><p>X- DICE 210</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="9-it-associates-to-any-given-number-the-probability-that-the-random-variable-will-be-equal-to-that-number-a-probability-mass-function-b-probability-histogram-c-continuous-random-variable-d-discr">
+                            10. 9. It associates to any given number the probability that the random variable will be equal to that number. a. Probability Mass Function b. Probability histogram c. Continuous Random Variable d. Discrete Random Variable​</h2><br />
+                        <p>c. Continuous Random Variable</p><br />
+                                            <h2 class="ez-toc-section" id="il-construct-a-probability-distribution-and-draw-a-histogram-for-the-data-of-the-probability-distribution-1-the-probability-that-a-customer-of-a-fast-food-chain-will-order-0-1-or-2-pieces-of-chicken">
+                            11. Il.Construct a probability distribution and draw a histogram for the data of the probability distribution 1. The probability that a customer of a fast food chain will order 0, 1 or 2 pieces of chicken are 0.20, 0.25, and 0 30, respectively​</h2><br />
+                        <p><strong>Answer:</strong></p><p>36473</p><p><strong>Explanation:</strong></p><p>for points and more asking</p><br />
+                                            <h2 class="ez-toc-section" id="three-coins-are-tossed-let-x-be-the-number-of-heads-obtained-construct-a-probability-distribution-and-histogram-for-x">
+                            12. Three coins are tossed. Let X be the number of heads obtained. Construct a probability distribution and histogram for X.</h2><br />
+                        <p>hi nagdjyxIsyydgystgzjht</p><p>zhhYyzgYyz</p><br />
+                                            <h2 class="ez-toc-section" id="1-a-bar-graph-but-has-no-spaces-in-between-the-bars-investigate-the-heights-of-the-bars-and-compare-it-with-the-probabilities-written-in-the-table-above-a-graph-b-histogram-c-random-histogram-d">
+                            13. 1. A bar graph but has no spaces in between the bars. Investigate the heights of the bars and compare it with the probabilities written in the table above. a. Graph b. Histogram c. Random Histogram d. Discrete Graph 2. The mean of a probability distribution is the same as the expected value of a discrete random variable of a probability distribution. a. True b. False c. Both d. Neither ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. c random history gram</p><p>2.b</p><br />
+                                            <h2 class="ez-toc-section" id="given-a-set-of-number-1-to-6-construct-the-following-distributions-and-comparea-histogram-of-the-probability-distribution-b-histogram-of-sample-means-where-two-cards-are-drawn-from-the-populatio">
+                            14. Given a set of number 1 to 6. Construct the following distributions and compare:
+a. Histogram of the probability distribution.
+b. Histogram of sample means where two cards are drawn from the population.
+c. Histogram of sample means where three cards are drawn from the population.</h2><br />
+                        <p><strong>Answer:</strong></p><p>The answer is A ,thanks you.</p><br />
+                                            <h2 class="ez-toc-section" id="%d1%85-1-3-5-px-0-1-0-3-0-6-construct-a-probability-histogram-of-the-above-table-%e2%80%8b">
+                            15. Х 1 3 5 P(X) 0.1 0.3 0.6 construct a probability histogram of the above table.​</h2><br />
+                        <strong>Answer:</strong><p>Probability distribution for a discrete random variable.</p><p></p><p>The probability distribution for a discrete random variable X can be represented by a formula, a table, or a graph, which provides p(x) = P(X=x) for all x.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-graph-the-data-using-probability-histogram%e2%80%8b">
+                            16. 1. Graph the data using probability histogram​</h2><br />
+                        <p><strong>Answer:</strong></p><p>nakalimutan ko na wait lang</p><br />
+                                            <h2 class="ez-toc-section" id="constract-a-probability-distribution-make-a-histogram-of-the-probability-distribution-find-the-mean-variance-and-standard-diviation-of-data-to-be-use-the-number-of-the-sum-of-6-of-2-dice-rolling-it-fi">
+                            17. Constract a probability distribution make a histogram of the probability distribution find the mean variance and standard diviation of data to be use the number of the sum of 6 of 2 dice rolling it five times​</h2><br />
+                        <p><strong>Answer:</strong></p><p>To construct the probability distribution for the sum of six of 2 dice rolled 5 times, we need to first consider all the possible outcomes and their probabilities.</p><p></p><p>The total number of possible outcomes when rolling two dice is 36, so we'll make a table showing all the possible outcomes and their respective probabilities:</p><p></p><p>| Dice 1 | Dice 2 | Sum | Probability |</p><p>|--------|--------|-----|-------------|</p><p>|   1    |   1    |  2  |  1/36       |</p><p>|   1    |   2    |  3  |  2/36       |</p><p>|   1    |   3    |  4  |  3/36       |</p><p>|   1    |   4    |  5  |  4/36       |</p><p>|   1    |   5    |  6  |  5/36       |</p><p>|   1    |   6    |  7  |  6/36       |</p><p>|   2    |   1    |  3  |  2/36       |</p><p>|   2    |   2    |  4  |  3/36       |</p><p>|   2    |   3    |  5  |  4/36       |</p><p>|   2    |   4    |  6  |  5/36       |</p><p>|   2    |   5    |  7  |  6/36       |</p><p>|   2    |   6    |  8  |  5/36       |</p><p>|   3    |   1    |  4  |  3/36       |</p><p>|   3    |   2    |  5  |  4/36       |</p><p>|   3    |   3    |  6  |  5/36       |</p><p>|   3    |   4    |  7  |  6/36       |</p><p>|   3    |   5    |  8  |  5/36       |</p><p>|   3    |   6    |  9  |  4/36       |</p><p>|   4    |   1    |  5  |  4/36       |</p><p>|   4    |   2    |  6  |  5/36       |</p><p>|   4    |   3    |  7  |  6/36       |</p><p>|   4    |   4    |  8  |  5/36       |</p><p>|   4    |   5    |  9  |  4/36       |</p><p>|   4    |   6    | 10 |  3/36       |</p><p>|   5    |   1    |  6  |  5/36       |</p><p>|   5    |   2    |  7  |  6/36       |</p><p>|   5    |   3    |  8  |  5/36       |</p><p>|   5    |   4    |  9  |  4/36       |</p><p>|   5    |   5    | 10 |  3/36       |</p><p>|   5    |   6    | 11 |  2/36       |</p><p>|   6    |   1    |  7  |  6/36       |</p><p>|   6    |   2    |  8  |  5/36       |</p><p>|   6    |   3    |  9  |  4/36       |</p><p>|   6    |   4    | 10 |  3/36       |</p><p>|   6    |   5    | 11 |  2/36       |</p><p>|   6    |   6    | 12 |  1/36       |</p><p></p><p>Next, we can create a histogram of this probability distribution by plotting the sum on the x-axis and the probability on the y-axis:</p><p></p><p>```</p><p>    0.3  ┌──┐</p><p>         │  │</p><p>    0.25 ├──┤            ┌──┐</p><p>         │  │       ┌──┐ │  │</p><p>     0.2 ├──┤  ┌──┐ │  │ │  │</p><p>         │  │ ┌──┼──┼──┼─┘│  │</p><p>    0.15 ├──┼─┘  │  │  │  │</p><p>         │  │    │  │  │  │</p><p>     0.1 ├──┤    │  │  │  │</p><p>         │  │    │  │  │  │</p><p>    0.05 ├──┼────┼──┼──┼──┘</p><p>         │  │    │  │  │</p><p>       0 ├──┴────┴──┴──┴───────────</p><p>          2  3  4  5  6  7  8  9 10 11 12</p><p>```</p><p></p><p>Finally, we can calculate some summary statistics for this distribution:</p><p></p><p>Mean = Σ(xp) = (2*1/36) + (3*2/36) + (4*3/36) + ... + (12*1/36) = 7</p><p>Variance = Σ(x-mean)²p = ((2-7)²*1/36) + ((3-7)²*2/36) + ... + ((12-7)²*1/36) ≈ 5.833 </p><p>Standard Deviation = √Variance ≈ 2.414</p><p></p><p>Therefore, the mean of the distribution is 7, the variance is 5.833, and the standard deviation is approximately 2.414.</p><p><strong>Step-by-step explanation:</strong></p><p>pa mark brainliest thnk you </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="8-it-is-a-graph-that-displays-the-possible-values-of-discrete-random-variable-on-the-horizontal-axis-and-the-probabilities-of-those-values-on-the-vertical-axis-a-bar-graph-b-line-graph-c-pie-char">
+                            18. 8. It is a graph that displays the possible values of discrete random variable on the horizontal axis and the probabilities of those values on the vertical axis. a. Bar graph b. Line Graph c. Pie Chart d. Probability histogram​</h2><br />
+                        <p><strong>Answer:</strong></p><p>a Bar graph </p><p><strong>Step-by-step explanation:</strong></p><p>that's all •` _`•</p><br />
+                                            <h2 class="ez-toc-section" id="2-illustrate-the-probability-histogram-of-the-sampling-distribution-of-themeans-%e2%80%8b">
+                            19. 2. Illustrate the probability histogram of the sampling distribution of themeans.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The Sampling Distribution of the Sample Mean. If repeated random samples of a given size n are taken from a population of values for a quantitative variable, where the population mean is μ (mu) and the population standard deviation is σ (sigma) then the mean of all sample means (x-bars) is population mean μ (mu).</p><p><strong>Explanation:</strong></p><p>Hope this will help.</p><br />
+                                            <h2 class="ez-toc-section" id="the-probabilities-that-a-printer-produces-0-1-2-and-3-misprints-are-42-28-18-and-12-respectively-construct-the-probability-mass-function-and-its-corresponding-histogram-solve-for-the-mean-var">
+                            20. The probabilities that a printer produces 0, 1, 2, and 3 misprints are 42%, 28%, 18%, and 12% respectively. Construct the probability mass function and its corresponding histogram, solve for the mean, variance and standard deviation.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>pariha tag question para sa exam</p><br />
+                                            <h2 class="ez-toc-section" id="box-a-contain-numbers-1357-and-box-b-contain-numbers-2468-write-the-probability-distribution-and-draw-the-histogram%e2%80%8b">
+                            21. Box A contain numbers 1,3,5,7 and Box B contain numbers 2,4,6,8. Write the probability distribution and draw the histogram​</h2><br />
+                        <p><strong>Answer:</strong></p><p>__1.Which group of object is composed of opaque materials?</p><p><strong>Step-by-step explanation:</strong></p><p>1. H</p><p>2. JK</p><p>3. HI</p><p>4.MN</p><p>5.HL</p><p>6.HJ</p><p>7.HK</p><p>8.IO</p><p>9.HO</p><p>10.OL</p><br />
+                                            <h2 class="ez-toc-section" id="using-the-sample-in-a-family-of-four-children-construct-a-probability-distribution-of-the-random-variable-z-representing-the-number-of-boys-draw-the-histogram-of-the-probability-distribution">
+                            22. Using the sample in a family of four children, construct a probability distribution of the random variable Z representing the number of boys. Draw the histogram of the probability distribution​</h2><br />
+                        <p><strong>Answer:</strong></p><p>when you answer this activity make sure to draw the graph</p><br />
+                                            <h2 class="ez-toc-section" id="a-make-a-histogram-of-the-given-probability-distribution-b-compute-the-mean-and-variance-of-the-distribution-c-illustrate-the-distribution-using-the-properties-of-normal-curve%e2%80%8b">
+                            23. a. make a histogram of the given probability distribution b. compute the mean and variance of the distribution c. illustrate the distribution using the properties of normal curve​</h2><br />
+                        <p>answer</p><p>C po ang sagot </p><p>pa brainles po kung tama</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-what-is-the-probability-that-3-or-more-copies-will-be-demanded-in-a-particular-day-b-what-is-the-probability-that-the-demand-will-be-at-least-2-but-not-more-than-6-c-draw-the-histogram-of-the-p">
+                            24. a) What is the probability that 3 or more copies will be demanded in a particular day? b) What is the probability that the demand will be at least 2 but not more than 6? c) Draw the histogram of the probability distribution.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>bbbbbbbbbbb bbbbbbbbbbb</p><br />
+                                            <h2 class="ez-toc-section" id="2-how-do-you-make-the-histogram-for-a-probability-distributions%e2%80%8b">
+                            25. 2. How do you make the histogram for a probability distributions?​</h2><br />
+                        <p><strong>Answer:</strong></p>TO CREATE A HISTOGRAM OF A PROBABILITY DISTRIBUTION.Input the values of the random variable into L1 (remember to use the class midpoints for continuous random variables).Input the associated percentages, formatted as decimals, into L2.Press 2nd Y= and ENTER to edit stat plot 1.Press ENTER when the word ON is highlighted to turn on the stat plot.Select the histogram graphic and press ENTER.Set the Xlist: to L1.Set the Freq: to L2.Press WINDOW.Set up the window as follows:Xmin: lowest x-value from L1Xmax: a little higher than the highest x-value from L1Xscl: the “increment of change” of the x-variable in L1Ymin: 0Ymax: a little higher than the maximum probability from L2Yscl: Could use a lot of things here, but 0.05 works pretty wellXres: 1Press GRAPH. The calculator should now display the graph of the specified binomial distribution.<p><strong>Step-by-step explanation:</strong></p>#carry on learning<br />
+                                            <h2 class="ez-toc-section" id="construct-the-probability-mass-function-of-the-discrete-random-variable-x-that-has-four-values-1234-assuming-that-the-value-has-an-equal-probability-histogram-and-describe-the-pmf-%e2%80%8b">
+                            26. Construct the probability mass function of the discrete random variable X that has four values ( 1,2,3,4 ). Assuming that the value has an equal probability histogram and describe the pmf.​</h2><br />
+                        <p> </p><p>3.1.3 Probability Mass Function (PMF)</p><p>If X is a discrete random variable then its range RX is a countable set, so, we can list the elements in RX. In other words, we can write</p><p>RX={x1,x2,x3,...}.</p><p>Note that here x1,x2,x3,... are possible values of the random variable X. While random variables are usually denoted by capital letters, to represent the numbers in the range we usually use lowercase letters such as x, x1, y, z, etc. For a discrete random variable X, we are interested in knowing the probabilities of X=xk. Note that here, the event A={X=xk} is defined as the set of outcomes s in the sample space S for which the corresponding value of X is equal to xk. In particular,</p><p>A={s∈S|X(s)=xk}.</p><p>The probabilities of events {X=xk} are formally shown by the probability mass function (pmf) of X.</p><p> </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="draw-the-histogram-of-tge-probability-distribution%e2%80%8b">
+                            27. Draw the histogram of tge probability distribution​</h2><br />
+                        <p>Input the values of the <strong>random variable </strong>into L1(remember to use the class <strong>midpoints</strong> for <strong>continuous</strong> random variables).</p><p></p>What is <strong>continuous?</strong><p></p><p>In mathematics, a continuous function is a<strong> function that does not have discontinuities that means any unexpected changes in value.</strong> A function is continuous if we can ensure arbitrarily small changes by restricting enough minor changes in its input. If the given function is not continuous, then it is said to be <strong>discontinuous.</strong></p><p></p><p>Input the <strong>associated percentages, </strong>formatted as<strong> decimals,</strong> into <strong>L2.</strong></p><p></p><strong>What is associated percentages?</strong><p></p><p>The Percentage is a relative value that indicates the<strong> hundredth parts of any quantity.</strong> One percent (1%) represents the one hundredth, 2 percent (2%) represents two hundredths, 100% represents the whole, 200% twice the given quantity and so on… For example - 1 percent of 1000 mangoes is equal to 1/100 of <strong>1000</strong> or<strong> 10 mangoes.</strong></p><p></p><p>Therefore,<strong> </strong>Input the values of the <strong>random variable </strong>into L1(remember to use the class <strong>midpoints</strong> for <strong>continuous</strong> random variables).<br /><br />Therefore, Input the <strong>associated percentages, </strong>formatted as<strong> decimals,</strong> into <strong>L2.<br /><br /></strong>learn more about<strong> continuous </strong>here: https://brainly.ph/question/4395274<br />learn more about <strong>associated percentages </strong>here:<br />https://brainly.ph/question/30292875</p><p><br />#SPJ3</p><br />
+                                            <h2 class="ez-toc-section" id="construct-the-probability-distriibution-and-its-corresponding-histogram-also-determine-the-following">
+                            28. Construct the probability distriibution and its corresponding histogram. Also,  determine the following</h2><br />
+                        <p><strong>Answer:</strong></p><p>WDOYWDXYWOUXWOUDWUWJCUWPCOUCW</p><br />
+                                            <h2 class="ez-toc-section" id="20230321-1538-a-given-the-possible-outcomes-and-value-of-the-random-variable-construct-the-probability-mass-function-of-a-discrete-random-variable-and-its-corresponding-histogram-1-number-of-re">
+                            29. 2023/03/21 15:38 A. Given the possible outcomes and value of the random variable, construct the probability mass function of a discrete random variable and its corresponding histogram. 1. Number of Red Balls Possible Outcomes RR RB BR BB Probability Mass Function 0.8 0.6 0.4 0.2 0 The Histogram for the Probability Distribution of the Discrete Random Variable X 0 Value of the Random Variable X 2 1 Histogram 1 1 0 2 3​</h2><br />
+                        <p><strong>Answer:</strong></p><p>To construct the probability mass function (PMF) of the discrete random variable X, we need to two drawassign probabilities to each possible outcome. In this case, the possible outcomes for X are 0, 1, and 2, which correspond to the number of red balls intwo draws from a box containing two red balls (RR), one red ball and one blue ball (RB or BR), or two blue balls (BB).</p><p></p><p>From the given information, we know the probabilities of each possible outcome:</p><p></p><p>P(X=0) = 0.2 (the probability of drawing two blue balls)</p><p>P(X=1) = 0.6 (the probability of drawing one red ball and one blue ball, or vice versa)</p><p>P(X=2) = 0.8 (the probability of drawing two red balls)</p><p>To visualize this probability distribution, we can create a histogram with the value of X on the x-axis and the probability on the y-axis. Each bar in the histogram represents a possible outcome, and the height of the bar corresponds to its probability.</p><p></p><p>Here is the probability mass function and histogram for this discrete random variable:</p><p></p><p>X	P(X)</p><p>0	0.2</p><p>1	0.6</p><p>2	0.8</p><p>Histogram:</p><p></p><p>markdown</p><p>Copy code</p><p>       |</p><p>   |   |   |</p><p>   |   |   |   |</p><p>___|___|___|___|__</p><p>  0   1   2</p><p>Note that the probabilities in the PMF must add up to 1, which is the total area under the histogram.</p><br />
+                                            <h2 class="ez-toc-section" id="part-2-illustrative-problem%e2%80%a2construct-the-probability-distribution-of-the-given-problem%e2%80%a2draw-the-histogram-of-the-problem%e2%80%a2calculate-the-mean-variance-and-standard-deviatio">
+                            30. Part 2: Illustrative Problem•	Construct the probability distribution of the given problem•	Draw the histogram of the problem•	Calculate the mean, variance and standard deviation​</h2><br />
+                        <p><strong>Step-by-step explanation:</strong></p><p> histogram problem</p><p><strong>HOPE </strong><strong>I'TS </strong><strong>HELP</strong></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/ogaysLy8QrQ?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>math</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/it-s-a-night-job-by-joanita-male-analysis.html">It s A Night Job By Joanita Male Analysis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/body-anatomy-drawing-organs.html">Body Anatomy Drawing Organs</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/36-feet-to-meters.html">36 Feet To Meters</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/my-head-is-bloody-but-unbowed-figure-of-speech.html">My Head Is Bloody But Unbowed Figure Of Speech</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/what-s-your-first-impression-of-me.html">What s Your First Impression Of Me</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/professional-driver-s-license-age.html">Professional Driver s License Age</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/buy-comparison-essay.html">Buy Comparison Essay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/pluto-s-diameter-is-approximately-2370-km.html">Pluto s Diameter Is Approximately 2370 Km</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/do-you-observe-practices-that-preserve-culture-in-today-s-living.html">Do You Observe Practices That Preserve Culture In Today s Living</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/spell-11th.html">Spell 11th</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/why-are-numbers-important-in-our-life.html">Why Are Numbers Important In Our Life</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/emotionless-art.html">Emotionless Art</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/element-that-has-20-protons.html">Element That Has 20 Protons</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/instrumental-music-of-west-asia.html">Instrumental Music Of West Asia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/social-economic-model.html">Social Economic Model</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/problem-solving-with-patterns-mathematics-in-the-modern-world.html">Problem Solving With Patterns Mathematics In The Modern World</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/movie-theater-survey.html">Movie Theater Survey</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/penalty-for-trespassing-in-the-philippines.html">Penalty For Trespassing In The Philippines</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/19-days-chapter-2.html">19 Days Chapter 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/difference-between-technical-writing-and-creative-writing.html">Difference Between Technical Writing And Creative Writing</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://odoeduc.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://odoeduc.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

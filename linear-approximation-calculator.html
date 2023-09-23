@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Linear Approximation Calculator - QnA</title>
+    <meta name="description" content="Linear Approximation Calculator, , , , , , , 0, Linear approximation calculator - AlanaTyronne, alanatyronne.blogspot.com, 1920 x 1080, jpeg, , 20, linear-approximation-calculator, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Linear Approximation Calculator - QnA" />
+    <meta property="og:description" content="Linear Approximation Calculator, , , , , , , 0, Linear approximation calculator - AlanaTyronne, alanatyronne.blogspot.com, 1920 x 1080, jpeg, , 20, linear-approximation-calculator, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Linear Approximation Calculator - QnA" />
+    <meta name="twitter:description" content="Linear Approximation Calculator, , , , , , , 0, Linear approximation calculator - AlanaTyronne, alanatyronne.blogspot.com, 1920 x 1080, jpeg, , 20, linear-approximation-calculator, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://odoeduc.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://odoeduc.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://odoeduc.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://odoeduc.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://odoeduc.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Linear Approximation Calculator</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">lee4</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Linear+Approximation+Calculator" alt="Linear Approximation Calculator">
+                    </div>
+                    <p></p>
+                    <p>In 1977, the price of a scientific 
+calculator was $175. In 2004, the 
+price was $15. Assuming the change 
+in price was linear, what was the 
+approximate price of a scientific 
+calculator in 1998?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#in-1977-the-price-of-a-scientific-calculator-was-175-in-2004-the-price-was-15-assuming-the-change-in-price-was-linear-what-was-the-approximate-price-of-a-scientific-calculator-in-1998">1.
+                                            In 1977, the price of a scientific 
+calculator was $175. In 2004, the 
+price was $15. Assuming the change 
+in price was linear, what was the 
+approximate price of a scientific 
+calculator in 1998?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#to-make-a-rough-or-approximate-calculation%e2%80%8b">2.
+                                            to make a rough or approximate calculation​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-to-use-local-linear-approximation-when-a-and-fx-need-to-be-approximated">3.
+                                            How to use local linear approximation when a and f(x) need to be approximated?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#using-inverse-sines-and-cosines-use-a-calculator-to-approximate-the-measure-of-angle-a-to-the-nearest-tenth-of-a-degree-%e2%80%8b">4.
+                                            Using inverse Sines and Cosines.Use a calculator to approximate the measure of angle A to the nearest tenth of a degree ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#calculate-the-approximate-value-of-tex162-div-21tex%e2%80%8b">5.
+                                            calculate the approximate value of [tex]162 \div 21[/tex]​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-1-1-approximating-square-roots-use-the-method-given-at-the-first-column-to-approximate-the-square-root-do-not-use-a-calculator-pa2long-p-slmt-advnce325-pts-%e2%80%8b">6.
+                                            Activity 1.1: Approximating Square Roots Use the method given at the first column to approximate the square root. Do not use a calculator.Pa2long p slmt advnce&lt;325 pts.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#calculate-the-actual-time-and-approximate-time-from-march-8-2018-to-december-18-2018">7.
+                                            calculate the actual time and approximate time from march 8, 2018 to December 18, 2018</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#g-use-a-calculator-to-determine-the-approximate-value-9f-the-number-up-to-two-decimal-places-%e2%80%8b">8.
+                                            G, Use a calculator to determine the approximate value 9f the number up to two decimal places.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#as-a-student-and-a-worker-why-do-you-think-it-is-neccessary-to-know-the-importance-of-measuring-and-calculating-approximately-why%e2%80%8b">9.
+                                            As a student and a worker, why do you think it is neccessary to know the importance of measuring and calculating approximately? why?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activities-activity-1-1-approximating-square-roots-use-the-method-given-at-the-first-column-to-approximate-the-square-root-do-not-use-a-calculator%e2%80%8b">10.
+                                            Activities Activity 1.1: Approximating Square Roots Use the method given at the first column to approximate the square root. Do not use a calculator​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sound-waves-in-air-travel-at-approximately-330ms-calculate-the-frequency-of-a-2-5m-long-sound-wave">11.
+                                            Sound waves in air travel at approximately 330m/s. Calculate the frequency of a 2.5m-long sound wave.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#find-the-linear-approximation-of">12.
+                                            Find the linear approximation of </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#show-how-you-would-estimate-the-approximate-square-root-of-69-without-using-a-calculator">13.
+                                            Show how you would estimate the approximate square root of 69 without using a calculator.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#an-earthquake-releared-approximately-10ls-joulerof-energy-calculate-the-magnitude-on-richter-scale">14.
+                                            An earthquake releared approximately 10ls jouler
+of energy. calculate the magnitude on richter scale.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-is-differential-used-as-linear-approximation-%e2%80%8b">15.
+                                            how is differential used as linear approximation? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#22-which-method-used-in-calculating-pediatric-doses-uses-child%e2%80%99s-weight-to-calculate-approximate-dose-a-clark%e2%80%99s-ruleb-young%e2%80%99s-rulec-fried%e2%80%99s-ruled-bsa-method">16.
+                                            22. Which method used in calculating pediatric doses uses child’s weight to calculate approximate dose? 
+A. Clark’s Rule
+B. Young’s Rule
+C. Fried’s Rule
+D. BSA Method</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sound-waves-in-air-travel-at-approximately-330ms-calculate-the-frequency-of-a-2-5m-long-sound-wave">17.
+                                            Sound waves in air travel at approximately 330m/s. Calculate the frequency of a 2.5m-long sound wave.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directionsfill-in-the-table-by-using-approximate-values-and-calculate-the-speed-in-m-s-do-this-in-your-notebook-on-a-separate-sheet-of-paper-%e2%80%8b">18.
+                                            Directions:Fill in the table by using approximate values and calculate the speed in m/ s.Do this in your notebook/ on a separate sheet of paper.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-it-is-a-numeric-ruler-with-sliding-pointer-that-gives-approximate-calculations-%e2%80%8b">19.
+                                            1. It is a numeric ruler with sliding pointer that gives approximate calculations.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#simplify-the-following-expressions-classify-if-the-root-is-rational-or-irrational-technology-integration-calculator-is-allowed-approximate-to-nearest-hundredths-%e2%80%8b">20.
+                                            Simplify the following expressions. Classify if the root is rational or irrational Technology integration Calculator is allowed, approximate to nearest hundredths.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-farmer-has-a-garden-lot-with-a-length-of-21-5-meters-and-a-width-of-8-52-meters-calculate-the-approximate-area-of-the-garden-lot">21.
+                                            A farmer has a garden lot with a length of 21.5 meters and a width of 8.52 meters. Calculate the approximate area of the garden lot.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-1-1-aproximating-square-roots-use-the-method-given-at-the-first-column-to-approximate-the-square-root-do-not-use-a-calculator%e2%80%8b">22.
+                                            ACTIVITY 1.1: APROXIMATING SQUARE ROOTS use the method given at the first column to approximate the square root do not use a calculator​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#at-15-%c2%b0c-air-has-a-density-of-approximately-1-23kgm3-calculate-the-density-in-gcm3">23.
+                                            At 15 °C, air has a density of approximately 1.23kg/m^3. Calculate the density in g/cm^3.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#calculate-the-approximate-values-of-the-specified-measures-of-position-and-interpret-the-paris-show-your-solutions-grades-of-40-students-in-mathematics%e2%80%8b">24.
+                                            calculate the approximate values of the specified measures of position and interpret the paris show your solutions grades of 40 students in mathematics​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#when-do-we-need-to-measure-and-when-do-we-approximate-or-calculate-measurement-of-ingredients%e2%80%8b">25.
+                                            when do we need to measure and when do we approximate or calculate measurement of ingredients?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#use-the-change-of-base-formula-to-rewrite-the-following-logarithmic-expressions-to-the-indicated-and-then-compute-the-approximate-value-using-the-calculator">26.
+                                            use the change of base formula to rewrite the following logarithmic expressions to the indicated and then compute the approximate value using the calculator.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#use-a-linear-approximation-or-differentials-to-estimate-e-0-01%e2%80%8b">27.
+                                            Use a linear approximation or differentials to estimate e^-0.01​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-did-the-ancient-people-of-egypt-babylon-and-austria-calculate-the-years-approximate-length%e2%80%8b">28.
+                                            how did the ancient people of egypt babylon and austria calculate the years approximate length​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#calculate-the-approximate-values-of-the-specified-measures-of-position-pahelp-naman-po%e2%80%8b">29.
+                                            Calculate the approximate values of the specified measures of position. pahelp naman po​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#example-on-how-to-calculate-the-actual-time-and-approximate-time">30.
+                                            example on how to calculate the actual time and approximate time</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="in-1977-the-price-of-a-scientific-calculator-was-175-in-2004-the-price-was-15-assuming-the-change-in-price-was-linear-what-was-the-approximate-price-of-a-scientific-calculator-in-1998">
+                            1. In 1977, the price of a scientific 
+calculator was $175. In 2004, the 
+price was $15. Assuming the change 
+in price was linear, what was the 
+approximate price of a scientific 
+calculator in 1998?</h2><br />
+                        First, find the linear equation:<br /><br />Let the x-axis represents the years and the y-axis represents the price.<br /><br />1977 <strong>(y₁)</strong> = <strong>0</strong>                                     Price in 1977 <strong>(x₁) </strong>= <strong>175</strong><br />2004 (<strong>y₂)</strong> = 2004 - 1977 =<strong> 27</strong>            Price in 2004 <strong>(x₂)</strong> = <strong>15</strong><br /><br /><strong>The two points are:</strong><br />(1997, price) = <strong>(0, 175)</strong><br />(2004, price) = <strong>(27, 15)</strong><br /><br />y-y₁ = [tex] \frac{y _{2}-y _{1}  }{x _{2}-x _{1}  } [/tex] (x - x₁)<br /><br />y - 175 = -160/27 (x - 0)<br /><br />y = -160/27 (x) + 175<br /><br /><strong>y = -5.93x + 175   (Linear Equation)<br /></strong>       <br />Note that the slope (-160/27 or -5.93) is negative because the price <br />of the calculator is decreasing.      <br /><br /><strong>To find the price of calculator in 1998:</strong><br />x₃ = 1998 - 1977<br /><strong>x₃ = 21</strong><br /><br />Plug-in 21 to x₃:<br />y₃ = -5.92(x₃) + 175<br />y₃ = -5.92 (21) + 175<br />y₃ = -124.32 + 175<br /><strong>y₃ </strong>≈<strong> 50.68  or  $51<br /></strong><br /><strong>ANSWER:  The price of calculator in 1998 is $50.68 or $51.</strong><br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="to-make-a-rough-or-approximate-calculation%e2%80%8b">
+                            2. to make a rough or approximate calculation​</h2><br />
+                        <p><strong>Answer:</strong></p><p>An approximation is a rough estimate or guess at something. When you write a budget for the month, you're making an approximation of how much you're going to spend. You can't be certain of the exact amount.</p><p><strong>Step-by-step explanation:</strong></p><p>YAN NA T-T</p><br />
+                                            <h2 class="ez-toc-section" id="how-to-use-local-linear-approximation-when-a-and-fx-need-to-be-approximated">
+                            3. How to use local linear approximation when a and f(x) need to be approximated?</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>How To Do Linear </strong><strong>Approximation</strong></p><p></p><p>1.Find the point we want to zoom in on.</p><p></p><p>2.Calculate the slope at that point using derivatives.</p><p></p><p>3.Write the equation of the tangent line using point-slope form.</p><p></p><p>4.Evaluate our tangent line to estimate another nearby point.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="using-inverse-sines-and-cosines-use-a-calculator-to-approximate-the-measure-of-angle-a-to-the-nearest-tenth-of-a-degree-%e2%80%8b">
+                            4. Using inverse Sines and Cosines.Use a calculator to approximate the measure of angle A to the nearest tenth of a degree ​</h2><br />
+                        <p> i have no idea expalnation</p><br />
+                                            <h2 class="ez-toc-section" id="calculate-the-approximate-value-of-tex162-div-21tex%e2%80%8b">
+                            5. calculate the approximate value of [tex]162 \div 21[/tex]​</h2><br />
+                        <p><strong>Answer:</strong></p><p>hihinge lng ako ng point</p><br />
+                                            <h2 class="ez-toc-section" id="activity-1-1-approximating-square-roots-use-the-method-given-at-the-first-column-to-approximate-the-square-root-do-not-use-a-calculator-pa2long-p-slmt-advnce325-pts-%e2%80%8b">
+                            6. Activity 1.1: Approximating Square Roots Use the method given at the first column to approximate the square root. Do not use a calculator.Pa2long p slmt advnce&lt;325 pts.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Estimate: Get as close as possible to the number you're trying to square root by finding two perfect square roots that gives a close number. Divide: Divide your number by one of the square roots you've chosen from the previous step. Average: Take the average of step 2 and the root.</p><br />
+                                            <h2 class="ez-toc-section" id="calculate-the-actual-time-and-approximate-time-from-march-8-2018-to-december-18-2018">
+                            7. calculate the actual time and approximate time from march 8, 2018 to December 18, 2018</h2><br />
+                        <p><strong>APPROXIMATE</strong><strong> </strong><strong>TIME</strong></p><p></p><p><strong>Days</strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>Month</strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>Time</strong></p><p></p><p><strong>1</strong><strong>8</strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>1</strong><strong>2</strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>2</strong><strong>0</strong><strong>1</strong><strong>8</strong></p><p><strong>(</strong><strong>8</strong><strong>)</strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>(</strong><strong>3</strong><strong>)</strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>(</strong><strong>2</strong><strong>0</strong><strong>1</strong><strong>8</strong><strong>)</strong></p><p><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong></p><p><strong>1</strong><strong>0</strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>9</strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>0</strong></p><p><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>x30</strong></p><p><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong></p><p><strong>1</strong><strong>0</strong><strong> </strong><strong> </strong><strong>+</strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>2</strong><strong>7</strong><strong>0</strong><strong> </strong><strong>=</strong><strong> </strong><strong>2</strong><strong>8</strong><strong>0</strong><strong> </strong><strong>days</strong></p><p></p><p></p><p></p><p><strong>ACTUAL</strong><strong> </strong><strong>TIME</strong></p><p></p><p><strong>March</strong><strong> </strong><strong> </strong><strong>7</strong></p><p><strong>April</strong><strong> </strong><strong> </strong><strong>3</strong><strong>0</strong></p><p><strong>May </strong><strong> </strong><strong> </strong><strong>31 </strong></p><p><strong>31 June </strong><strong> </strong><strong> </strong><strong>30 </strong></p><p><strong>30 July </strong><strong> </strong><strong> </strong><strong>31 </strong></p><p><strong>August</strong><strong> </strong><strong> </strong><strong>3</strong><strong>1</strong></p><p><strong>September  30 </strong></p><p><strong>September  30</strong></p><p><strong>October  31 </strong></p><p><strong>November  30 </strong></p><p><strong>Decem</strong><strong>ber</strong><strong> </strong><strong> </strong><strong>1</strong><strong>8</strong></p><p><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong><strong>-</strong></p><p><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong>2</strong><strong>6</strong><strong>9</strong><strong> </strong><strong>days</strong></p><br />
+                                            <h2 class="ez-toc-section" id="g-use-a-calculator-to-determine-the-approximate-value-9f-the-number-up-to-two-decimal-places-%e2%80%8b">
+                            8. G, Use a calculator to determine the approximate value 9f the number up to two decimal places.​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>Step-by-step explanation:</strong></p><p>1. 3.74</p><p>2 .-2.83</p><p>3. -3.87</p><p>4.19.00±√</p><br />
+                                            <h2 class="ez-toc-section" id="as-a-student-and-a-worker-why-do-you-think-it-is-neccessary-to-know-the-importance-of-measuring-and-calculating-approximately-why%e2%80%8b">
+                            9. As a student and a worker, why do you think it is neccessary to know the importance of measuring and calculating approximately? why?​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong></strong></p><strong>Uncertainty based on best estimate</strong><p>When scientists make a measurement or calculate a quantity from their data, they usually presume that there is an exact or "true value" depending on how they characterize what they are measuring (or calculated). Scientists who present their findings frequently include a range of values within which they expect this "real value" to fall. The most popular technique to display the range of values is to use the following formula: measurement = best estimate uncertainty.</p>Importance of measuring and calculating approximately<p>Without measurement, modern society would simply not exist. Without the vital measurement tools on which everyday life is based, twenty-first-century civilization would be unthinkable.</p><p></p><p>Time, size, distance, speed, direction, weight, volume, temperature, pressure, force, sound, light, energy: these are among the physical properties for which humans have developed accurate measures, without which we could not live our daily routines.</p><p></p><p>Every area of human life is influenced by measurement. However, we have a tendency to take measurement for granted, failing to see how much we need and rely on our measurement tools. We take measuring for granted since we are surrounded by it and have been accustomed to it. It's only when our measurement tools break down or become unavailable that we realize how critical they are. We truly don't realize what we have until it's gone.</p><p></p>Look at the importanceYou start to wonder how and when you'll get up the next morning to go to work as you go to bed. There would be no clocks or alarms to wake you up at a specific hour if measurement did not exist. On the plus side, if there were no timekeepers, no one would ever know if you were late for work. Without measurement, the concept of being on time would evaporate entirely.You won't be able to make breakfast or coffee with an electric stove, oven, or microwave after waking up because these devices rely on temperature or time measurements to heat food and beverages. You wouldn't be able to use a modern refrigerator either, because refrigeration necessitates measurement in order to keep food and beverages at a consistent temperature.You couldn't drive to work since modern cars have onboard computers that use measurements to control the ignition system, automatic transmission, brakes, engine temperature, throttle position, and fuel-oxygen mix. You wouldn't be able to tell how much fuel, oil, or transmission fluid your vehicle had because there would be no fuel gauge or dip stick to check these fluid levels without measurement.<p></p><p>To know more about estimation, click here</p><p>https://brainly.ph/question/169758</p><p>Hope this helps! :)
+</p><p><strong>#BRAINLYFAST</strong>
+</p><p>
+</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="activities-activity-1-1-approximating-square-roots-use-the-method-given-at-the-first-column-to-approximate-the-square-root-do-not-use-a-calculator%e2%80%8b">
+                            10. Activities Activity 1.1: Approximating Square Roots Use the method given at the first column to approximate the square root. Do not use a calculator​</h2><br />
+                        <p><strong>Answer</strong><strong>:</strong> </p><p>I solved it clear po </p><br />
+                                            <h2 class="ez-toc-section" id="sound-waves-in-air-travel-at-approximately-330ms-calculate-the-frequency-of-a-2-5m-long-sound-wave">
+                            11. Sound waves in air travel at approximately 330m/s. Calculate the frequency of a 2.5m-long sound wave.</h2><br />
+                        <p><strong>Answer:</strong></p><p>bdixbejxugdjcideixhdj</p><br />
+                                            <h2 class="ez-toc-section" id="find-the-linear-approximation-of">
+                            12. Find the linear approximation of </h2><br />
+                        <p><strong>Answer:</strong></p><p>The linear approximation formula is based on the equation of the tangent line of a function at a fixed point. The linear approximation of a function f(x) at a fixed value x = a is given by L(x) = f(a) + f '(a) (x - a).</p><br />
+                                            <h2 class="ez-toc-section" id="show-how-you-would-estimate-the-approximate-square-root-of-69-without-using-a-calculator">
+                            13. Show how you would estimate the approximate square root of 69 without using a calculator.</h2><br />
+                        Without using calculus, we may say that the square root of 69 is between 8 and 9.<br /><br />Because,<br />                     [tex]64 &lt; 69 &lt;81
+
+8^{2} &lt; 69 &lt; 9^{2}[/tex]<br />
+                                            <h2 class="ez-toc-section" id="an-earthquake-releared-approximately-10ls-joulerof-energy-calculate-the-magnitude-on-richter-scale">
+                            14. An earthquake releared approximately 10ls jouler
+of energy. calculate the magnitude on richter scale.</h2><br />
+                        <p><strong>Answer:</strong></p><p>Earthquake magnitude, energy release, and shaking intensity are all related measurements of an earthquake that are often confused with one another. Their dependencies and relationships can be complicated, and even one of these concepts alone can be confusing.</p><p></p><p>Here we'll look at each of these, as well as their interconnectedness and dependencies.</p><p></p><p><strong>Step-by-step explanation:</strong></p><p>pa brainliest po</p><p><strong>Answer:</strong></p><p>10 13 joules energy </p><p></p><p> 10</p><p>x13 </p><p>=N </p><p>130 </p><br />
+                                            <h2 class="ez-toc-section" id="how-is-differential-used-as-linear-approximation-%e2%80%8b">
+                            15. how is differential used as linear approximation? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p> Linear approximations may be used in estimating roots and powers</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="22-which-method-used-in-calculating-pediatric-doses-uses-child%e2%80%99s-weight-to-calculate-approximate-dose-a-clark%e2%80%99s-ruleb-young%e2%80%99s-rulec-fried%e2%80%99s-ruled-bsa-method">
+                            16. 22. Which method used in calculating pediatric doses uses child’s weight to calculate approximate dose? 
+A. Clark’s Rule
+B. Young’s Rule
+C. Fried’s Rule
+D. BSA Method</h2><br />
+                        letter C ang sagot jan <br />
+                                            <h2 class="ez-toc-section" id="sound-waves-in-air-travel-at-approximately-330ms-calculate-the-frequency-of-a-2-5m-long-sound-wave">
+                            17. Sound waves in air travel at approximately 330m/s. Calculate the frequency of a 2.5m-long sound wave.</h2><br />
+                        330 m/s x 1/2.5 m = 132 s^-1<br />
+                                            <h2 class="ez-toc-section" id="directionsfill-in-the-table-by-using-approximate-values-and-calculate-the-speed-in-m-s-do-this-in-your-notebook-on-a-separate-sheet-of-paper-%e2%80%8b">
+                            18. Directions:Fill in the table by using approximate values and calculate the speed in m/ s.Do this in your notebook/ on a separate sheet of paper.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.m.s.m</p><p>2.s.m.m</p><p>3.m.s.s</p><p>4.s.s.s</p><p>5.m.m.s</p><p><strong>Explanation:</strong></p><p>iyan po Tama yan sa nakakatakot </p><br />
+                                            <h2 class="ez-toc-section" id="1-it-is-a-numeric-ruler-with-sliding-pointer-that-gives-approximate-calculations-%e2%80%8b">
+                            19. 1. It is a numeric ruler with sliding pointer that gives approximate calculations.​</h2><br />
+                        <p>slide rule</p><p><strong>Explanation:</strong></p><p>the slide rule is a mechanical analog computer.[3][4] As a graphical analog calculator,the slide rule is closely related to a nomogram;the former is used to general calculations,the latter for application-specific computations.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="simplify-the-following-expressions-classify-if-the-root-is-rational-or-irrational-technology-integration-calculator-is-allowed-approximate-to-nearest-hundredths-%e2%80%8b">
+                            20. Simplify the following expressions. Classify if the root is rational or irrational Technology integration Calculator is allowed, approximate to nearest hundredths.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. 3.28</p><p>2. 5</p><p>3. 0.38</p><p>4. 25.82</p><p>5. 0.60</p><p>God bless</p><br />
+                                            <h2 class="ez-toc-section" id="a-farmer-has-a-garden-lot-with-a-length-of-21-5-meters-and-a-width-of-8-52-meters-calculate-the-approximate-area-of-the-garden-lot">
+                            21. A farmer has a garden lot with a length of 21.5 meters and a width of 8.52 meters. Calculate the approximate area of the garden lot.</h2><br />
+                        <p><strong>Answer:</strong></p><p>183.18 meters squared </p><p><strong>Step-by-step explanation:</strong></p><p>Area= l * w</p><p>       = 21.5 m * 8.52m</p><p>       = 183.18 meters squared </p><br />
+                                            <h2 class="ez-toc-section" id="activity-1-1-aproximating-square-roots-use-the-method-given-at-the-first-column-to-approximate-the-square-root-do-not-use-a-calculator%e2%80%8b">
+                            22. ACTIVITY 1.1: APROXIMATING SQUARE ROOTS use the method given at the first column to approximate the square root do not use a calculator​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. 36&lt;40&lt;49</p><p>    6 and 7</p><p>    40/6=6.66</p><p>    (6.66+6)/2</p><p>   =6.33</p><p>    = 6.7195 </p><p>    =6.7</p><br />
+                                            <h2 class="ez-toc-section" id="at-15-%c2%b0c-air-has-a-density-of-approximately-1-23kgm3-calculate-the-density-in-gcm3">
+                            23. At 15 °C, air has a density of approximately 1.23kg/m^3. Calculate the density in g/cm^3.</h2><br />
+                        <p><strong>Answer:</strong></p><p>2/4 m^²</p><p><strong>Explanation:</strong></p><p>don't report if wrong</p><br />
+                                            <h2 class="ez-toc-section" id="calculate-the-approximate-values-of-the-specified-measures-of-position-and-interpret-the-paris-show-your-solutions-grades-of-40-students-in-mathematics%e2%80%8b">
+                            24. calculate the approximate values of the specified measures of position and interpret the paris show your solutions grades of 40 students in mathematics​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Penge po sagot nito need lang po talaga</p><br />
+                                            <h2 class="ez-toc-section" id="when-do-we-need-to-measure-and-when-do-we-approximate-or-calculate-measurement-of-ingredients%e2%80%8b">
+                            25. when do we need to measure and when do we approximate or calculate measurement of ingredients?​</h2><br />
+                        <p>when we make a material or etc...</p><p><strong> </strong><strong>f</strong><strong>o</strong><strong>r</strong><strong> </strong><strong>e</strong><strong>x</strong><strong>a</strong><strong>m</strong><strong>p</strong><strong>l</strong><strong>e</strong><strong>:</strong></p><p></p><p><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong><strong> </strong>baking a cake</p><p></p><p>before we bake/make a cake we must measure and calculate the measurent of the ingredients before mixing it</p><p>so we can make the cake properly and perfectly with no mess included while making a material...</p><p></p><p>NOT A COPY PASTE</p><p>JUST MY OWN IDEA</p><p></p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="use-the-change-of-base-formula-to-rewrite-the-following-logarithmic-expressions-to-the-indicated-and-then-compute-the-approximate-value-using-the-calculator">
+                            26. use the change of base formula to rewrite the following logarithmic expressions to the indicated and then compute the approximate value using the calculator.</h2><br />
+                        <p></p><p>Without using a calculator, find the value of the following logarithmic expression. log7 1</p><p>Answer: 0</p><p>The Mathematics in Grade 9 is all about Trigonometry and Calculus. There is statistics also. The Grade 9 Mathematics Modules are a bit harder than the past modules. It levelled up. So, it needs a focus, not just a focus but more of concentration. The education gives chances to people. Through this, the future of individuals might change and improve a bit.</p><p>pa Brainliests</p><p></p><p>1000.123456</p><p><strong>Step-by-step explanation:</strong></p><p>thanks po sa points</p><br />
+                                            <h2 class="ez-toc-section" id="use-a-linear-approximation-or-differentials-to-estimate-e-0-01%e2%80%8b">
+                            27. Use a linear approximation or differentials to estimate e^-0.01​</h2><br />
+                        <p><strong>Answer:</strong></p><p>wasn't</p><p><strong>Step-by-step explanation:</strong></p><p>diii ko po Alam sagot</p><br />
+                                            <h2 class="ez-toc-section" id="how-did-the-ancient-people-of-egypt-babylon-and-austria-calculate-the-years-approximate-length%e2%80%8b">
+                            28. how did the ancient people of egypt babylon and austria calculate the years approximate length​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Ancient Babylonian, Assyrian, and Egyptian astronomers knew the approximate length of the year. The Egyptians of 3000 years ago, for example, adopted a calendar based on a 365-day year. They kept careful track of the rising time of the bright star Sirius in the predawn sky, which has a yearly cycle that corresponded with the flooding of the Nile River. The Chinese also had a working calendar; they determined the length of the year at about the same time as the Egyptians. The Chinese also recorded comets, bright meteors, and dark spots on the Sun. (Many types of astronomical objects were introduced in you are not familiar with terms like comets and meteors, you may want to review that chapter.) Later, Chinese astronomers kept careful records of “guest stars”—those that are normally too faint to see but suddenly flare up to become visible to the unaided eye for a few weeks or months. We still use some of these records in studying stars that exploded a long time ago.</p><br />
+                                            <h2 class="ez-toc-section" id="calculate-the-approximate-values-of-the-specified-measures-of-position-pahelp-naman-po%e2%80%8b">
+                            29. Calculate the approximate values of the specified measures of position. pahelp naman po​</h2><br />
+                        <p>[tex]Q_{2}[/tex]<strong> </strong></p><p><strong>Solution:</strong></p><p><strong></strong>[tex](\frac{2n}{4}) ^{th}[/tex]<strong></strong></p><p>[tex](\frac{2*40}{4}) ^{th}[/tex]</p><p>= <strong>20th value in cf column</strong></p><p>Q2 class = 81-85</p><p>Lower Boundary Point = 80.5</p><p>(Final Answer nasa picture)</p><p></p><p>[tex]D_{7}[/tex]<strong> </strong></p><p><strong>Solution:</strong></p><p><strong></strong>[tex](\frac{7n}{10}) ^{th}[/tex]<strong></strong></p><p>[tex](\frac{7*40}{10}) ^{th}[/tex]</p><p>= <strong>28th value in cf column</strong></p><p>D7 class = 81-85</p><p>Lower Boundary Point = 80.5</p><p>(Final Answer nasa picture)</p><p></p><p>[tex]P_{20}[/tex]<strong> </strong></p><p><strong>Solution:</strong></p><p><strong></strong>[tex](\frac{20n}{100}) ^{th}[/tex]<strong></strong></p><p>[tex](\frac{20*40}{100}) ^{th}[/tex]</p><p>= <strong>8th value in cf column</strong></p><p>P20 class = 76-80</p><p>Lower Boundary Point = 75.5</p><p>(Final Answer nasa picture)</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="example-on-how-to-calculate-the-actual-time-and-approximate-time">
+                            30. example on how to calculate the actual time and approximate time</h2><br />
+                        <p>calculate the actual time and approximate time from march 8, 2018 to December 18, 2018</p><p></p><p>APPROXIMATE TIME</p><p></p><p>Days     Month      Time</p><p></p><p>18        12         2018</p><p>(8)       (3)       (2018)</p><p>---------------------</p><p>10        9          0</p><p>         x30</p><p>--------------------</p><p>10  +    270 = 280 days</p><p></p><p></p><p></p><p>ACTUAL TIME</p><p></p><p>March       7</p><p>April        30</p><p>May         31 </p><p>31 June   30 </p><p>30 July    31 </p><p>August.    31</p><p>September  30 </p><p>September  30</p><p>October       31 </p><p>November  30 </p><p>December  18</p><p>------------------------</p><p>         269 days</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/F4C4uGwQ_FE?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>math</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/consider-the-lengths-of-stay-at-a-hospital-s-emergency-department.html">Consider The Lengths Of Stay At A Hospital s Emergency Department</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/pablo-neruda-sonnet-17-spanish.html">Pablo Neruda Sonnet 17 Spanish</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/how-does-the-narrator-s-view-of-martial-law.html">How Does The Narrator s View Of Martial Law</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/newton-s-third-law-illustration.html">Newton s Third Law Illustration</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/elementaryvideo.html">ElementaryVideo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/avogadro-s-law-real-life-application.html">Avogadro s Law Real Life Application</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/quebec-s-largest-city.html">Quebec s Largest City</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/irrigation-project-for-school.html">Irrigation Project For School</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/mandate-of-heaven-tagalog.html">Mandate Of Heaven Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/jose-rizal-s-wife.html">Jose Rizal s Wife</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/inequality-slogan.html">Inequality Slogan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/why-are-numbers-important-in-our-life.html">Why Are Numbers Important In Our Life</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/speech-for-ssg-representative-tagalog.html">Speech For Ssg Representative Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/object-of-the-contract.html">Object Of The Contract</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/bridge-to-terabithia-activities-pdf.html">Bridge To Terabithia Activities Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/mgh-meaning.html">Mgh Meaning</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/2-methyl-1-pentene.html">2 Methyl 1 Pentene</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/special-written-report-sample-pnp.html">Special Written Report Sample Pnp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/love-and-romance-a-study-of-intimacy.html">Love And Romance A Study Of Intimacy</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/1-5-1.html">1 5 1</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://odoeduc.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://odoeduc.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

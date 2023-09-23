@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Do While Loop With Switch Case In C - QnA</title>
+    <meta name="description" content="Do While Loop With Switch Case In C, 07 Do While and Switch Statement, , , , qmy5728, 2014-02-01T17:21:43.000000Z, 20, Part 6 c Programming switch case with do while loop - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, do-while-loop-with-switch-case-in-c, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Do While Loop With Switch Case In C - QnA" />
+    <meta property="og:description" content="Do While Loop With Switch Case In C, 07 Do While and Switch Statement, , , , qmy5728, 2014-02-01T17:21:43.000000Z, 20, Part 6 c Programming switch case with do while loop - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, do-while-loop-with-switch-case-in-c, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Do While Loop With Switch Case In C - QnA" />
+    <meta name="twitter:description" content="Do While Loop With Switch Case In C, 07 Do While and Switch Statement, , , , qmy5728, 2014-02-01T17:21:43.000000Z, 20, Part 6 c Programming switch case with do while loop - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, do-while-loop-with-switch-case-in-c, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://odoeduc.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://odoeduc.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://odoeduc.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://odoeduc.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://odoeduc.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Do While Loop With Switch Case In C</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">anneborja18</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Do+While+Loop+With+Switch+Case+In+C" alt="Do While Loop With Switch Case In C">
+                    </div>
+                    <p></p>
+                    <p>Activity 1: Read and analyze each question carefully. Choose the correct answer and write it on the space
+provided before the number.
+1. It is a structure used to repeat a process based on the given condition.
+a. Decisive Control Structure
+b. Process Control Structure
+c. Repetitive Control Structure
+d. Sequential Control Structure
+2. The loop must continue to perform the statements repeatedly as long as a
+condition remains
+a. Constant
+c. True
+b. False
+d. Unchanged
+3. It is a loop that performs a block of code as long as a specified condition is true
+a. Do-White Loop c. Switch Loop
+b. For Loop
+d. While Loop
+4. This loop will execute the code block once, before checking if the condition is
+true, then it will repeat the loop as long as the condition is true.
+a. Do-While Loop c. Switch Loop
+b. For Loop
+d. While Loop
+5. This loop is used to run a block of code for a certain number of times.
+a. Do-While Loop c. Switch Loop
+b. For Loop
+d. While Loop</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-1-read-and-analyze-each-question-carefully-choose-the-correct-answer-and-write-it-on-the-spaceprovided-before-the-number-1-it-is-a-structure-used-to-repeat-a-process-based-on-the-given-c">1.
+                                            Activity 1: Read and analyze each question carefully. Choose the correct answer and write it on the space
+provided before the number.
+1. It is a structure used to repeat a process based on the given condition.
+a. Decisive Control Structure
+b. Process Control Structure
+c. Repetitive Control Structure
+d. Sequential Control Structure
+2. The loop must continue to perform the statements repeatedly as long as a
+condition remains
+a. Constant
+c. True
+b. False
+d. Unchanged
+3. It is a loop that performs a block of code as long as a specified condition is true
+a. Do-White Loop c. Switch Loop
+b. For Loop
+d. While Loop
+4. This loop will execute the code block once, before checking if the condition is
+true, then it will repeat the loop as long as the condition is true.
+a. Do-While Loop c. Switch Loop
+b. For Loop
+d. While Loop
+5. This loop is used to run a block of code for a certain number of times.
+a. Do-While Loop c. Switch Loop
+b. For Loop
+d. While Loop</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#difference-of-for-next-loop-do-loop-and-while-end-while-loop">2.
+                                            Difference of For-Next Loop, Do Loop, and While-End-While loop</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#using-while-loop-or-do-while-loop-function-write-a-c-program-that-will-count-and-display-0-loop-will-end-when-reached-the-number-10">3.
+                                            Using While loop or Do While loop function, write a C program that will count and display 0. Loop will end when reached the number 10.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-do-you-think-while-loop-statement-is-important%e2%80%8b">4.
+                                            why do you think while loop statement  is important?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-do-while-loop-is-a-__________-type-of-loop">5.
+                                            The do-while loop is a __________ type of loop.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-to-make-a-program-using-do-while-loop">6.
+                                            how to make a program using do while loop</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-are-the-syntax-needed-in-while-loop2-what-are-the-syntax-needed-in-do-loop3-what-are-the-syntax-needed-in-do-until">7.
+                                            1. What are the syntax needed in while loop?
+2. What are the syntax needed in Do Loop?
+3. What are the syntax needed in Do Until?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-do-we-use-the-nested-for-and-while-loop-statements-in-creating-programs">8.
+                                            how do we use the nested for and while loop statements in creating programs?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-causes-electrons-to-move-in-a-conducting-loopa-currentb-resistorc-switchd-voltage%e2%80%8b">9.
+                                            which of the following causes electrons to move in a conducting loop?a. currentb. resistorc. switchd. voltage​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-lets-you-do-something-a-word-again-and-a-specific-number-a-while-loopb-repeat-c-loopd-conditionals%e2%80%8b">10.
+                                            which of the following lets you do something a word again and a specific number A. While loopB. Repeat C. LoopD. Conditionals​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-structure-would-be-best-for-looping-through-a-known-number-of-questionsa-for-nextb-do-loopc-whiled-all-of-the-above">11.
+                                            what structure would be best for looping through a known number of questionsa. for nextb. do loopc. whiled. all of the above</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#define-while-loop-and-for-loop%e2%80%8b">12.
+                                            define while loop and for loop​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-difference-between-a-while-loop-and-a-do-while-loop">13.
+                                            What is the difference between a while loop and a do-while loop? -</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#charlie-is-trying-to-write-a-looping-program-that-executes-at-least-once-which-of-the-following-should-he-useselect-onea-do-while-loopb-for-loopc-while-loopd-none-of-these">14.
+                                            Charlie is trying to write a looping program that executes at least once. Which of the following should he use?
+Select one:
+a. Do While Loop
+b. For Loop
+c. While Loop
+d. None of these</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#using-while-loop-do-while-and-for-loop-write-a-c-program-that-lets-you-input-a-starting-and-ending-integer-range-then-display-all-the-odd-integers">15.
+                                            Using while loop, do while and for loop write a C program that lets you input a starting and ending integer (range) then display all the odd integers</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#11-is-there-a-light-produced-if-the-loop-touches-the-wire-why-a-yes-because-electric-current-can-pass-through-the-wire-b-no-because-electric-current-cannot-pass-through-the-wire-c-yes-becaus">16.
+                                            11. Is there a light produced if the loop touches the wire? Why? A Yes, because electric current can pass through the wire. B. No, because electric current cannot pass through the wire. C. Yes, because an electric wire acts as insulator in the set-up D. No, because an electric wire served only as decoration in the set-up. 12. Can an electric current flow if the wire loop did not touch the wire? Why? A. Yes because the circut is complete B. No because the circuit is incompleto C Yes, because an electric wire acts as insulator in the set-up. D. No, because an electric wire served only as decoration in the set-up. 13. How does the wire loop and the wire shape together acts as a switch? A When the wire loop and the wire maze don't touch the switch is open, and when it touches the switch is closed. B. When the wire loop and the wire maze don't touch the switch is closed, and when it touches the switch is opened. C. When the wire loop and the wire maze touched, the circuit is incomplete and the switch is close D. When the wire loop and the wire maze touched, the circuit is complete and the switch is open​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#similarities-between-loop-block-and-switch-block%e2%80%8b">17.
+                                            similarities between loop block and switch block​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#convert-the-following-do-while-loop-to-a-while-loop-char-sure-do-cout-are-you-sure-you-want-to-quit-cin-sure-while-sure-y-sure-n">18.
+                                            Convert the following do-while loop to a while loop: char sure; do { cout &lt;&lt; "Are you sure you want to quit?"; cin &gt;&gt; sure; } while (sure ! = 'y' &amp;&amp; sure ! ='N');</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-would-probably-be-the-most-important-difference-between-the-do-while-loop-and-the-while-loop%e2%80%8b">19.
+                                            what would probably be the most important difference between the do-while loop and the while loop?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-difference-between-until-loop-and-while-loop%e2%80%8b">20.
+                                            the difference between until loop and while loop?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-do-you-call-a-closed-loop-through-which-current-flows-a-wire-b-circuit-c-batteryd-switch%e2%80%8b">21.
+                                            What do you call a closed loop through which current flows? a. Wire b. Circuit c. Batteryd. Switch​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-different-between-a-while-loop-to-a-normal-repeat-loop%e2%80%8b">22.
+                                            what is the different between a while loop to a normal repeat loop?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-a-java-paradigm-that-executes-a-block-of-code-as-long-as-specified-condition-is-reached-a-breakb-switchc-loopd-continue%e2%80%8b">23.
+                                            It is a Java paradigm that executes a block of code as long as specified condition is reached.A. BreakB. SwitchC. LoopD. Continue​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-differences-between-while-do-while-and-for-loops%e2%80%8b">24.
+                                            . What is the differences between while, do-while, and for loops?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#guys-what-is-for-and-do-while-loop-please-help-me-on-my-programming-subject">25.
+                                            Guys what is for and do while loop please help me on my programming subject.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-switch-case-statement">26.
+                                            What is Switch case Statement ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-many-times-is-do-while-loop-guaranteed-to-loop">27.
+                                            How many times is do while loop guaranteed to loop?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-differences-of-3-types-of-loop-statement-if-then-elsefor-loopand-while-loop%e2%80%8b">28.
+                                            what are the differences of 3 types of loop statement (if-then-else,for-loop,and while loop)?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-differences-of-3-types-of-loop-statement-tf-then-else-for-loop-and-while-loop%e2%80%8b">29.
+                                            What are the differences of 3 types of Loop Statement (tf-Then-Else, For-Loop, and While-Loop)?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-based-on-the-diagram-will-the-bulb-light-up-why-a-no-because-the-loop-is-open-and-the-electric-current-cannot-flow-b-no-because-the-loop-is-open-and-the-electric-current-is-sufficient-c-y">30.
+                                            1. Based on the diagram, will the bulb light up? Why? A. No, because the loop is open and the electric current cannot flow. B. No, because the loop is open and the electric current is sufficient. C. Yes, because the loop is closed and the current will not flow. D. Yes, because the loop is closed and the current is sufficient. 2. What will happen to the bulb if you turned on the switch? A. The bulb will break. B. The bulb will get dimmer. C. The bulb lights up. D. There will be no changes to the bulb. 3. What will happen to the bulb if you turned off the switch? A. The bulb will light up. B. The bulb will be broken. C. The bulb will produce heat. D. The bulb will not produce light. 4. What needs to be done to this circuit so that the lamp will light up? A. Close the switch. B. Add another lamp. C. Add a cell and close the circuit. D. Add a motor and close the switch. 5. What is wrong in this circuit diagram? A. There is no switch. B. There are two bulbs. C. There is only one battery. D. There is a missing wire. case​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="activity-1-read-and-analyze-each-question-carefully-choose-the-correct-answer-and-write-it-on-the-spaceprovided-before-the-number-1-it-is-a-structure-used-to-repeat-a-process-based-on-the-given-c">
+                            1. Activity 1: Read and analyze each question carefully. Choose the correct answer and write it on the space
+provided before the number.
+1. It is a structure used to repeat a process based on the given condition.
+a. Decisive Control Structure
+b. Process Control Structure
+c. Repetitive Control Structure
+d. Sequential Control Structure
+2. The loop must continue to perform the statements repeatedly as long as a
+condition remains
+a. Constant
+c. True
+b. False
+d. Unchanged
+3. It is a loop that performs a block of code as long as a specified condition is true
+a. Do-White Loop c. Switch Loop
+b. For Loop
+d. While Loop
+4. This loop will execute the code block once, before checking if the condition is
+true, then it will repeat the loop as long as the condition is true.
+a. Do-While Loop c. Switch Loop
+b. For Loop
+d. While Loop
+5. This loop is used to run a block of code for a certain number of times.
+a. Do-While Loop c. Switch Loop
+b. For Loop
+d. While Loop</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. c</p><p>2. c</p><p>3. d</p><p>4. a</p><p>5. b</p><p><strong>Explanation:</strong></p><p>Legit answer.</p><p></p><p>#BrainlyEveryday</p><br />
+                                            <h2 class="ez-toc-section" id="difference-of-for-next-loop-do-loop-and-while-end-while-loop">
+                            2. Difference of For-Next Loop, Do Loop, and While-End-While loop</h2><br />
+                        <p>The oxygen and carbon dioxide from Yahoo finance online and identifying the body to the bathroom and then I'll be home  I see you have a great day to be home  I seen it on the space provided before</p><br />
+                                            <h2 class="ez-toc-section" id="using-while-loop-or-do-while-loop-function-write-a-c-program-that-will-count-and-display-0-loop-will-end-when-reached-the-number-10">
+                            3. Using While loop or Do While loop function, write a C program that will count and display 0. Loop will end when reached the number 10.</h2><br />
+                        <p><strong>Answer:</strong></p><p>C – while loop in C programming with example</p><p></p><p>BY CHAITANYA SINGH | FILED UNDER: C-PROGRAMMING</p><p></p><p>A loop is used for executing a block of statements repeatedly until a given condition returns false. In the previous tutorial we learned for loop. In this guide we will learn while loop in C.</p><p></p><p>C – while loop</p><p></p><p>Syntax of while loop:</p><p></p><p>while (condition test) { //Statements to be executed repeatedly // Increment (++) or Decrement (--) Operation }Flow Diagram of while loop</p><p></p><p>Example of while loop#include &lt;stdio.h&gt; int main() { int count=1; while (count &lt;= 4) { 	printf("%d ", count); 	count++; } return 0; }</p><p></p><p>Output:</p><p></p><p>1 2 3 4</p><p></p><p>step1: The variable count is initialized with value 1 and then it has been tested for the condition.</p><p>step2: If the condition returns true then the statements inside the body of while loop are executed else control comes out of the loop.</p><p>step3: The value of count is incremented using ++ operator then it has been tested again for the loop condition.</p><p></p><p>Guess the output of this while loop</p><p></p><p>#include &lt;stdio.h&gt; int main() { int var=1; while (var &lt;=2) { printf("%d ", var); } }</p><p></p><p>The program is an example of infinite while loop. Since the value of the variable var is same (there is no ++ or – operator used on this variable, inside the body of loop) the condition var&lt;=2 will be true forever and the loop would never terminate.</p><p></p><p></p><p><strong>Explanation:</strong></p><p>I hoped it helps and pa Brainliest please </p><br />
+                                            <h2 class="ez-toc-section" id="why-do-you-think-while-loop-statement-is-important%e2%80%8b">
+                            4. why do you think while loop statement  is important?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A "While" Loop is used to repeat a specific block of code an unknown number of times, until a condition is met. For example, if we want to ask a user for a number between 1 and 10, we don't know how many times the user may enter a larger number, so we keep asking "while the number is not between 1 and 10".</p><br />
+                                            <h2 class="ez-toc-section" id="the-do-while-loop-is-a-__________-type-of-loop">
+                            5. The do-while loop is a __________ type of loop.</h2><br />
+                        |✏️Answer ✏️|<p>A do-while loop is a kind of loop, which is a kind of control statement.</p><p> It is a loop with the test at the bottom, rather than the more usual test at the top.</p><p></p>hope it's help<p>(ノ^_^)ノ</p><br />
+                                            <h2 class="ez-toc-section" id="how-to-make-a-program-using-do-while-loop">
+                            6. how to make a program using do while loop</h2><br />
+                        if it's java<br /><br />do{<br />/*insert code that you want the program to do*/<br />}<br />while (/*condition statement*/) <br />
+                                            <h2 class="ez-toc-section" id="1-what-are-the-syntax-needed-in-while-loop2-what-are-the-syntax-needed-in-do-loop3-what-are-the-syntax-needed-in-do-until">
+                            7. 1. What are the syntax needed in while loop?
+2. What are the syntax needed in Do Loop?
+3. What are the syntax needed in Do Until?</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. do { statements } while (expression); As we saw in a while loop, the body is executed if and only if the condition is true. In some cases, we have to execute a body of the loop at least once even if the condition is false.</p><p>2. Here's the basic syntax for a do while loop: do { // body of the loop } while (condition); Note that the test of the termination condition is made after each execution of the loop. This means that the loop will always be executed at least once, even if the condition is false in the beginning.</p><p><strong>Explanation:</strong></p><p>hope it helps</p><br />
+                                            <h2 class="ez-toc-section" id="how-do-we-use-the-nested-for-and-while-loop-statements-in-creating-programs">
+                            8. how do we use the nested for and while loop statements in creating programs?</h2><br />
+                        <p><strong>Answer:</strong></p>hcxx vbm hnj can bueno<p><strong>Explanation:</strong></p><p>fû over hi</p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-causes-electrons-to-move-in-a-conducting-loopa-currentb-resistorc-switchd-voltage%e2%80%8b">
+                            9. which of the following causes electrons to move in a conducting loop?a. currentb. resistorc. switchd. voltage​</h2><br />
+                        <p><strong>Answer:</strong></p><p>d. voltage</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-lets-you-do-something-a-word-again-and-a-specific-number-a-while-loopb-repeat-c-loopd-conditionals%e2%80%8b">
+                            10. which of the following lets you do something a word again and a specific number A. While loopB. Repeat C. LoopD. Conditionals​</h2><br />
+                        <p><strong>Answer:</strong></p><p>d po or b  yan po  alam ko po yan ehh</p><p><strong>Answer:</strong></p><p><strong>B</strong><strong>.</strong><strong> </strong><strong>Repe</strong><strong>at</strong></p><p></p><p></p><p>Hope it helps</p><p>feel free to correct me :)</p><br />
+                                            <h2 class="ez-toc-section" id="what-structure-would-be-best-for-looping-through-a-known-number-of-questionsa-for-nextb-do-loopc-whiled-all-of-the-above">
+                            11. what structure would be best for looping through a known number of questionsa. for nextb. do loopc. whiled. all of the above</h2><br />
+                        <p><strong>Answer:</strong></p><p> d. all of the above </p><p><strong>Explanation:</strong></p><p>sana makatulong po thnks</p><br />
+                                            <h2 class="ez-toc-section" id="define-while-loop-and-for-loop%e2%80%8b">
+                            12. define while loop and for loop​</h2><br />
+                        <p></p><p></p><p><strong>Step-by-step explanation:</strong></p><p>i hope it's help ☺️ </p><p>pa brainliest din Po ☺️</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-difference-between-a-while-loop-and-a-do-while-loop">
+                            13. What is the difference between a while loop and a do-while loop? -</h2><br />
+                        <p><strong>Answer:</strong></p><p>The do-while loop is similar to the while loop except it checks the condition only after it runs through its instructions and the do-while loop always runs at least once. </p><p>The while loop is the most basic looping structure used in programming and is used where the number of iterations are unknown.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="charlie-is-trying-to-write-a-looping-program-that-executes-at-least-once-which-of-the-following-should-he-useselect-onea-do-while-loopb-for-loopc-while-loopd-none-of-these">
+                            14. Charlie is trying to write a looping program that executes at least once. Which of the following should he use?
+Select one:
+a. Do While Loop
+b. For Loop
+c. While Loop
+d. None of these</h2><br />
+                        <p>A.Do While Loop </p><p>Explanation:</p><p>I think this is the answer </p><br />
+                                            <h2 class="ez-toc-section" id="using-while-loop-do-while-and-for-loop-write-a-c-program-that-lets-you-input-a-starting-and-ending-integer-range-then-display-all-the-odd-integers">
+                            15. Using while loop, do while and for loop write a C program that lets you input a starting and ending integer (range) then display all the odd integers</h2><br />
+                        <p><strong>Answer:</strong></p><p>In this tutorial, we will learn the use of while and do...while loops in C++ programming with the help of some examples.</p><p><strong>Explanation:</strong></p><p>In computer programming, loops are used to repeat a block of code.
+</p><p>
+</p><p>For example, let's say we want to show a message 100 times. Then instead of writing the print statement 100 times, we can use a loop.
+</p><p>
+</p><p>That was just a simple example; we can achieve much more efficiency and sophistication in our programs by making effective use of loops.
+</p><p>
+</p><p>There are 3 types of loops in C++.
+</p><p>
+</p><p>1 for loop
+</p><p>2 while loop
+</p><p>3 do...while loop</p><br />
+                                            <h2 class="ez-toc-section" id="11-is-there-a-light-produced-if-the-loop-touches-the-wire-why-a-yes-because-electric-current-can-pass-through-the-wire-b-no-because-electric-current-cannot-pass-through-the-wire-c-yes-becaus">
+                            16. 11. Is there a light produced if the loop touches the wire? Why? A Yes, because electric current can pass through the wire. B. No, because electric current cannot pass through the wire. C. Yes, because an electric wire acts as insulator in the set-up D. No, because an electric wire served only as decoration in the set-up. 12. Can an electric current flow if the wire loop did not touch the wire? Why? A. Yes because the circut is complete B. No because the circuit is incompleto C Yes, because an electric wire acts as insulator in the set-up. D. No, because an electric wire served only as decoration in the set-up. 13. How does the wire loop and the wire shape together acts as a switch? A When the wire loop and the wire maze don't touch the switch is open, and when it touches the switch is closed. B. When the wire loop and the wire maze don't touch the switch is closed, and when it touches the switch is opened. C. When the wire loop and the wire maze touched, the circuit is incomplete and the switch is close D. When the wire loop and the wire maze touched, the circuit is complete and the switch is open​</h2><br />
+                        <p><strong>Answer:</strong></p><p>A</p><p>C</p><p>A</p><p><strong>Explanation:</strong></p><p>Kung mali po paki comment na lang po</p><p><strong>Answer:</strong></p><p>11.A. Yes, because electric current can pass through the wire. </p><p></p><p>12.C. Yes, because an electric wire acts as insulator in the set-up. </p><p></p><p>A. When the wire loop and the wire maze don't touch the switch is open, and when it touches the switch is closed. </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="similarities-between-loop-block-and-switch-block%e2%80%8b">
+                            17. similarities between loop block and switch block​</h2><br />
+                        <p> </p><p></p><p> </p><p>carry on learning</p><p>pa follow na Rin</p><br />
+                                            <h2 class="ez-toc-section" id="convert-the-following-do-while-loop-to-a-while-loop-char-sure-do-cout-are-you-sure-you-want-to-quit-cin-sure-while-sure-y-sure-n">
+                            18. Convert the following do-while loop to a while loop: char sure; do { cout &lt;&lt; "Are you sure you want to quit?"; cin &gt;&gt; sure; } while (sure ! = 'y' &amp;&amp; sure ! ='N');</h2><br />
+                        <strong>Question:</strong><p><strong>Convert the following do-while loop to a while loop: char sure; do { cout &lt;&lt; "Are you sure you want to quit?"; cin &gt;&gt; sure; } while (sure ! = 'y' &amp;&amp; sure ! ='N');</strong></p><p><strong></strong></p><strong>Solution 1:</strong><p><strong>while(true){</strong></p><p><strong>  cout &lt;&lt; "Are you sure you want to quit?";</strong></p><p><strong>  cin &gt;&gt; sure;</strong></p><p><strong>  if (sure == 'y' || sure == 'N'){</strong></p><p><strong>    break;</strong></p><p><strong>  }</strong></p><p><strong>}</strong></p><p></p><strong>Solution 2:</strong><p><strong>while(true){</strong></p><p><strong>  cout &lt;&lt; "Are you sure you want to quit?";</strong></p><p><strong>  cin &gt;&gt; sure;</strong></p><p><strong>  if (!(sure != 'y' &amp;&amp; sure !='N')){</strong></p><p><strong>    break;</strong></p><p><strong>  }</strong></p><p><strong>}</strong></p><p></p><strong>Solution 3:</strong><p><strong>sure = '\0';</strong></p><p><strong>while(sure != 'y' &amp;&amp; sure != 'N'){</strong></p><p><strong>  cout &lt;&lt; "Are you sure you want to quit?";</strong></p><p><strong>  cin &gt;&gt; sure;</strong></p><p><strong>}</strong></p><br />
+                                            <h2 class="ez-toc-section" id="what-would-probably-be-the-most-important-difference-between-the-do-while-loop-and-the-while-loop%e2%80%8b">
+                            19. what would probably be the most important difference between the do-while loop and the while loop?​</h2><br />
+                        <p></p>what would probably be the most important difference between the do-while loop and the while loop?​<p>The do while loop executes the content of the loop once before checking the condition of the while.</p><p></p><p>Whereas a while loop will check the condition first before executing the content.</p><p></p><p>In this case you are waiting for user input with scanf(), which will never execute in the while loop as wdlen is not initialized and may just contain a garbage value which may be greater than 2.</p><p></p><p></p><p>While : your condition is at the begin of the loop block, and makes possible to never enter the loop.</p><p></p><p>Do While : your condition is at the end of the loop block, and makes obligatory to enter the loop at least one time.</p><p>While is sometimes used almost like an if because when the condition isn't true the loop never gets entered, and inside the loop is code to deal with the condition being true until it isn't anymore.</p><p>A do-while loop guarantees the execution of the loop at least once because it checks the loop condition AFTER the loop iteration. Therefore it'll print the string and call scanf, thus updating the wdlen variable.</p><p>As for the while loop, it evaluates the loop condition BEFORE the <strong>loop </strong>body is executed. wdlen probably starts off as more than 2 in your code that's why you never reach the loop body.</p><p>While:</p><p>     entry control <strong>loop</strong></p><p>    condition is checked before loop execution</p><p>    never execute <strong>loop </strong>if condition is false</p><p>    there is no semicolon at the end of while statement</p><p>Do-while:</p><p>    exit control <strong>loop</strong></p><p>    condition is checked at the end of <strong>loop</strong></p><p>    executes false condition at least once since condition is checked later</p><p>    there is semicolon at the end of while statement.</p><p>What is the difference between a while <strong>loop </strong>and a do-while <strong>loop</strong>? -</p><p>brainly.ph/question/17536870</p><p>#letsstudy</p><br />
+                                            <h2 class="ez-toc-section" id="the-difference-between-until-loop-and-while-loop%e2%80%8b">
+                            20. the difference between until loop and while loop?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The main difference is that while loops are designed to run while a condition is satisfied and then terminate once that condition returns false. On the other hand, until loops are designed to run while the condition returns false and only terminate when the condition returns true.</p><p><strong>Explanation:</strong></p><p>sana makatulongh po</p><p>pa heart</p><p></p><p></p>#BrainliestMe<br />
+                                            <h2 class="ez-toc-section" id="what-do-you-call-a-closed-loop-through-which-current-flows-a-wire-b-circuit-c-batteryd-switch%e2%80%8b">
+                            21. What do you call a closed loop through which current flows? a. Wire b. Circuit c. Batteryd. Switch​</h2><br />
+                        <p><strong>Answer:</strong></p><p>b. Circuit is the answer</p><p><strong>Explanation:</strong></p><p>hope it helps</p><p><strong>Answer:</strong></p><p>letter B</p><p><strong>Explanation:</strong></p><p>hope it helps &lt;3</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-different-between-a-while-loop-to-a-normal-repeat-loop%e2%80%8b">
+                            22. what is the different between a while loop to a normal repeat loop?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The 'while' loop used only when the number of iteration are not exactly known. If the condition is not put up in 'for' loop, then loop iterates infinite times. If the condition is not put up in 'while' loop, it provides compilation error. In 'for' loop the initialization once done is never repeated.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="it-is-a-java-paradigm-that-executes-a-block-of-code-as-long-as-specified-condition-is-reached-a-breakb-switchc-loopd-continue%e2%80%8b">
+                            23. It is a Java paradigm that executes a block of code as long as specified condition is reached.A. BreakB. SwitchC. LoopD. Continue​</h2><br />
+                        <p>C. Loop statement will execute repeatedly until the end of the program is reached. It is used for repetitive tasks such as while loops. For example, if i = 1 then do something else; means keep executing this instruction over again.</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-differences-between-while-do-while-and-for-loops%e2%80%8b">
+                            24. . What is the differences between while, do-while, and for loops?​</h2><br />
+                        <p></p>While Loop	Do-While LoopThe while loop may run zero or more times	Do-While may run more than one times but at least once.<p></p><br />
+                                            <h2 class="ez-toc-section" id="guys-what-is-for-and-do-while-loop-please-help-me-on-my-programming-subject">
+                            25. Guys what is for and do while loop please help me on my programming subject.</h2><br />
+                        <p>[tex] Answer:</p><p></p>A do while loop is a control flow statement that executes a block of code at least once, and then repeatedly executes the block, or not, depending on a given boolean condition at the end of the block. Some languages may use a different naming convention for this type of loop. <br />
+                                            <h2 class="ez-toc-section" id="what-is-switch-case-statement">
+                            26. What is Switch case Statement ?</h2><br />
+                        The Switch case statement
+<p>The switch case statement, in programming is a statement used when there is two or more conditions needed to compare and the comparison is of exact value, number or string. Once that the condition is found, it will execute the statement. Instead of using many if's statements, you can make use of the switch case statement. It is easier to use, understand and shorter.  </p><p>
+</p><p><strong>The syntax of the switch case statement looks like this:
+</strong></p><p>switch (variable) {
+</p><p>case 1 : {
+</p><p>statement; }
+</p><p>break;
+</p><p>case 2 : {
+</p><p>statement; {
+</p><p>break;
+</p><p>}
+</p><p>case 3 : {
+</p><p>statement;  </p><p>break;
+</p><p>}
+</p><p>default : {
+</p><p>statement;
+</p><p>break;
+</p><p>}
+</p><p>return 0;
+</p><p>}
+</p><p>
+</p><p><strong>An example of how to use switch case statement:
+</strong></p><p>Supposed you are going to input a number from 1 to 3 and output it's words equivalent. If it's more than 3 or less than 1, the program will say, invalid input. This is using Java codes.
+</p><p>int number;
+</p><p>switch (number) {
+</p><p>case 1 : {
+</p><p>System.out.println("One");  </p><p>break;}
+</p><p>case 2 :{
+</p><p>System.out.println("Two");
+</p><p>break;
+</p><p>}
+</p><p>case 3 : {
+</p><p>System.out.println("three");  </p><p>break;
+</p><p>}
+</p><p>default : {
+</p><p>System.out.println("Invalid input");
+</p><p>break;
+</p><p>}
+</p><p>return 0;
+</p><p>}
+</p><p>
+</p><p>Break means stop. If there is no break statement, all satisfied case and statements will be read and executed.
+</p><p>
+</p><p>To know more about programming, read the following:
+</p><strong>What is programming? : </strong>https://brainly.ph/question/2412500
+<strong>What is programming? :</strong> https://brainly.ph/question/4743
+<strong>In programming what does c programming mean? : </strong>https://brainly.ph/question/2702959
+<p><strong>#LetsStudy</strong></p><br />
+                                            <h2 class="ez-toc-section" id="how-many-times-is-do-while-loop-guaranteed-to-loop">
+                            27. How many times is do while loop guaranteed to loop?</h2><br />
+                        <p>♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦</p><p>✒️How many times is do while loop guaranteed to loop?</p><p></p><p>✏️one or 1</p><p>How many times will the string "Here" be printed? statement; } while ( condition ); An example of a do loop: The body of a do loop executes one or more times (Note: At least once!).</p><p>♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦♦</p><p>#Bagong Aralin</p><p>#Carry On learning</p><br />
+                                            <h2 class="ez-toc-section" id="what-are-the-differences-of-3-types-of-loop-statement-if-then-elsefor-loopand-while-loop%e2%80%8b">
+                            28. what are the differences of 3 types of loop statement (if-then-else,for-loop,and while loop)?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>if then states if then</p><p></p><p>and loop. states while loop</p><br />
+                                            <h2 class="ez-toc-section" id="what-are-the-differences-of-3-types-of-loop-statement-tf-then-else-for-loop-and-while-loop%e2%80%8b">
+                            29. What are the differences of 3 types of Loop Statement (tf-Then-Else, For-Loop, and While-Loop)?​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>If-then-else</strong> executes one set of code if a specified condition evaluates to TRUE, or another set of code if it evaluates to FALSE.</p><p></p><p><strong>For</strong> <strong>loop</strong> is used for executing a block of statements repeatedly until a particular condition is satisfied.</p><p></p><p> <strong>While</strong> <strong>loop</strong><strong> </strong>is a loop that executes the code at least one time even if the conditional statement is FALSE.</p><br />
+                                            <h2 class="ez-toc-section" id="1-based-on-the-diagram-will-the-bulb-light-up-why-a-no-because-the-loop-is-open-and-the-electric-current-cannot-flow-b-no-because-the-loop-is-open-and-the-electric-current-is-sufficient-c-y">
+                            30. 1. Based on the diagram, will the bulb light up? Why? A. No, because the loop is open and the electric current cannot flow. B. No, because the loop is open and the electric current is sufficient. C. Yes, because the loop is closed and the current will not flow. D. Yes, because the loop is closed and the current is sufficient. 2. What will happen to the bulb if you turned on the switch? A. The bulb will break. B. The bulb will get dimmer. C. The bulb lights up. D. There will be no changes to the bulb. 3. What will happen to the bulb if you turned off the switch? A. The bulb will light up. B. The bulb will be broken. C. The bulb will produce heat. D. The bulb will not produce light. 4. What needs to be done to this circuit so that the lamp will light up? A. Close the switch. B. Add another lamp. C. Add a cell and close the circuit. D. Add a motor and close the switch. 5. What is wrong in this circuit diagram? A. There is no switch. B. There are two bulbs. C. There is only one battery. D. There is a missing wire. case​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.a</p><p>2.d</p><p>3. c</p><p>4.a</p><p>5.b</p><p><strong>Explanation:</strong></p><p>#   ' </p><p><strong>Answer:</strong></p><p>1.<strong>D</strong></p><p>2.<strong>C</strong></p><p>3.<strong>D</strong></p><p>4.<strong>C</strong></p><p>5.<strong>D</strong></p><p><strong>Explanation:</strong></p><p>tnx me ltr</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/NPBWFDD5kbo?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>computer_science</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/gilbert-ryle-philosophy-about-self-essay.html">Gilbert Ryle Philosophy About Self Essay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/maslow-s-hierarchy-of-needs-practice-test.html">Maslow s Hierarchy Of Needs Practice Test</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/let-s-go-in-spanish.html">Let s Go In Spanish</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/thorndike-s-law-of-learning-graphic-organizer.html">Thorndike s Law Of Learning Graphic Organizer</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/position-paper-about-samemarriage-in-the-philippines.html">Position Paper About SameMarriage In The Philippines</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/let-s-be-moots.html">Let s Be Moots</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/the-right-to-be-informed.html">The Right To Be Informed</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/pbr5-lewis-structure.html">Pbr5 Lewis Structure</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/3x-0.html">3x 0</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/a-physical-count-of-inventory-is-usually-taken.html">A Physical Count Of Inventory Is Usually Taken</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/modem-stands-for.html">Modem Stands For</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/polygons-in-real-life.html">Polygons In Real Life</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/present-tense-of-enjoy.html">Present Tense Of Enjoy</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/lay-eggs-on-land.html">Lay Eggs On Land</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/what-is-gumamela.html">What Is Gumamela</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/32-celsius-to-fahrenheit.html">32 Celsius To Fahrenheit</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/what-is-cyber-libel-in-tagalog.html">What Is Cyber Libel In Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/baptist-separation-of-church-and-state.html">Baptist Separation Of Church And State</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/61-cm-to-m.html">61 Cm To M</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/the-divide-ending.html">The Divide Ending</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://odoeduc.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://odoeduc.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

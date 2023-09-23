@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Area Sampling Example - QnA</title>
+    <meta name="description" content="Area Sampling Example, , , , , , , 0, PPT - CS 445 / 645 Introduction to Computer Graphics PowerPoint, www.slideserve.com, 1023 x 682, jpeg, , 20, area-sampling-example, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Area Sampling Example - QnA" />
+    <meta property="og:description" content="Area Sampling Example, , , , , , , 0, PPT - CS 445 / 645 Introduction to Computer Graphics PowerPoint, www.slideserve.com, 1023 x 682, jpeg, , 20, area-sampling-example, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Area Sampling Example - QnA" />
+    <meta name="twitter:description" content="Area Sampling Example, , , , , , , 0, PPT - CS 445 / 645 Introduction to Computer Graphics PowerPoint, www.slideserve.com, 1023 x 682, jpeg, , 20, area-sampling-example, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://odoeduc.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://odoeduc.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://odoeduc.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://odoeduc.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://odoeduc.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Area Sampling Example</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">sarahjean614yahoo</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Area+Sampling+Example" alt="Area Sampling Example">
+                    </div>
+                    <p></p>
+                    <p>identify whether each example describes a random sample sample answer with YES or NO collects the election results in all areas in the philippines during election​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-whether-each-example-describes-a-random-sample-sample-answer-with-yes-or-no-collects-the-election-results-in-all-areas-in-the-philippines-during-election%e2%80%8b">1.
+                                            identify whether each example describes a random sample sample answer with YES or NO collects the election results in all areas in the philippines during election​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-no-the-speed-of-internet-in-all-areas-in-the-visayas-region-%e2%80%8b">2.
+                                            Identify whether each example describes a random sample. Answer with Yes or No. The speed of internet in all areas in the Visayas Region.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-no-the-speed-of-internet-in-all-areas-in-the-visayas-region">3.
+                                            Identify whether each example describes a random sample. Answer with Yes or No. The speed of internet in all areas in the Visayas Region.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-directions-create-cleaning-schedule-matrix-for-your-kitchen-assign-three-household-members-to-do-specific-task-see-the-format-and-example-below-sample-output-area-frequency-procedure-cleaning-pe">4.
+                                            B. Directions: Create cleaning schedule matrix for your kitchen. Assign three household members to do specific task. See the format and example below Sample Output Area Frequency Procedure Cleaning Person Responsible Agents Used Floor Daily Sweep then mop Detergent Juan Dela Cruzpst:pakiayos po ng sgot.:)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-travelling-salesman-checks-the-prices-of-gasoline-in-gas-stations-within-his-area-of-assignment-the-following-are-the-prices-per-liter-of-unleaded-gasoline-in-a-sample-of-15-gasoline-stations-in-hi">5.
+                                            A travelling salesman checks the prices of gasoline in gas stations within his area of assignment. The following are the prices per liter of unleaded gasoline in a sample of 15 gasoline stations in his area:50.15	51.89	48.84	51.87	46.59	51.61	49.54	47.9850.96	51.22	51.08	50.88	51.94	46.50	47.90	Round off all answers to two decimal places .For answers less than 1, type 0 before the decimal point.(Example: 81.00, 0.23, 84.21)what is the HIGHEST PRICE, LOWEST PRICE, MEAN, MEDIAN, 40TH PERCENTILE, STANDARD DEVIATION, COEFFICIENT OF VARIATION?need answers please, makatama mark KO brainliest​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#enrichment-activity-you-have-been-assigned-as-a-researcher-for-a-laundry-business-that-w-be-put-up-in-your-area-develop-a-research-proposal-that-contains-the-following-%e2%80%a2statement-of-the-prob">6.
+                                            ENRICHMENT ACTIVITY You have been assigned as a researcher for a laundry business that w be put up in your area. Develop a research proposal that contains the following. •Statement of the problem and objectives. •Data collection method (sampling method and data-gathering procedure) •At least five survey questions that yield quantitative or qualitative data, or both ( for example, you may have four quantitative questions and one qualitative question).​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#additional-activities-there-are-more-examples-of-rocks-other-than-what-you-recogni-identifying-more-examples-of-igneous-sedimentary-and-metamorphic-roches-this-lesson-this-time-i-want-you-to-widen">7.
+                                            Additional Activities There are more examples of rocks other than what you recogni identifying more examples of igneous, sedimentary and metamorphic roches this lesson. This time, I want you to widen your knowledge about rocks gallery. You may search in the internet or ask an expert to assist you in in your area. Make a log and collect pictures of your samples and forma identifying the samples you have collected.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sketch-the-curve-and-find-the-values-of-the-following-areas-under-the-normal-curve-which-lie-from-z-1-32z-1-98between-z-1-56-and-z-2-51between-z-1-36-and-z-2-55to-the-right-of-z-1-31to-the">8.
+                                            Sketch the curve and find the values of the following areas under the normal curve which lie from: Z= 1.32Z= 1.98Between z= 1.56  and z= 2.51Between z= -1.36 and z= 2.55To the right of z= -1.31To the left of z=  1.85Using the formula for standard score or z-score:  The z-score is found by using the following equations:		For Population	 =           where:  	z – standard score				 – raw score or observed value				– population mean				 – population standard deviationFor Sample = 	         where: 	 – standard score                                   	 	 – raw score or observed value				 – sample mean			-  sample standard deviationExample: If scores are normally distributed with a mean of 30 and a standard deviation of 5  what percent of the score is grater than 37?Solution:    =    = 1.40    hence the corresponding z score of 37 is 1.40​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-noselects-all-areas-in-the-philippines-who-are-affected-by-typhoon-and-with-5th-and-6th-income-class-%e2%80%8b">9.
+                                            Identify whether each example describes a random sample. Answer with Yes or NoSelects all areas in the Philippines who are affected by typhoon and with 5th and 6th income class.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-read-the-questions-carefully-and-encircle-the-letter-of-the-1-which-of-the-following-branch-of-science-that-deals-with-collecting-organizing-summarizing-analyzing-interpretin-data-and">10.
+                                            Directions: Read the questions carefully and encircle the letter of the 1. Which of the following branch of science that deals with collecting, organizing, summarizing, analyzing, interpretin data and making conclusions? C. Physics D. Statistics B. Chemistry A. Biology 2. Mr. Puto determines the effectiveness of the new fertilizer in the growth of plants and crops through experimental studies. In what field does statistics help in this situation? C. Education D. Medicine B. Business A. Agriculture 3. Chariz, a 7th grade learner, wanted to find out if she lives the farthest from the school than other grade 7 learners. What statistical question would BEST help her to find the answer to her problem? A. How far is Chariz from home to school? B. How far are the 7 th grade students from home to school? C. What are the means of transportation of the 7 th grade students? D. What time will the 7 th grade students arrive from home to school? 4. "Joseph uses the data he collected and conclude that 85-90% of his classmates love to play badminton". What area c statistics is being depicted? C. inferential statistics D. sample A. descriptive statistics B. population 5. How do you call the systematic method of collecting and measuring data gathered from different sources of information in order to provide answers to relevant questions? A. data collection B. primary data C. samples D. secondary data 6. Which of the following is referred to as an indirect method of gathering data where the respondent used to answer written questions? A. experimentation B. interview D. questionnaire C. observation 7. Which of the following is an example of a primary data? A. books B. journals C. magazines D. testimonies of the investigator 8. Which of the following methods of gathering data requires face-to-face inquiry with the respondent? A. experimentation B. interview C. observation D. questionnaire 9. Which sampling technique suggests that the population be divided geographically into regions, divisions, or districts? A. cluster sampling B. stratified sampling C. systematic sampling D. quota sampling 10. A researcher asks neighbors' opinions about the effectiveness of the COVID-19 vaccine. What kind of sample is this? B. convenience sampling D. stratified sampling A. cluster sampling C. random sampling 11. It refers to the difference of the highest score and the lowest score. A. classes B. class interval C. frequency D. range 12. It refers to the middle value of each class. A. class boundaries B. class limits C. class mark D. cumulative frequency 13. It refers to the size of each class. A. class boundaries B. class frequency C. class interval D. range 14. It refers to the tabular presentation of data. 15. It A. class frequency B. data collection C. frequency distribution table D. frequency polygon refers to the class boundary that is 0.5 less than its lower limit. A. classes B. class limits C. lower boundary D. upper boundary 16. Which statement is NOT correct? A. The class mark is the size of each class. B. The lowest class contains the lowest score. C. The class boundaries are often described as true limits. D. The range is the difference of the highest score and the lowest score. 17. It is one of the ways of presenting data. A. graph B. bar graph C. line graph D. ogive graph 18. It is the same as frequency cumulative polygon. D. ogive graph A. graph B. bar graph C. line graph 19. It shows trends in data clearly or how the data behaves. A. graph B. bar graph C. line graph 20. Looks like a histogram excep that its bars are separated. A. pie chart B. bar graph D. ogive graph C. line graph D. ogive graph kailangan ko Po ang answer nyo thank you​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#12-the-department-of-health-has-the-following-data-of-the-numberof-infected-persons-of-covid-19-in-five-high-risk-areas-in-thecountry-51-89-129-215-and-297-suppose-samples-of-size-2high-risk-ar">11.
+                                            12. The Department of Health has the following data of the numberof infected persons of Covid-19 in five high-risk areas in thecountry, 51, 89, 129, 215, and 297. Suppose samples of size 2high-risk areas are drawn from this population, what exampleof the sampling distribution of the sample mean for normalpopulation portrays the situation?A variance is knownB. variance is unknownC. standard deviation is smallD. standard deviation is large​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-multiple-choice-choose-the-letter-of-the-best-answer-write-the-chosen-letter-on-a-separate-sheet-of-paper-1-all-of-the-following-are-solutions-except-a-milk-b-wine-c-alloy-d-coffee-2-all">12.
+                                            1. Multiple choice. Choose the letter of the best answer. Write the chosen letter on a separate sheet of paper. 1. All of the following are solutions EXCEPT; A. milk B. wine C. alloy D. coffee 2. All of the following affects the solubility of a solid in a liquid EXCEPT A pressure B. stirring C. surface area D. temperature 3. Which is an example of a solute? A egg whites C. water D. acetone B. sugar 4. Why is a solution considered homogenous? A. It is usually liquid. B. It contains a solute and solvent. C. It can be dilute or concentrated. D. Its components are distributed evenly in all proportions. 5. All of the following describes a solution EXCEPT A. clear C. cannot pass through filter paper B. homogenous D. can be separated by physical means 6. A solution that contains the maximum amount of dissolved solute is: A saturated C. concentrated B. unsaturated D. su persaturated C. sugar 7. The following substances are soluble in water EXCEPT A oil B. salt D. alcohol 8. When there is less solute in relation to the solvent, the solution is said to be: A dilute C. supersaturated B. un saturated D. none of the above 9. A solution has all the following properties EXCEPT A cicar C. cannot pass through filter paper B. homogenous D. can be separated by physical means 10. You can make a solute dissolve more quickly in a solvent by A. adding more solute. B. adding ice. C. heating the solvent. D removing some solvent 11. Throe 10 g samples of sugar are represented below. Sample A dissolves in water more slowly than sample B. Sample B dissolves more slowly than sample C.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#area-practical-research-1-gradestrand-situational-problems-read-the-following-situations-and-identify-the-type-of-sampling-that-best-fits-the-problem-explain-your-answers-with-an-example-1-as-you">13.
+                                            Area: Practical Research 1 Grade/Strand SITUATIONAL PROBLEMS Read the following situations and identify the type of sampling that best fits the problem. Explain your answers with an example. 1. As you choose samples for your study, you include only those who are available or willing to participate in the research. What kind of sampling is this? Explain. 2. You include only those students whose parents are working abroad. What kind of sampling is this? Explain. 3. You decide to interview a big number of participants. What kind of sampling is this. Explain.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#schoolgrade-levelactivity-sheet-instatistics-and-probability1-if-you-were-a-researcher-and-wanted-to-conduct-a-research-within-your-barangaywhat-would-it-be-what-sampling-technique-are-you-going-to">14.
+                                            SchoolGrade LevelActivity Sheet inStatistics and Probability1. If you were a researcher and wanted to conduct a research within your Barangay,what would it be? What sampling technique are you going to use?2. There are 20 members of taekwondo club, 40 math club members, 60 drama theatremembers, and 30 members of science club. The researchers want to get 20respondents out of these organizations. Identify the samples to be taken in eachorganization. Get the samples needed for each category using stratified randomsampling.3. Give a situation in your area that is an example of parameter and statistic. Explainwhy you considered it as a parameter or a statistic.4. Construct all random samples consisting three observations from the given dataArrange the observations in ascending order without replacement and repetitic86 89 92 95 98​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-no-the-speed-of-internet-in-all-areas-in-the-visayas-region-answer">15.
+                                            Identify whether each example describes a random sample. Answer with Yes or No.
+The speed of internet in all areas in the Visayas Region.
+Answer:</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-think-of-ways-on-how-you-can-mitigate-at-home-if-a-rainfall-inducedlandslide-or-sinkhole-is-to-happen-fill-out-the-flowchart-of-the-step-or-process-youhave-thought-you-may-still-add-anot">16.
+                                            Directions: Think of ways on how you can mitigate at home if a rainfall-inducedlandslide or sinkhole is to happen. Fill out the flowchart of the step or process youhave thought, you may still add another line or boxes if the given sample is notenough. You may use another sheet of paper to answer.Disaster event:EXAMPLE: Check the mineand geoscience bureau forthe geohazard map of ourmunicipalityEXAMPLE: Assess the mapif I am living in a highlysusceptible area.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#stat-112-20172s-%e2%96%ba-week-10-quarterly-exam-%e2%96%ba-quarterly-exam1q-true-or-false-the-greek-letter-alpha-represents-the-mean-2q-this-determines-the-degree-to-which-values-of-a-random">17.
+                                            STAT-112-20172S / ► Week 10: Quarterly Exam / ► Quarterly Exam
+1Q: True or False: The Greek letter alpha represents the mean.
+2Q: This determines the degree to which values of a random variable dif
+3Q: Find the median of the following data set. 11, 13, 15, 17, 19, 21, 22, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 51, 53, 55, 57, 59
+4Q: A single value given as an estimate of a parameter of a population.
+5Q: Empirical Rule states that 68% of the data falls within the 1 standard deviation.
+6Q: The sum of all the probabilities P(X = x) for all possible values of a discrete random variable X must equal 1.
+7Q: As the sample size increases,
+8Q: Given the following sample data, compute for the true mean. The answer must have two decimal places.1 1 1 2 3 4 5 5 5 8 8 8 8
+9Q: How many possible outcomes when you simultaneously toss three fair coins.
+10Q: Identify if the random variable is a DISCRETE or CONTINUOUS. Weight of students in a university
+11Q: True or False: In Statistics, variance is defined as the number of times an outcome can occur compared to all possible outcomes.
+12Q: True or False: Mean is the sum of all possible values of random variables.
+13Q: Find the median of the following data set. 44, 46, 29, 39, 59, 59, 39
+14Q: Which of the following does not describes a T distribution?
+15Q: True or False: Random sample happened when data is collected in no certain order
+16Q: True or False: In order to apply the Central Limit Theorem, a sample size must be greater than or equal to 20.
+17Q: To calculate the mean from a sample,
+18Q: Which of the following is used to calculate population parameter?
+19Q: Identify whether each example describes a random sample. Answer with Yes or No The manager chooses 30 employees randomly from a department.
+20Q: Identify if the random variable is a DISCRETE or CONTINUOUS. Total number of volunteers in a community
+21Q: Normal Distribution Curve is also called
+22Q: In Central Limit Theorem, the mean of the sampling distribution of the mean is equal to the
+23Q: Which measure of tendency is the best estimator?
+24Q: The number of times out of 100 that the repeated experiment would be expected to capture the population mean within the given interval.
+25Q: In a normal curve, a ___ of 1 means 1 deviation data are above the average.
+26Q: True or False: In Central Limit Theorem, the mean of the sampling distribution of the mean is equal to the population mean.
+27Q: Confidence coefficient is a single value given as an estimate of a parameter of a population.
+28Q: For example, a 90% confidence interval covers 90% of the normal curve, so the probability of observing a value outside of this area is ____________.
+29Q: Use to check the normality of a distribution
+30Q: Identify if the random variable is a DISCRETE or CONTINUOUS. Number of winning tournaments of a varsity team</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#procedure1-look-for-a-place-in-the-vicinity-of-your-house-that-is-safe-and-at-the-same-time-hasan-exposed-soil-resources-example-backyard-garden-vacant-lot2-locate-a-small-area-where-you-c">18.
+                                            PROCEDURE:
+1. Look for a place in the vicinity of your house that is safe and at the same time has
+an exposed soil resources. (Example: backyard, garden, vacant lot)
+2. Locate a small area where you can get a soil sample. Using a stick, try to lose the
+particles of the soil to see the components and easily get sample as well.
+3. Get a handful sample of the soil and place it in a clear plastic bag or in a sheet of
+paper.
+4. Continue examining the soil sample at home such as its color, texture and
+components.
+5. Take a picture of your soil sample.
+6. Answer the questions that follow.
+Questions:
+1. What makes up soil based on your observation? __________________________________
+____________________________________________________________________________________
+2. How do you think soil is being formed? ___________________________________________
+_____________________________________________________________________________________
+3. Give the characteristics of the soil that you have examined.
+Color: ____________________________________________________________________________
+Texture: _________________________________________________________________________
+4. What types of soil do you know? __________________________________________________
+5. What type of soil do you think your soil sample is? ________________________________
+Why did you say so? ________________________________________________________________</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-directions-choose-only-the-letter-of-the-correct-answer-and-write-it-on-the-space-before-each-number-show-your-solution-at-the-back-of-this-paper-if-needed-1-it-helps-in-providing-a-better-unders">19.
+                                            A Directions: Choose only the letter of the correct answer and write it on the space before each number. Show your solution at the back of this paper if needed 1. It helps in providing a better understanding and exact description of a phenomenon of natureA) Data B) StatisticsC) Population D) Sample 2. It refers to all the members of a defined group that we are studying A Data B.) Statistics C.) Population D.) Sample 3. It is a representative or portion of the population that is used as respondents of the study A) Data B.) Statistics C.) Population D.) Sample 4. It is composed of measurement tools (for example, questionnaires or scales) designed to obtain data on a topic of interest from research subjects A) Data Collection  B) Research Instrument C.) Graphical InstrumentD.) Statistical Instrument 5. It refers to the systematic approach to gathering and measuring Information from a variety of sources to get a complete and accurate picture of an area of interest.A) Data CollectionB.) Research InstrumentC.) Graphical Instrument D.) Statistical Instrument 6. It refers to non-numeric data. A Qualitative B) Quantitative C.) Discrete D.) Continuous​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-2-tell-me-what-instructions-write-good-if-the-statement-is-correct-otherwise-defective-if-incorrect-1-magnetic-particle-test-can-be-performed-by-wet-method-which-uses-finely-divide">20.
+                                            Learning task 2. TELL ME WHAT Instructions: Write GOOD if the statement is correct, otherwise DEFECTIVE if incorrect. 1. Magnetic Particle Test can be performed by wet method, which uses finely divided dry particles that are dusted onto a magnetized surface, is better for rough surfaces. _2. X-rays and Gamma rays are examples of Penetrate Test. 3. A fluorescent penetrant test requires an ultraviolet light (black light) to observe the test results. It may be necessary to enclose the viewing area to properly read the test results. -4. The major advantage of ultrasonic testing is the advanced skill required to properly interpret the results. Weld design, location of the defect, internal structure, and complexity of the weldment affect the interpretation of the ultrasonic signal. 5. Visual testing equipment includes rulers, fillet weld gauges, squares, magnifying glasses, and reference weld samples.pakisagot ng maayus please ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#performance-task-1-complete-the-table-below-refer-to-the-first-number-as-your-example-genre-sample-tv-internet-program-values-taken-from-the-videos-weather-report-i-am-ready-habagat-to-bring-cloud">21.
+                                            Performance Task 1: Complete the table below. Refer to the first number as your example. Genre Sample TV/ Internet Program Values Taken from the Videos Weather report I Am Ready Habagat to bring cloudy skies scattered rains over Zambales, Bataan, and other 9 areas. This report will give us warning on the upcoming rain or storm. It will teach us to be alert and ready all the times. Real-life application I will prepare our emergency kit. I will charge my cellphone and other gadget in terms the electricity shuts down. I will list down the telephone numbers of each agencies who can help us when there is a typhoon. Activate Go to Settim​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#angela-lucenopre-assessmenta-determine-whether-each-statement-is-true-or-false-true-1-experiments-whose-outcomes-can-be-predictedare-called-random-experiments2-the-set-of-all-possible-outcomes-of">22.
+                                            Angela LucenoPre - AssessmentA. Determine whether each statement is true or False.True 1 Experiments whose outcomes can be predictedare called random experiments2. The set of all possible outcomes of statiscalexpenments is called a sample space.a An element of a sample space is calleda saple point :4. The probability that it will rain tomorrow is- 0.255. Height, weight, and area are examplesof divorcte variables.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#assessmentdirections-write-the-letter-of-the-correct-answer-on-the-space-provided-before-each-number-a-1-what-term-refers-to-the-body-of-knowledge-that-deals-with-the-collection-organizatio">23.
+                                            AssessmentDIRECTIONS: Write the letter of the correct answer on the space provided before each number. A 1.) What term refers to the body of knowledge that deals with the collection,       organization, presentation, analysis and interpretation  of data?statistics					C. populationprobability		                      D. algebra2). Which process is involved in Inferential Statistics? forecasting					C.  tabulatingdescribing					D. consolidating3.) Which does not belong to the group?stratified  random sampling			C. cluster samplingquota sampling					D. systematic sampling4.)  Which term refers to the method or process of selecting the members of a sample from a population?randomizing					C. averagingsampling					D. estimating5.) It refers to the process of extracting relevant information from the given data from   which numerical      description can be formulated.               A.  Collection of data                                    C.   Organization of data                  B.  Analysis of Data                                       D.  Interpretation of data6.) Mr. Dalisay  estimates the average height of Grade -7 learners by computing the      average  height of Grade -7 section 1 learners. What do you call the obtained average height?     A. parameter						C. statistic     B. constant						D. variable7.) Which of the following refers to the area of statistics that deals about  the collection, presentation, and             description of sample data?                 A. sampling                         B. cluster          C.  descriptive           D. Inferential8.) Which of the following deals about   making decisions and drawing conclusions about populations?              A. sampling		B.  cluster 	      C. descriptive 	  D.  inferential9.) C the following is Not  an example of a statistical question?A. How old are the learners in this room ?B. How many hours per month do learners in the Mathematics  SPA (A) class spend studying?C. What time did the learners in this class get up this morning? D. How old are you ?10.) Which of the following does Not belong to the group?         A. summarizing question    B. comparing question    C. relationship question      D. descriptive question​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-it-is-a-group-of-people-who-are-selected-to-participate-or-to-be-the-subject-of-the-studya-sample-b-populationc-sampling-unit-d-variable5-it-is-a-set-of-exclusive-attributes-in-research-like-s">24.
+                                            4. It is a group of people who are selected to participate or to be the subject of the study,a.sample b. populationc. sampling unit d. variable5. It is a set of exclusive attributes in research like sex, age, and employment status. The elementsof a given population may be described in terms of their individual attributes on a givena.sampleb. populationc. sampling unitd. variable6. It is that element or set of elements considered for selection in some stage of sampling.a.sampleb. populationc. sampling unitd. variable7. It is the summary description of a given variable in a sample. An example of this can be the mean incomecomputed from a sample and the age distribution of a sample.a.sampleb. statisticsc. sampling unitd. variable8. This refers to the research design (paradigm as well as statistics and analysis) as well as theapproximate timeline for the completion of the study.a. Research Methodologyb. hypothesisc. Qualitative Researchd. thesis statement9. It is the documentation style used by American Psychological Association.a. APAb. MLAс. АРААd. MLAA10. It is the part of research that discusses published information in each subject area.a. Methodologyb. Introduction c. Literature Reviewd. Results​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#post-testdirections-read-and-understand-the-questions-below-select-the-best-answer-toeach-item-then-write-your-choice-on-your-answer-sheet-1-what-branch-of-science-that-deals-with-collecting-organ">25.
+                                            POST-TESTDirections: Read and understand the questions below. Select the best answer toeach item then write your choice on your answer sheet.1. What branch of science that deals with collecting, organizing,summarizing, analysis, and making decisions from data?A. AlgebraB. Probability C. Statistics D. Trigonometry2. Which of the following is role of Statistics in real-life?A. consumer goods B. quality testing C. stock marketD. all of these3. Which of the following type of variable categorized by height?A. qualitative B. quantitative C. both A&amp;BD. none of these4. Which of the following are examples of continuous variables?A. interpreting dataC. organizing dataB. presenting dataD. all of these5. Which of the following is a part of the population studied?A. averageB. dataC. populationD. sample6. Which area of Statistics that deals with methods for collecting,organizing, and describing data?A. descriptive B. inferential C. nominalD. ratio7. Which of the following is categorized by gender?A. intervalB. nominalC. ordinalD. ratio8. Which of the following is the specific subject or object about which theinformation is collected.A. averageB. element C. populationD. sample9. Which of the following is a qualitative variable?A. colorB. genderC. rankingD. both A and B10. Which of the following is a quantitative variable?A colorB. daily allowanceC. temperatureD. both A and C11. Which of the following is NOT a property of interval scale?A. equal distanceB. identity C. magnitudeD. sample​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-no-select-all-100-poor-households-in-a-community-in-areas-in-the-philippines-affected-by-the-earthquake">26.
+                                            Identify whether each example describes a random sample. Answer with Yes or No. Select all 100 poor households in a community in areas in the Philippines affected by the earthquake.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sample-problemthe-area-of-the-room-is-7-2-sq-m-how-many-pieces-of-30-x-30-cm-are-tiles-needed-to-fill-the-whole-room-cite-some-examples-where-you-can-make-use-of-the-concept-of-a-quadratic-equati">27.
+                                            Sample problem:The area of the room is 7.2 sq.m., how many pieces of 30 x 30 cm. Are tiles needed to fill the whole room? Cite some examples where you can make use of the concept of a quadratic equation. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-directions-choose-only-the-letter-of-the-correct-answer-and-write-it-on-the-space-before-each-number-show-your-solution-at-the-back-of-this-paper-if-needed-1-it-helps-in-providing-a-better-unde">28.
+                                            A. Directions: Choose only the letter of the correct answer and write it on the space before each number. Show your solution at the back of this paper if needed. 1. It helps in providing a better understanding and exact description of a phenomenon of nature. A.) Data B.) Statistics C.) Population D.) Sample 2. It refers to all the members of a defined group that we are studying. A) Data B.) Statistics C.) Population D.) Sample 3. It is a representative or portion of the population that is used as Tespondents of the study. A) Data B) Statistics C.) Population D.) Sartre 4. It is composed of measurement tools (for example, questionnaire or scales designed to obtain data on a topic of interest from research subjects A) Data Collection C) Graphical Instrument B) Research Instrument D.) Statistical Instrument 5. It refers to the systematic approach to gathering and measuring information from a variety of sources to get a complete and accurate picture of an area of interest. A) Data Collection c) Graphical Instrument B.) Research Instrument D.) Statistical Instrument It refers to non-numeric data, A Qualitative B.) Quantitative C.) Discrete D.) Continuous ident multi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#last-na-po-pls-bago-matapos-buhay-q-jkthe-confidence-level-is-expressed-in-terms-of-____________-a-percentageb-whole-numberc-fractiond-ratioin-central-limit-theorem-the-standard-deviation-of-the-popu">29.
+                                            last na po pls bago matapos buhay q jkThe confidence level is expressed in terms of ____________.a.Percentageb.Whole Numberc.Fractiond.RatioIn Central Limit Theorem, the standard deviation of the population is estimated by dividing the standard deviation of the population by the square of the sample size.a.The statement is SOMETIMES FALSEb.The statement is FALSEc.The statement is SOMETIMES TRUEd.The statement is TRUEConfidence coefficient is a single value given as an estimate of a parameter of a population.a.FALSE. Change “confidence coefficient” to confidence limitb.FALSE. Change “confidence coefficient” to Confidence Limitc.TRUEd.FALSE. Change “confidence coefficient” to sample meanPoint estimate is always equal to the sampling coefficient.a.TRUEb.FALSE. Change the statement to “Point estimate is equal to the number of samples”c.FALSE. Change the statement to “Point estimate is used to estimate population parameter”d.FALSE. Change the statement to “Point estimate is a range of possible values of population mean”A single value given as an estimate of a parameter of a population.a.Sample Meanb.Sample distributionc.Confidence coefficientd.Confidence LimitA 95% confidence interval means 95% of all samples of size n would fall _____ our confidence interval.a.Belowb.None of the choicesc.Withind.Abovee.OutsideWhich of the following is used to estimate population parameter?a.Mean Estimateb.Central Limit Theorem Estimatec.Point Estimated.Biased EstimateThis is a representative subset of a population.a.Sampleb.Statisticsc.Standard Deviationd.MeanConfidence level indicates the level of assurance that confidence interval encloses the:a.unbiased sampleb.known population meanc.biased sampled.unknown population meanThe number of times out of 100 that the repeated experiment would be expected to capture the population mean within the given interval.a.Z scoresb.Empirical Rulec.Confidence Intervald.Confidence LevelPopulation Mean is an example of a parameter.a.None of the choicesb.TRUEc.Maybed.FALSEThese are numbers that summarizes data from a sample.a.Sampleb.Statisticsc.Meand.Standard DeviationA curve is said to be symmetric if all data points lies at the right side of the curve.a.The statement is TRUEb.The statement is SOMETIMES TRUEc.The statement is FALSEd.The statement is SOMETIMES FALSEThe range of possible values expected to capture the population mean is called the Margin of Error.a.FALSEb.TRUETrue or False: Standard deviation of a distribution of means is the standard error of the mean.In a normal curve, a Answer of 1 means 1 deviation data are above the average.PROBLEM SOLVING: Write the answer corresponds to the problem.REMINDERSIf the answer requires decimals, express your answer in 2 decimal places.If your answer is more than 3 digits, DO NOT INCLUDE THE COMMA.Compute for the mean expenses of the XYZ Corporation given the following:Name	   Total Sales   	   Total Expenses   Quezon City	14,950.00	4,933.50Caloocan City	18,290.00	6,035.70Marikina City	37,200.00	12,276.00Cebu City	18,900.00	6,237.00Davao City	45,000.00	14,850.00Mandaluyong City    	23,000.00	7,590.00Cavite	22,000.00	7,260.00Laguna	21,000.00	6,930.00Manila	66,000.00	21,780.00Iloilo	34,000.00	11,220.00True or False: Empirical Rule states that 68% of the data falls within the 1 standard deviation.A single value given as an estimate of a parameter of a population.a.Confidence Limitb.Confidence coefficientc.Sample distributiond.Sample MeanFor example, a 90% confidence interval covers 90% of the normal curve, so the probability of observing a value outside of this area is ____________.a.Less than 10%b.Greater than 10%c.Lower than the 2 nd standard deviationd.Higher than the 2 nd standard deviation​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-no-collects-the-election-results-in-all-areas-in-the-philippines-during-electionanswerasaapppp-po">30.
+                                            Identify whether each example describes a random sample. Answer with Yes or No.Collects the election results in all areas in the Philippines during electionAnswer:ASAAPPPP po</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="identify-whether-each-example-describes-a-random-sample-sample-answer-with-yes-or-no-collects-the-election-results-in-all-areas-in-the-philippines-during-election%e2%80%8b">
+                            1. identify whether each example describes a random sample sample answer with YES or NO collects the election results in all areas in the philippines during election​</h2><br />
+                        <p><strong>Answer:</strong></p><p> </p><p><strong>Step-by-step explanation:</strong></p><p>    </p><br />
+                                            <h2 class="ez-toc-section" id="identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-no-the-speed-of-internet-in-all-areas-in-the-visayas-region-%e2%80%8b">
+                            2. Identify whether each example describes a random sample. Answer with Yes or No. The speed of internet in all areas in the Visayas Region.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. random sample</p><p>2.Mean</p><p>3. 0.14</p><p>4. A</p><p>5. A</p><p>6</p><p></p><p>HOPE IT HELPS!</p><p></p><p>#CARRYONLEARNING</p><p>#STAYSAFE</p><p>#BRAINLY</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-no-the-speed-of-internet-in-all-areas-in-the-visayas-region">
+                            3. Identify whether each example describes a random sample. Answer with Yes or No. The speed of internet in all areas in the Visayas Region.</h2><br />
+                        <p><strong>Answer:</strong></p><p>need ko lng points</p><p><strong>Step-by-step explanation:</strong></p><p>sana ok lng </p><br />
+                                            <h2 class="ez-toc-section" id="b-directions-create-cleaning-schedule-matrix-for-your-kitchen-assign-three-household-members-to-do-specific-task-see-the-format-and-example-below-sample-output-area-frequency-procedure-cleaning-pe">
+                            4. B. Directions: Create cleaning schedule matrix for your kitchen. Assign three household members to do specific task. See the format and example below Sample Output Area Frequency Procedure Cleaning Person Responsible Agents Used Floor Daily Sweep then mop Detergent Juan Dela Cruzpst:pakiayos po ng sgot.:)​</h2><br />
+                        <p>Answer:</p><p>Area:Kitchen</p><p>Procedure:Wash the dishes</p><p>Cleaning Agents Used:Dishwashing liquid</p><p>Person responsible:Ewan ikaw na mag lagay</p><p>Explaination:</p><p>Hope it helps po:)</p><br />
+                                            <h2 class="ez-toc-section" id="a-travelling-salesman-checks-the-prices-of-gasoline-in-gas-stations-within-his-area-of-assignment-the-following-are-the-prices-per-liter-of-unleaded-gasoline-in-a-sample-of-15-gasoline-stations-in-hi">
+                            5. A travelling salesman checks the prices of gasoline in gas stations within his area of assignment. The following are the prices per liter of unleaded gasoline in a sample of 15 gasoline stations in his area:50.15	51.89	48.84	51.87	46.59	51.61	49.54	47.9850.96	51.22	51.08	50.88	51.94	46.50	47.90	Round off all answers to two decimal places .For answers less than 1, type 0 before the decimal point.(Example: 81.00, 0.23, 84.21)what is the HIGHEST PRICE, LOWEST PRICE, MEAN, MEDIAN, 40TH PERCENTILE, STANDARD DEVIATION, COEFFICIENT OF VARIATION?need answers please, makatama mark KO brainliest​</h2><br />
+                        <p>Answer:</p><p></p><p>Step-by-step explanation:</p><p>Bakit po ang dami grade ano po ba kayo </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="enrichment-activity-you-have-been-assigned-as-a-researcher-for-a-laundry-business-that-w-be-put-up-in-your-area-develop-a-research-proposal-that-contains-the-following-%e2%80%a2statement-of-the-prob">
+                            6. ENRICHMENT ACTIVITY You have been assigned as a researcher for a laundry business that w be put up in your area. Develop a research proposal that contains the following. •Statement of the problem and objectives. •Data collection method (sampling method and data-gathering procedure) •At least five survey questions that yield quantitative or qualitative data, or both ( for example, you may have four quantitative questions and one qualitative question).​</h2><br />
+                        <p><strong>Answer:</strong></p><p>While running your own laundry business does not require any specific qualifications or experience, it’s a good idea when entering any business to have experience in the industry. With this in mind, it may prove valuable to take a job in a laundry facility, so you can learn more about the trade and what customers want.</p><br />
+                                            <h2 class="ez-toc-section" id="additional-activities-there-are-more-examples-of-rocks-other-than-what-you-recogni-identifying-more-examples-of-igneous-sedimentary-and-metamorphic-roches-this-lesson-this-time-i-want-you-to-widen">
+                            7. Additional Activities There are more examples of rocks other than what you recogni identifying more examples of igneous, sedimentary and metamorphic roches this lesson. This time, I want you to widen your knowledge about rocks gallery. You may search in the internet or ask an expert to assist you in in your area. Make a log and collect pictures of your samples and forma identifying the samples you have collected.​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p></p><p>Examples include sandstone, coal and chalk. Some sedimentary rocks contain fossils (bones or shells of living things that were buried long ago and have turned to stone). Metamorphic rocks are formed when other rocks are changed due to heat or pressure. Examples include slate and marble.</p><p><strong>Answer:</strong></p><p>salamat thank.you so much</p><br />
+                                            <h2 class="ez-toc-section" id="sketch-the-curve-and-find-the-values-of-the-following-areas-under-the-normal-curve-which-lie-from-z-1-32z-1-98between-z-1-56-and-z-2-51between-z-1-36-and-z-2-55to-the-right-of-z-1-31to-the">
+                            8. Sketch the curve and find the values of the following areas under the normal curve which lie from: Z= 1.32Z= 1.98Between z= 1.56  and z= 2.51Between z= -1.36 and z= 2.55To the right of z= -1.31To the left of z=  1.85Using the formula for standard score or z-score:  The z-score is found by using the following equations:		For Population	 =           where:  	z – standard score				 – raw score or observed value				– population mean				 – population standard deviationFor Sample = 	         where: 	 – standard score                                   	 	 – raw score or observed value				 – sample mean			-  sample standard deviationExample: If scores are normally distributed with a mean of 30 and a standard deviation of 5  what percent of the score is grater than 37?Solution:    =    = 1.40    hence the corresponding z score of 37 is 1.40​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>Step-by-step explanation:</strong></p><p></p><p></p><p>- Area to the left of Z = 1.32 is 0.9066</p><p>- Area to the left of Z = 1.98 is 0.9767</p><p>- Area between Z = 1.56 and Z = 2.51 is 0.0694</p><p>- Area between Z = -1.36 and Z = 2.55 is 0.9941</p><p>- Area to the right of Z = -1.31 is 0.9049</p><p>- Area to the left of Z = 1.85 is 0.9678</p><p></p><p>Regarding the example you provided, to find the percentage of scores greater than 37 with a mean of 30 and a standard deviation of 5, we need first to calculate the z-score:</p><p></p><p>z = (37 - 30) / 5 = 1.40</p><p></p><p>Using a standard normal distribution table, we can find that the area to the right of Z = 1.40 is 0.0808, which represents the percentage of scores greater than 37:</p><p></p><p>Percentage of scores greater than 37 = (1 - 0.0808) x 100% = 91.92%</p><p></p><p>any amount</p><p>09163917783</p><br />
+                                            <h2 class="ez-toc-section" id="identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-noselects-all-areas-in-the-philippines-who-are-affected-by-typhoon-and-with-5th-and-6th-income-class-%e2%80%8b">
+                            9. Identify whether each example describes a random sample. Answer with Yes or NoSelects all areas in the Philippines who are affected by typhoon and with 5th and 6th income class.​</h2><br />
+                        <strong>Answer: YESSSSSSSSSS</strong><p><strong> explanation:</strong></p><p><strong>oed sauce?</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="directions-read-the-questions-carefully-and-encircle-the-letter-of-the-1-which-of-the-following-branch-of-science-that-deals-with-collecting-organizing-summarizing-analyzing-interpretin-data-and">
+                            10. Directions: Read the questions carefully and encircle the letter of the 1. Which of the following branch of science that deals with collecting, organizing, summarizing, analyzing, interpretin data and making conclusions? C. Physics D. Statistics B. Chemistry A. Biology 2. Mr. Puto determines the effectiveness of the new fertilizer in the growth of plants and crops through experimental studies. In what field does statistics help in this situation? C. Education D. Medicine B. Business A. Agriculture 3. Chariz, a 7th grade learner, wanted to find out if she lives the farthest from the school than other grade 7 learners. What statistical question would BEST help her to find the answer to her problem? A. How far is Chariz from home to school? B. How far are the 7 th grade students from home to school? C. What are the means of transportation of the 7 th grade students? D. What time will the 7 th grade students arrive from home to school? 4. "Joseph uses the data he collected and conclude that 85-90% of his classmates love to play badminton". What area c statistics is being depicted? C. inferential statistics D. sample A. descriptive statistics B. population 5. How do you call the systematic method of collecting and measuring data gathered from different sources of information in order to provide answers to relevant questions? A. data collection B. primary data C. samples D. secondary data 6. Which of the following is referred to as an indirect method of gathering data where the respondent used to answer written questions? A. experimentation B. interview D. questionnaire C. observation 7. Which of the following is an example of a primary data? A. books B. journals C. magazines D. testimonies of the investigator 8. Which of the following methods of gathering data requires face-to-face inquiry with the respondent? A. experimentation B. interview C. observation D. questionnaire 9. Which sampling technique suggests that the population be divided geographically into regions, divisions, or districts? A. cluster sampling B. stratified sampling C. systematic sampling D. quota sampling 10. A researcher asks neighbors' opinions about the effectiveness of the COVID-19 vaccine. What kind of sample is this? B. convenience sampling D. stratified sampling A. cluster sampling C. random sampling 11. It refers to the difference of the highest score and the lowest score. A. classes B. class interval C. frequency D. range 12. It refers to the middle value of each class. A. class boundaries B. class limits C. class mark D. cumulative frequency 13. It refers to the size of each class. A. class boundaries B. class frequency C. class interval D. range 14. It refers to the tabular presentation of data. 15. It A. class frequency B. data collection C. frequency distribution table D. frequency polygon refers to the class boundary that is 0.5 less than its lower limit. A. classes B. class limits C. lower boundary D. upper boundary 16. Which statement is NOT correct? A. The class mark is the size of each class. B. The lowest class contains the lowest score. C. The class boundaries are often described as true limits. D. The range is the difference of the highest score and the lowest score. 17. It is one of the ways of presenting data. A. graph B. bar graph C. line graph D. ogive graph 18. It is the same as frequency cumulative polygon. D. ogive graph A. graph B. bar graph C. line graph 19. It shows trends in data clearly or how the data behaves. A. graph B. bar graph C. line graph 20. Looks like a histogram excep that its bars are separated. A. pie chart B. bar graph D. ogive graph C. line graph D. ogive graph kailangan ko Po ang answer nyo thank you​</h2><br />
+                        <p>[tex]\huge\color{pink}{\underline{\overline\color{hotpink}{\sf{ \: \: \: Answer: \: \: \: }}}}[/tex]</p><p>[tex]\small\color{pink}⊱─━━━━━━━━⊱༻●༺⊰━━━━━━━━─⊰[/tex]</p><p>1. Which of the following branch of science that deals with collecting, organizing, summarizing, analyzing, interpretin data and making conclusions? </p>[tex]\sf\purple {D.\: Statistics }[/tex]<p>[tex]\\[/tex]</p><p>2. Mr. Puto determines the effectiveness of the new fertilizer in the growth of plants and crops through experimental studies. In what field does statistics help in this situation? </p>[tex]\sf\purple {A. \:Agriculture }[/tex]<p>[tex]\\[/tex]</p><p>3. Chariz, a 7th grade learner, wanted to find out if she lives the farthest from the school than other grade 7 learners. What statistical question would BEST help her to find the answer to her problem? </p>[tex]\sf \purple{B. \:How \:far \:are\: the \:7\: th \:grade\: students}[/tex] [tex]\sf\purple {from\: home \:to \:school?}[/tex]<p>[tex]\\[/tex]</p><p>4. "Joseph uses the data he collected and conclude that 85-90% of his classmates love to play badminton". What area c statistics is being depicted? </p>[tex]\sf\purple{C.\: Inferential \:statistics}[/tex]<p>[tex]\\[/tex]</p><p>5. How do you call the systematic method of collecting and measuring data gathered from different sources of information in order to provide answers to relevant questions?</p>[tex]\sf\purple{A. \:Data \:collection }[/tex]<p>[tex]\\[/tex]</p><p>6. Which of the following is referred to as an indirect method of gathering data where the respondent used to answer written questions? </p>[tex]\sf\purple{D.\: questionnaire }[/tex]<p>[tex]\\[/tex]</p><p>7. Which of the following is an example of a primary data? </p>[tex]\sf\purple{D. \:Testimonies \:of\: the\: investigator }[/tex]<p>[tex]\\[/tex]</p><p>8. Which of the following methods of gathering data requires face-to-face inquiry with the respondent? </p>[tex]\sf\purple{B. \:Interview }[/tex]<p>[tex]\\[/tex]</p><p>9. Which sampling technique suggests that the population be divided geographically into regions, divisions, or districts? </p>[tex]\sf\purple{C. \:Systematic \:sampling }[/tex]<p>[tex]\\[/tex]</p><p>10. A researcher asks neighbors' opinions about the effectiveness of the COVID-19 vaccine. What kind of sample is this?</p>[tex]\sf\purple{A.\: Cluster \:sampling }[/tex]<p>[tex]\\[/tex]</p><p>11. It refers to the difference of the highest score and the lowest score. </p>[tex]\sf\purple{D.\: Range }[/tex]<p>[tex]\\[/tex]</p><p>12. It refers to the middle value of each class. A. class boundaries.</p>[tex]\sf\purple{D. \:Cumulative\: frequency}[/tex] <p>[tex]\\[/tex]</p><p>13. It refers to the size of each class. </p>[tex]\sf\purple{D.\: Range }[/tex]<p>[tex]\\[/tex]</p><p>14. It refers to the tabular presentation of data. </p>[tex]\sf\purple{C.\: Frequency \:distribution \:table}[/tex]<p>[tex]\\[/tex]</p><p>15. It refers to the class boundary that is 0.5 less than its lower limit. </p>[tex]\sf\purple{C. \:Lower \:boundary }[/tex]<p>[tex]\\[/tex]</p><p>16. Which statement is NOT correct? </p>[tex]\sf\purple{C. \:The\: class \:boundaries\: are\: often}[/tex][tex]\sf\purple{described\: as\: true \:limits. }[/tex]<p>[tex]\\[/tex]</p><p>17. It is one of the ways of presenting data. </p>[tex]\sf\purple{A. \:Graph }[/tex]<p>[tex]\\[/tex]</p><p>18. It is the same as frequency cumulative polygon. </p>[tex]\sf\purple{D. \:Ogive \:graph }[/tex]<p>[tex]\\[/tex]</p><p>19. It shows trends in data clearly or how the data behaves. </p>[tex]\sf\purple{C.\: Line\: graph }[/tex]<p>[tex]\\[/tex]</p><p>20. Looks like a histogram excep that its bars are separated. </p>[tex]\sf\purple{A.\: Pie\: chart }[/tex]<p>[tex]\small\color{pink}⊱─━━━━━━━━⊱༻●༺⊰━━━━━━━━─⊰[/tex]</p><p>[tex]\sf {\#CarryOnLearning}[/tex]</p>DABCA<p></p><p>Sana makatulong </p><p>Brainliest mo sa itaas</p><br />
+                                            <h2 class="ez-toc-section" id="12-the-department-of-health-has-the-following-data-of-the-numberof-infected-persons-of-covid-19-in-five-high-risk-areas-in-thecountry-51-89-129-215-and-297-suppose-samples-of-size-2high-risk-ar">
+                            11. 12. The Department of Health has the following data of the numberof infected persons of Covid-19 in five high-risk areas in thecountry, 51, 89, 129, 215, and 297. Suppose samples of size 2high-risk areas are drawn from this population, what exampleof the sampling distribution of the sample mean for normalpopulation portrays the situation?A variance is knownB. variance is unknownC. standard deviation is smallD. standard deviation is large​</h2><br />
+                        <p><strong>Answer:</strong></p><p>C. standard deviation is small</p><br />
+                                            <h2 class="ez-toc-section" id="1-multiple-choice-choose-the-letter-of-the-best-answer-write-the-chosen-letter-on-a-separate-sheet-of-paper-1-all-of-the-following-are-solutions-except-a-milk-b-wine-c-alloy-d-coffee-2-all">
+                            12. 1. Multiple choice. Choose the letter of the best answer. Write the chosen letter on a separate sheet of paper. 1. All of the following are solutions EXCEPT; A. milk B. wine C. alloy D. coffee 2. All of the following affects the solubility of a solid in a liquid EXCEPT A pressure B. stirring C. surface area D. temperature 3. Which is an example of a solute? A egg whites C. water D. acetone B. sugar 4. Why is a solution considered homogenous? A. It is usually liquid. B. It contains a solute and solvent. C. It can be dilute or concentrated. D. Its components are distributed evenly in all proportions. 5. All of the following describes a solution EXCEPT A. clear C. cannot pass through filter paper B. homogenous D. can be separated by physical means 6. A solution that contains the maximum amount of dissolved solute is: A saturated C. concentrated B. unsaturated D. su persaturated C. sugar 7. The following substances are soluble in water EXCEPT A oil B. salt D. alcohol 8. When there is less solute in relation to the solvent, the solution is said to be: A dilute C. supersaturated B. un saturated D. none of the above 9. A solution has all the following properties EXCEPT A cicar C. cannot pass through filter paper B. homogenous D. can be separated by physical means 10. You can make a solute dissolve more quickly in a solvent by A. adding more solute. B. adding ice. C. heating the solvent. D removing some solvent 11. Throe 10 g samples of sugar are represented below. Sample A dissolves in water more slowly than sample B. Sample B dissolves more slowly than sample C.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>fsufsjiwvwHwi</p><p><strong>Explanation:</strong></p><p>mliwhidhhijdbswuwvesis&amp;sdhdidbdhfiddbd</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="area-practical-research-1-gradestrand-situational-problems-read-the-following-situations-and-identify-the-type-of-sampling-that-best-fits-the-problem-explain-your-answers-with-an-example-1-as-you">
+                            13. Area: Practical Research 1 Grade/Strand SITUATIONAL PROBLEMS Read the following situations and identify the type of sampling that best fits the problem. Explain your answers with an example. 1. As you choose samples for your study, you include only those who are available or willing to participate in the research. What kind of sampling is this? Explain. 2. You include only those students whose parents are working abroad. What kind of sampling is this? Explain. 3. You decide to interview a big number of participants. What kind of sampling is this. Explain.​</h2><br />
+                        <p>asan po ang answer nito?</p><br />
+                                            <h2 class="ez-toc-section" id="schoolgrade-levelactivity-sheet-instatistics-and-probability1-if-you-were-a-researcher-and-wanted-to-conduct-a-research-within-your-barangaywhat-would-it-be-what-sampling-technique-are-you-going-to">
+                            14. SchoolGrade LevelActivity Sheet inStatistics and Probability1. If you were a researcher and wanted to conduct a research within your Barangay,what would it be? What sampling technique are you going to use?2. There are 20 members of taekwondo club, 40 math club members, 60 drama theatremembers, and 30 members of science club. The researchers want to get 20respondents out of these organizations. Identify the samples to be taken in eachorganization. Get the samples needed for each category using stratified randomsampling.3. Give a situation in your area that is an example of parameter and statistic. Explainwhy you considered it as a parameter or a statistic.4. Construct all random samples consisting three observations from the given dataArrange the observations in ascending order without replacement and repetitic86 89 92 95 98​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>1</strong>. i would conduct a research about students who are enrolled and currently studying at 11th grade. I'll use stratified random sampling.</p><p></p><p><strong>2</strong>. taekwondo = 3</p><p>    math = 5</p><p>    Drama Theatre = 8</p><p>    science = 4</p><p></p><p><strong>3</strong>. parameter: All g11 students who was enrolled </p><p>                       in 1st semester enrolled for the 2nd  </p><p>                       semester. I considered this as a </p><p>                       parameter because students in 11th</p><p>                       grade need to be enrolled.</p><p>   statistic: 30% of students are at 9th grade in our  </p><p>                 barangay. i considered this as an </p><p>                 statistic because not all students in our </p><p>                 brgy. is in 9th grade.</p><p></p><p><strong>4.Answer:</strong></p><p>a.)  86,89,92,95,98</p><p>      N=5</p><p>      n=1</p><p>      NCn= 5</p><p></p><p></p><p>b.)   sample         sample mean</p><p>          86                     86</p><p>          89                     89</p><p>          92                     92</p><p>          95                     95</p><p>          98                     98</p><p></p><p></p><p>c.)   sample mean      Probability P(x)</p><p>             86                    ⅕ or 0.2</p><p>             89                    ⅕ or 0.2</p><p>             92                    ⅕ or 0.2</p><p>             95                    ⅕ or 0.2</p><p>             98                    ⅕ or 0.2</p><p></p><p>•All sample means appeared once, thus, their probability is P(x)=⅕ or 0.2 .</p><p></p><p></p><p></p><p><strong>Step-by-step explanation:</strong></p><p>yung a,b,c po yan po yung three observation.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-no-the-speed-of-internet-in-all-areas-in-the-visayas-region-answer">
+                            15. Identify whether each example describes a random sample. Answer with Yes or No.
+The speed of internet in all areas in the Visayas Region.
+Answer:</h2><br />
+                        <p></p><p><strong>Step-by-step explanation:</strong></p><p>Identify whether each example describes a random sample. Answer with Yes or No.</p><p>The speed of internet in all areas in the Visayas Region.</p><br />
+                                            <h2 class="ez-toc-section" id="directions-think-of-ways-on-how-you-can-mitigate-at-home-if-a-rainfall-inducedlandslide-or-sinkhole-is-to-happen-fill-out-the-flowchart-of-the-step-or-process-youhave-thought-you-may-still-add-anot">
+                            16. Directions: Think of ways on how you can mitigate at home if a rainfall-inducedlandslide or sinkhole is to happen. Fill out the flowchart of the step or process youhave thought, you may still add another line or boxes if the given sample is notenough. You may use another sheet of paper to answer.Disaster event:EXAMPLE: Check the mineand geoscience bureau forthe geohazard map of ourmunicipalityEXAMPLE: Assess the mapif I am living in a highlysusceptible area.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>There are also various direct methods of preventing landslides; these include modifying slope geometry, using chemical agents to reinforce slope material, installing structures such as piles and retaining walls, grouting rock joints and fissures, diverting debris pathways, and rerouting surface and underwater drainage.</p><br />
+                                            <h2 class="ez-toc-section" id="stat-112-20172s-%e2%96%ba-week-10-quarterly-exam-%e2%96%ba-quarterly-exam1q-true-or-false-the-greek-letter-alpha-represents-the-mean-2q-this-determines-the-degree-to-which-values-of-a-random">
+                            17. STAT-112-20172S / ► Week 10: Quarterly Exam / ► Quarterly Exam
+1Q: True or False: The Greek letter alpha represents the mean.
+2Q: This determines the degree to which values of a random variable dif
+3Q: Find the median of the following data set. 11, 13, 15, 17, 19, 21, 22, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 51, 53, 55, 57, 59
+4Q: A single value given as an estimate of a parameter of a population.
+5Q: Empirical Rule states that 68% of the data falls within the 1 standard deviation.
+6Q: The sum of all the probabilities P(X = x) for all possible values of a discrete random variable X must equal 1.
+7Q: As the sample size increases,
+8Q: Given the following sample data, compute for the true mean. The answer must have two decimal places.1 1 1 2 3 4 5 5 5 8 8 8 8
+9Q: How many possible outcomes when you simultaneously toss three fair coins.
+10Q: Identify if the random variable is a DISCRETE or CONTINUOUS. Weight of students in a university
+11Q: True or False: In Statistics, variance is defined as the number of times an outcome can occur compared to all possible outcomes.
+12Q: True or False: Mean is the sum of all possible values of random variables.
+13Q: Find the median of the following data set. 44, 46, 29, 39, 59, 59, 39
+14Q: Which of the following does not describes a T distribution?
+15Q: True or False: Random sample happened when data is collected in no certain order
+16Q: True or False: In order to apply the Central Limit Theorem, a sample size must be greater than or equal to 20.
+17Q: To calculate the mean from a sample,
+18Q: Which of the following is used to calculate population parameter?
+19Q: Identify whether each example describes a random sample. Answer with Yes or No The manager chooses 30 employees randomly from a department.
+20Q: Identify if the random variable is a DISCRETE or CONTINUOUS. Total number of volunteers in a community
+21Q: Normal Distribution Curve is also called
+22Q: In Central Limit Theorem, the mean of the sampling distribution of the mean is equal to the
+23Q: Which measure of tendency is the best estimator?
+24Q: The number of times out of 100 that the repeated experiment would be expected to capture the population mean within the given interval.
+25Q: In a normal curve, a ___ of 1 means 1 deviation data are above the average.
+26Q: True or False: In Central Limit Theorem, the mean of the sampling distribution of the mean is equal to the population mean.
+27Q: Confidence coefficient is a single value given as an estimate of a parameter of a population.
+28Q: For example, a 90% confidence interval covers 90% of the normal curve, so the probability of observing a value outside of this area is ____________.
+29Q: Use to check the normality of a distribution
+30Q: Identify if the random variable is a DISCRETE or CONTINUOUS. Number of winning tournaments of a varsity team</h2><br />
+                        <p>The answer is:</p><p>1:False</p><p>2:Variance</p>
+
+<p>3:31</p>
+
+<p>4:Sample Mean</p>
+
+<p>5:False</p>
+
+<p>6:The statement is TRUE.</p>
+
+<p>7:sampling distribution
+becomes closer to a normal distribution.</p>
+
+<p>8:4.53</p>
+
+<p>9:8</p>
+
+<p>10:CONTINUOUS</p>
+
+<p>11:False</p>
+
+<p>12:False</p>
+
+<p>13:39</p>
+
+<p>14:Mean of Means is equal to
+0</p>
+
+<p>15:True</p>
+
+<p>16:False</p>
+
+<p>17:Add all the values and
+divided by the total number of samples</p>
+
+<p>18:Point Estimate</p>
+
+<p>19:Yes</p>
+
+<p>20:DISCRETE</p>
+
+<p>21:Normal Curve</p>
+
+<p>22:Population mean</p>
+
+<p>23:Mean</p>
+
+<p>24:Confidence Level</p>
+
+<p>25:Z score</p>
+
+<p>26:True</p>
+
+<p>27:FALSE. Change “confidence
+coefficient” to sample mean</p>
+
+<p>28:Less than 10%</p>
+
+<p>29:Normal quantile plot</p>
+
+<p>30:DISCRETE</p><br />
+                                            <h2 class="ez-toc-section" id="procedure1-look-for-a-place-in-the-vicinity-of-your-house-that-is-safe-and-at-the-same-time-hasan-exposed-soil-resources-example-backyard-garden-vacant-lot2-locate-a-small-area-where-you-c">
+                            18. PROCEDURE:
+1. Look for a place in the vicinity of your house that is safe and at the same time has
+an exposed soil resources. (Example: backyard, garden, vacant lot)
+2. Locate a small area where you can get a soil sample. Using a stick, try to lose the
+particles of the soil to see the components and easily get sample as well.
+3. Get a handful sample of the soil and place it in a clear plastic bag or in a sheet of
+paper.
+4. Continue examining the soil sample at home such as its color, texture and
+components.
+5. Take a picture of your soil sample.
+6. Answer the questions that follow.
+Questions:
+1. What makes up soil based on your observation? __________________________________
+____________________________________________________________________________________
+2. How do you think soil is being formed? ___________________________________________
+_____________________________________________________________________________________
+3. Give the characteristics of the soil that you have examined.
+Color: ____________________________________________________________________________
+Texture: _________________________________________________________________________
+4. What types of soil do you know? __________________________________________________
+5. What type of soil do you think your soil sample is? ________________________________
+Why did you say so? ________________________________________________________________</h2><br />
+                        <p><strong>Answer:</strong></p>1. what makes up a soil based on your observation?<p>From my observation soil is made from dried/dead leaves and old rocks that has been crushed and other organic materials.</p><p></p>2. How do you think soil is being formed?<p>When a rock has been sitting on the ground for so long, some bacterias tend to colonized the rock and after a few days the rock will be automatically crack and a new plant will be born between the cracks of the rock.</p><p></p> 3. Give the characteristics of the soil that you have examined<p>color: Dark brown</p><p>texture: soft</p><p></p>4. What types of soil do you know?<p>There are 6 types of soil but I only know 4 of them but here are the 6 type of soil such as <strong>clay </strong><strong>soil,</strong><strong> </strong><strong>sandy </strong><strong>soil,</strong><strong> </strong><strong>silty </strong><strong>soil,</strong><strong> </strong><strong>peaty </strong><strong>soil,</strong><strong> </strong><strong>chalky </strong><strong>soil,</strong><strong> </strong><strong>and </strong><strong>loamy </strong><strong>soil.</strong></p><p></p>5. What type of soil do you think your soil sample is? Why did you say so?<p>The type of soil that I examined is loamy soil because loamy soil have dark color and soft texture it's a bit wet too and I'm confident to say that the soil I examined is a loamy soil. </p><br />
+                                            <h2 class="ez-toc-section" id="a-directions-choose-only-the-letter-of-the-correct-answer-and-write-it-on-the-space-before-each-number-show-your-solution-at-the-back-of-this-paper-if-needed-1-it-helps-in-providing-a-better-unders">
+                            19. A Directions: Choose only the letter of the correct answer and write it on the space before each number. Show your solution at the back of this paper if needed 1. It helps in providing a better understanding and exact description of a phenomenon of natureA) Data B) StatisticsC) Population D) Sample 2. It refers to all the members of a defined group that we are studying A Data B.) Statistics C.) Population D.) Sample 3. It is a representative or portion of the population that is used as respondents of the study A) Data B.) Statistics C.) Population D.) Sample 4. It is composed of measurement tools (for example, questionnaires or scales) designed to obtain data on a topic of interest from research subjects A) Data Collection  B) Research Instrument C.) Graphical InstrumentD.) Statistical Instrument 5. It refers to the systematic approach to gathering and measuring Information from a variety of sources to get a complete and accurate picture of an area of interest.A) Data CollectionB.) Research InstrumentC.) Graphical Instrument D.) Statistical Instrument 6. It refers to non-numeric data. A Qualitative B) Quantitative C.) Discrete D.) Continuous​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. D</p><p>2. C</p><p>3. A</p><p>4. B</p><p>5. A</p><p>6. A </p><p><strong>Step-by-step explanation:</strong></p><p> correct me if I'm wrong:))) </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-2-tell-me-what-instructions-write-good-if-the-statement-is-correct-otherwise-defective-if-incorrect-1-magnetic-particle-test-can-be-performed-by-wet-method-which-uses-finely-divide">
+                            20. Learning task 2. TELL ME WHAT Instructions: Write GOOD if the statement is correct, otherwise DEFECTIVE if incorrect. 1. Magnetic Particle Test can be performed by wet method, which uses finely divided dry particles that are dusted onto a magnetized surface, is better for rough surfaces. _2. X-rays and Gamma rays are examples of Penetrate Test. 3. A fluorescent penetrant test requires an ultraviolet light (black light) to observe the test results. It may be necessary to enclose the viewing area to properly read the test results. -4. The major advantage of ultrasonic testing is the advanced skill required to properly interpret the results. Weld design, location of the defect, internal structure, and complexity of the weldment affect the interpretation of the ultrasonic signal. 5. Visual testing equipment includes rulers, fillet weld gauges, squares, magnifying glasses, and reference weld samples.pakisagot ng maayus please ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.good</p><p>2.good</p><p>3.defective</p><p>4.good</p><p>5.good</p><br />
+                                            <h2 class="ez-toc-section" id="performance-task-1-complete-the-table-below-refer-to-the-first-number-as-your-example-genre-sample-tv-internet-program-values-taken-from-the-videos-weather-report-i-am-ready-habagat-to-bring-cloud">
+                            21. Performance Task 1: Complete the table below. Refer to the first number as your example. Genre Sample TV/ Internet Program Values Taken from the Videos Weather report I Am Ready Habagat to bring cloudy skies scattered rains over Zambales, Bataan, and other 9 areas. This report will give us warning on the upcoming rain or storm. It will teach us to be alert and ready all the times. Real-life application I will prepare our emergency kit. I will charge my cellphone and other gadget in terms the electricity shuts down. I will list down the telephone numbers of each agencies who can help us when there is a typhoon. Activate Go to Settim​</h2><br />
+                        <p><strong>Answer:</strong></p><p>News flash</p><p></p><p>Sample TV/Internet Program - 24 Oras</p><p></p><p>Values takes from the video- What is happening in our country.</p><p></p><p>Real-life application- accidents that is happening this days</p><p></p><p>Movie trailer</p><p></p><p>Sample TV/Internet Program- my ex and why's</p><p></p><p>Values takes from the video- learn to forgive</p><p></p><p>Real-life application- some people experience heart ache</p><p></p><p>Documentary</p><p></p><p>Sample TV/Internet Program- No Leftovers</p><p></p><p>Values Taken from the Videos- don't just casually throw food away because some people don't have any.</p><p></p><p>Real-Life Application- People take for granted the food that they eat and just throw leftovers away like nothing</p><p></p><p>Weather forecast</p><p></p><p>Sample TV/Internet Program- I am ready gma weather update</p><p></p><p>Values Taken from the Videos- Getting ready for the worst case scenario</p><p></p><p>Real-Life Application- always be ready in any calamity</p><p></p><p>Internet program</p><p></p><p>Sample TV/Internet Program- Live gaming vlog</p><p></p><p>Values Taken from the Videos- having fun</p><p></p><p>Real-Life Application- streaming the game you play to learn more.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="angela-lucenopre-assessmenta-determine-whether-each-statement-is-true-or-false-true-1-experiments-whose-outcomes-can-be-predictedare-called-random-experiments2-the-set-of-all-possible-outcomes-of">
+                            22. Angela LucenoPre - AssessmentA. Determine whether each statement is true or False.True 1 Experiments whose outcomes can be predictedare called random experiments2. The set of all possible outcomes of statiscalexpenments is called a sample space.a An element of a sample space is calleda saple point :4. The probability that it will rain tomorrow is- 0.255. Height, weight, and area are examplesof divorcte variables.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>true</p><p>true</p><p>false</p><p>false</p><p>true</p><br />
+                                            <h2 class="ez-toc-section" id="assessmentdirections-write-the-letter-of-the-correct-answer-on-the-space-provided-before-each-number-a-1-what-term-refers-to-the-body-of-knowledge-that-deals-with-the-collection-organizatio">
+                            23. AssessmentDIRECTIONS: Write the letter of the correct answer on the space provided before each number. A 1.) What term refers to the body of knowledge that deals with the collection,       organization, presentation, analysis and interpretation  of data?statistics					C. populationprobability		                      D. algebra2). Which process is involved in Inferential Statistics? forecasting					C.  tabulatingdescribing					D. consolidating3.) Which does not belong to the group?stratified  random sampling			C. cluster samplingquota sampling					D. systematic sampling4.)  Which term refers to the method or process of selecting the members of a sample from a population?randomizing					C. averagingsampling					D. estimating5.) It refers to the process of extracting relevant information from the given data from   which numerical      description can be formulated.               A.  Collection of data                                    C.   Organization of data                  B.  Analysis of Data                                       D.  Interpretation of data6.) Mr. Dalisay  estimates the average height of Grade -7 learners by computing the      average  height of Grade -7 section 1 learners. What do you call the obtained average height?     A. parameter						C. statistic     B. constant						D. variable7.) Which of the following refers to the area of statistics that deals about  the collection, presentation, and             description of sample data?                 A. sampling                         B. cluster          C.  descriptive           D. Inferential8.) Which of the following deals about   making decisions and drawing conclusions about populations?              A. sampling		B.  cluster 	      C. descriptive 	  D.  inferential9.) C the following is Not  an example of a statistical question?A. How old are the learners in this room ?B. How many hours per month do learners in the Mathematics  SPA (A) class spend studying?C. What time did the learners in this class get up this morning? D. How old are you ?10.) Which of the following does Not belong to the group?         A. summarizing question    B. comparing question    C. relationship question      D. descriptive question​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>1.C</strong></p><p><strong>2.A</strong></p><p><strong>3.A</strong></p><p><strong>4.B</strong></p><p><strong>5.D</strong></p><p><strong>6.C</strong></p><p><strong>7.B</strong></p><p><strong>8.B</strong></p><p><strong>9.A</strong></p><p><strong>10.D</strong></p><p></p><p><strong>I</strong><strong> </strong><strong>HOPE</strong><strong> </strong><strong>ITS</strong><strong> </strong><strong>HELP</strong><strong> </strong><strong>TO</strong><strong> </strong><strong>YOU</strong><strong> </strong></p><p>1.A</p><p>2.B</p><p>3.D</p><p>4.C</p><p>5.A</p><p>6.A.</p><p>7.B</p><p>8.C</p><p>9.D</p><p>10.D</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="4-it-is-a-group-of-people-who-are-selected-to-participate-or-to-be-the-subject-of-the-studya-sample-b-populationc-sampling-unit-d-variable5-it-is-a-set-of-exclusive-attributes-in-research-like-s">
+                            24. 4. It is a group of people who are selected to participate or to be the subject of the study,a.sample b. populationc. sampling unit d. variable5. It is a set of exclusive attributes in research like sex, age, and employment status. The elementsof a given population may be described in terms of their individual attributes on a givena.sampleb. populationc. sampling unitd. variable6. It is that element or set of elements considered for selection in some stage of sampling.a.sampleb. populationc. sampling unitd. variable7. It is the summary description of a given variable in a sample. An example of this can be the mean incomecomputed from a sample and the age distribution of a sample.a.sampleb. statisticsc. sampling unitd. variable8. This refers to the research design (paradigm as well as statistics and analysis) as well as theapproximate timeline for the completion of the study.a. Research Methodologyb. hypothesisc. Qualitative Researchd. thesis statement9. It is the documentation style used by American Psychological Association.a. APAb. MLAс. АРААd. MLAA10. It is the part of research that discusses published information in each subject area.a. Methodologyb. Introduction c. Literature Reviewd. Results​</h2><br />
+                        <p><strong>Answer:</strong></p><p>4.<strong>B</strong><strong> </strong></p><p>5.<strong>C</strong></p><p>6.<strong>C</strong></p><p>7.<strong>B</strong></p><p>8<strong>.</strong><strong>A</strong></p><p>9.<strong> </strong><strong>A</strong></p><p><strong>10.C</strong></p><p><strong>Explanation:</strong></p><p>Yan po sagot ko hindi ko po yan binasta basta </p><p>promise ✨po yan po sagot</p><br />
+                                            <h2 class="ez-toc-section" id="post-testdirections-read-and-understand-the-questions-below-select-the-best-answer-toeach-item-then-write-your-choice-on-your-answer-sheet-1-what-branch-of-science-that-deals-with-collecting-organ">
+                            25. POST-TESTDirections: Read and understand the questions below. Select the best answer toeach item then write your choice on your answer sheet.1. What branch of science that deals with collecting, organizing,summarizing, analysis, and making decisions from data?A. AlgebraB. Probability C. Statistics D. Trigonometry2. Which of the following is role of Statistics in real-life?A. consumer goods B. quality testing C. stock marketD. all of these3. Which of the following type of variable categorized by height?A. qualitative B. quantitative C. both A&amp;BD. none of these4. Which of the following are examples of continuous variables?A. interpreting dataC. organizing dataB. presenting dataD. all of these5. Which of the following is a part of the population studied?A. averageB. dataC. populationD. sample6. Which area of Statistics that deals with methods for collecting,organizing, and describing data?A. descriptive B. inferential C. nominalD. ratio7. Which of the following is categorized by gender?A. intervalB. nominalC. ordinalD. ratio8. Which of the following is the specific subject or object about which theinformation is collected.A. averageB. element C. populationD. sample9. Which of the following is a qualitative variable?A. colorB. genderC. rankingD. both A and B10. Which of the following is a quantitative variable?A colorB. daily allowanceC. temperatureD. both A and C11. Which of the following is NOT a property of interval scale?A. equal distanceB. identity C. magnitudeD. sample​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. B</p><p></p><p>2. C</p><p></p><p>3. D</p><p></p><p>4. A</p><p></p><p>5. C</p><p></p><p>6.A</p><p></p><p>7.C</p><p></p><p>8.D</p><p></p><p>9.C</p><p></p><p>10. C</p><p></p><p>11.B</p><br />
+                                            <h2 class="ez-toc-section" id="identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-no-select-all-100-poor-households-in-a-community-in-areas-in-the-philippines-affected-by-the-earthquake">
+                            26. Identify whether each example describes a random sample. Answer with Yes or No. Select all 100 poor households in a community in areas in the Philippines affected by the earthquake.</h2><br />
+                        No. It's not a random sample.<br />
+                                            <h2 class="ez-toc-section" id="sample-problemthe-area-of-the-room-is-7-2-sq-m-how-many-pieces-of-30-x-30-cm-are-tiles-needed-to-fill-the-whole-room-cite-some-examples-where-you-can-make-use-of-the-concept-of-a-quadratic-equati">
+                            27. Sample problem:The area of the room is 7.2 sq.m., how many pieces of 30 x 30 cm. Are tiles needed to fill the whole room? Cite some examples where you can make use of the concept of a quadratic equation. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>Step By step the answer talk carefully</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-directions-choose-only-the-letter-of-the-correct-answer-and-write-it-on-the-space-before-each-number-show-your-solution-at-the-back-of-this-paper-if-needed-1-it-helps-in-providing-a-better-unde">
+                            28. A. Directions: Choose only the letter of the correct answer and write it on the space before each number. Show your solution at the back of this paper if needed. 1. It helps in providing a better understanding and exact description of a phenomenon of nature. A.) Data B.) Statistics C.) Population D.) Sample 2. It refers to all the members of a defined group that we are studying. A) Data B.) Statistics C.) Population D.) Sample 3. It is a representative or portion of the population that is used as Tespondents of the study. A) Data B) Statistics C.) Population D.) Sartre 4. It is composed of measurement tools (for example, questionnaire or scales designed to obtain data on a topic of interest from research subjects A) Data Collection C) Graphical Instrument B) Research Instrument D.) Statistical Instrument 5. It refers to the systematic approach to gathering and measuring information from a variety of sources to get a complete and accurate picture of an area of interest. A) Data Collection c) Graphical Instrument B.) Research Instrument D.) Statistical Instrument It refers to non-numeric data, A Qualitative B.) Quantitative C.) Discrete D.) Continuous ident multi​</h2><br />
+                        <p><strong>Answer:</strong></p><p>a po kasi nagaaral po ako ng ml</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="last-na-po-pls-bago-matapos-buhay-q-jkthe-confidence-level-is-expressed-in-terms-of-____________-a-percentageb-whole-numberc-fractiond-ratioin-central-limit-theorem-the-standard-deviation-of-the-popu">
+                            29. last na po pls bago matapos buhay q jkThe confidence level is expressed in terms of ____________.a.Percentageb.Whole Numberc.Fractiond.RatioIn Central Limit Theorem, the standard deviation of the population is estimated by dividing the standard deviation of the population by the square of the sample size.a.The statement is SOMETIMES FALSEb.The statement is FALSEc.The statement is SOMETIMES TRUEd.The statement is TRUEConfidence coefficient is a single value given as an estimate of a parameter of a population.a.FALSE. Change “confidence coefficient” to confidence limitb.FALSE. Change “confidence coefficient” to Confidence Limitc.TRUEd.FALSE. Change “confidence coefficient” to sample meanPoint estimate is always equal to the sampling coefficient.a.TRUEb.FALSE. Change the statement to “Point estimate is equal to the number of samples”c.FALSE. Change the statement to “Point estimate is used to estimate population parameter”d.FALSE. Change the statement to “Point estimate is a range of possible values of population mean”A single value given as an estimate of a parameter of a population.a.Sample Meanb.Sample distributionc.Confidence coefficientd.Confidence LimitA 95% confidence interval means 95% of all samples of size n would fall _____ our confidence interval.a.Belowb.None of the choicesc.Withind.Abovee.OutsideWhich of the following is used to estimate population parameter?a.Mean Estimateb.Central Limit Theorem Estimatec.Point Estimated.Biased EstimateThis is a representative subset of a population.a.Sampleb.Statisticsc.Standard Deviationd.MeanConfidence level indicates the level of assurance that confidence interval encloses the:a.unbiased sampleb.known population meanc.biased sampled.unknown population meanThe number of times out of 100 that the repeated experiment would be expected to capture the population mean within the given interval.a.Z scoresb.Empirical Rulec.Confidence Intervald.Confidence LevelPopulation Mean is an example of a parameter.a.None of the choicesb.TRUEc.Maybed.FALSEThese are numbers that summarizes data from a sample.a.Sampleb.Statisticsc.Meand.Standard DeviationA curve is said to be symmetric if all data points lies at the right side of the curve.a.The statement is TRUEb.The statement is SOMETIMES TRUEc.The statement is FALSEd.The statement is SOMETIMES FALSEThe range of possible values expected to capture the population mean is called the Margin of Error.a.FALSEb.TRUETrue or False: Standard deviation of a distribution of means is the standard error of the mean.In a normal curve, a Answer of 1 means 1 deviation data are above the average.PROBLEM SOLVING: Write the answer corresponds to the problem.REMINDERSIf the answer requires decimals, express your answer in 2 decimal places.If your answer is more than 3 digits, DO NOT INCLUDE THE COMMA.Compute for the mean expenses of the XYZ Corporation given the following:Name	   Total Sales   	   Total Expenses   Quezon City	14,950.00	4,933.50Caloocan City	18,290.00	6,035.70Marikina City	37,200.00	12,276.00Cebu City	18,900.00	6,237.00Davao City	45,000.00	14,850.00Mandaluyong City    	23,000.00	7,590.00Cavite	22,000.00	7,260.00Laguna	21,000.00	6,930.00Manila	66,000.00	21,780.00Iloilo	34,000.00	11,220.00True or False: Empirical Rule states that 68% of the data falls within the 1 standard deviation.A single value given as an estimate of a parameter of a population.a.Confidence Limitb.Confidence coefficientc.Sample distributiond.Sample MeanFor example, a 90% confidence interval covers 90% of the normal curve, so the probability of observing a value outside of this area is ____________.a.Less than 10%b.Greater than 10%c.Lower than the 2 nd standard deviationd.Higher than the 2 nd standard deviation​</h2><br />
+                        D ata ewan sinagutan q lg boring buhaibq<br />
+                                            <h2 class="ez-toc-section" id="identify-whether-each-example-describes-a-random-sample-answer-with-yes-or-no-collects-the-election-results-in-all-areas-in-the-philippines-during-electionanswerasaapppp-po">
+                            30. Identify whether each example describes a random sample. Answer with Yes or No.Collects the election results in all areas in the Philippines during electionAnswer:ASAAPPPP po</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p></p><p>Nasan po yung examples, paano ko yan sasagutan?</p><p></p><p>Ito na:</p><p></p><p>Yes, Every citizen 18 years old or above on Election Day who has been a resident of the Philippines for at least a year and for at least six months in the place where she or he is registered, and who is not otherwise disqualified by law, may vote. To actually vote, a citizen has to register. The COMELEC has a registration period of several months prior to the election. Those who are not registered do not appear on the voters' list and are ineligible to vote despite being otherwise qualified to do so.</p><p></p><p>People aged 18 to 24 may vote in Sangguniang Kabataan elections. As with their adult counterparts, the COMELEC has a registration period a few months prior to the election.</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/LI-kog_Vthc?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>math</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/children-s-stories-about-bullying.html">Children s Stories About Bullying</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/chebyshev-s-theorem-calculator.html">Chebyshev s Theorem Calculator</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/conclusion-about-samemarriage.html">Conclusion About SameMarriage</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/kirchhoff-s-current-law-is-based-on-the-conservation-of.html">Kirchhoff s Current Law Is Based On The Conservation Of</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/f-b-service-crew.html">F b Service Crew</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/tanabata-s-wife-short-story.html">Tanabata s Wife Short Story</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/3i-s-lesson-plan-in-english.html">3i s Lesson Plan In English</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/perceptual-barriers-examples.html">Perceptual Barriers Examples</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/inception-summary-essay.html">Inception Summary Essay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/script-for-demo-teaching.html">Script For Demo Teaching</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/how-many-is-4-quarts.html">How Many Is 4 Quarts</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/freestyle-rap-lyrics-tagalog.html">Freestyle Rap Lyrics Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/tagalog-of-attitude.html">Tagalog Of Attitude</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/man-vs-nature-examples-in-movies.html">Man Vs Nature Examples In Movies</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/the-great-dissenter-in-philippine-history.html">The Great Dissenter In Philippine History</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/jehovah-witness-attire.html">Jehovah Witness Attire</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/bitter-lemons-of-cyprus-summary.html">Bitter Lemons Of Cyprus Summary</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/equipment-tools-and-utensils-uses-of-specification.html">Equipment Tools And Utensils Uses Of Specification</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/nouns-ending-in-f-or-fe.html">Nouns Ending In F Or Fe</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/5th-grade-math-projects-pdf.html">5th Grade Math Projects Pdf</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://odoeduc.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://odoeduc.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

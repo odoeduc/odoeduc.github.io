@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Second Best Mst - QnA</title>
+    <meta name="description" content="Second Best Mst, Prims algorithm | MST | Code implementation, , , , TECH DOSE, 2020-07-29T21:39:48.000000Z, 20, Thoughts on the Second MST(Masters and SUSA Training) - Hong Ik Martial, hongikmartialarts.com, 900 x 675, jpeg, , 20, second-best-mst, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Second Best Mst - QnA" />
+    <meta property="og:description" content="Second Best Mst, Prims algorithm | MST | Code implementation, , , , TECH DOSE, 2020-07-29T21:39:48.000000Z, 20, Thoughts on the Second MST(Masters and SUSA Training) - Hong Ik Martial, hongikmartialarts.com, 900 x 675, jpeg, , 20, second-best-mst, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Second Best Mst - QnA" />
+    <meta name="twitter:description" content="Second Best Mst, Prims algorithm | MST | Code implementation, , , , TECH DOSE, 2020-07-29T21:39:48.000000Z, 20, Thoughts on the Second MST(Masters and SUSA Training) - Hong Ik Martial, hongikmartialarts.com, 900 x 675, jpeg, , 20, second-best-mst, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://odoeduc.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://odoeduc.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://odoeduc.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://odoeduc.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://odoeduc.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Second Best Mst</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">cedryclulu5558</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Second+Best+Mst" alt="Second Best Mst">
+                    </div>
+                    <p></p>
+                    <p>Does understanding mst in this time of pandemic beneficial</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#does-understanding-mst-in-this-time-of-pandemic-beneficial">1.
+                                            Does understanding mst in this time of pandemic beneficial</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-mst-sensitive-part-of-the-female-genitaliapasagot-plss%e2%80%8b">2.
+                                            what is the mst sensitive part of the female genitalia?pasagot plss​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#if-msyu162%c2%b0and-mst38%c2%b0what-is-the-msru%e2%80%8b">3.
+                                            if mSYU=162°and mST=38°,what is the m&lt;SRU?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ano-ang-gagawin-ko-sa-bahaging-ito-ang-bagong-aralin-ay-pakikilala-sa-iyo-sa-pamamagitan-ng-isang-word-search-hanapin-at-bilugan-ang-mga-salitang-may-kinalaman-sa-salitang-kuwento-simulan-mo-na-at-g">4.
+                                            Ano ang gagawin ko? Sa bahaging ito, ang bagong aralin ay pakikilala sa iyo sa pamamagitan ng isang Word Search Hanapin at bilugan ang mga salitang may kinalaman sa salitang KUWENTO Simulan mo na at galingan! K N BS KS UTTA K A S U SM MUY к 1 T 1 KIAT A PI 0 NATA A A A M GIB T AG PAL N MST T MA N A B OTUA AGIL HU N S MUTH A A ET KL AHA SU KID A T N N A N N A A AK ALL K GI YU N A T K SPIL S A GIO N G A S 1 MA N S WA N GI MA к AW A S M YIL SU A N G N B N N K A M D STA N S 1 US N SU KI AN OTA S D NA S - CDOUX OCZU 2xIxoko Iraz - ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#in-om-below-diameter-it-bisects-chord-ch-if-mit-40-and-mst-8-find-the-following%e2%80%8b">5.
+                                            In OM below, diameter IT bisects chord CH. If mIT = 40 and mST = 8, find the following:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-what-i-have-learneddirections-read-each-item-carefully-then-choose-the-letter-of-the-correct-answer-write-your-answer-on-a1-if-the-first-three-angles-of-a-quadrilateral-measures-54%c2%b0-86">6.
+                                            a. What I have Learned?Directions: Read each item carefully, then choose the letter of the correct answer. Write your answer on a1. If the first three angles of a quadrilateral measures 54°, 86', and 70° respectively. What is the measureC. 1700of the fourth angle?a. 1500b. 160°d. 180°2. What is the sum of the measures of the interior angles of a coin,which is in the shape of an octagon?b. 980°c. 1,080°d. 1,180°a. 8800t3. In Figure 1, mar= 140° and mas = 155º. Find mst.140°ra. 25°155°b. 40°C. 650d. 90°Figure 14. What is the measure of each interior angle of a regular dodecagon?a. 120°b. 130°c. 140°d. 1505. If the measure of each interior angle of a regular polygon is 108°, which of the following is the measureof its exterior angles?a. 36°b. 72°c. 108°d. 1440​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mst-of-us-mis-out-on-lyfs-big-prizes-d-pulitzer-d-nobel-d-oscars-tonys-grammys-bt-we-rall-elligibi-4-lyfs-small-pleasures-a-pat-on-the-bk-a-gud-word-a-hug-a-full-moon-a-glorious-sunse">7.
+                                            Mst of us mis out on lyf's big prizes... d Pulitzer, d Nobel, d Oscars, Tonys, Grammys, bt we rall elligibi 4 lyf's small pleasures... a pat on the bk, a gud word, a hug, a full moon, a glorious sunset, an empty parking space, a gr8 meal, a gud joke, a hot soup, a cold drink, an icecream, a inku, a gud frend. So don't fret about missing lyf's grandest rewards, enjoy its tiny delyts. Ders plenty 4 ol of usreflection​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#whats-new-activity-1-3-6-heres-your-order-encircle-the-words-which-relate-to-the-ethical-standards-in-writing-review-of-related-literature-the-words-can-be-read-horizontally-and-vertically-de-16-a">8.
+                                            What's New Activity 1.3.6 Here's Your Order Encircle the words which relate to the ethical standards in writing review of related literature. The words can be read horizontally and vertically DE 16 A N S R T A E 1 MIN T RST LOI N IK а PLAGIA RIS MS EL MST H CHITOJ N HK RL Сут VESTYMO N DF AL S 1 FICATI O NY RUT HY HB CFR NYON U ATHA HOT RI YH N M MO DE LA D AN W DE T H Y N J MO MATE V E R T Y H GINJ UM KLU GAIS SIFA BRICA T 1 ONR R A S TY FETCV SRT IN F А A Y M T N Y CVT OG S M1 A T T R 1 ON B UIT KH OU J V P KL 1 B. N MIDEA O NE X E B BND UP LICATII OBOLLO GRF​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#direction-arranged-the-word-affar-the-space-provided-after-each-number-example-1-millecuso-obe-biomolecules-1-eeen-mst-2-eichmclas-3-oorinps-4-rnostune-5-tticaippeer-1%e2%80%8b">9.
+                                            Direction: arranged the word Affar the space provided after each number. Example: 1. MILLECUSO OBE - BIOMOLECULES 1. EEEN MST 2. EICHMCLAS 3. OORINPS 4. RNOSTUNE 5. TTICAIPPEER 1​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-have-learnedon-a-sheet-of-paperdirections-solve-each-problem-completely-and-accuratelyshow-your-solution-and-write-the-properties-you-applied-to-justifycach-step-in-the-solution-process-you-ma">10.
+                                            What I Have Learnedon a sheet of paperDirections Solve each problem completely and accuratelyShow your solution and write the properties you applied to justifycach step in the solution process. You may illustrate each given,1. Given Quadrilateral LEAF is a parallelogram.a. If m&lt;L= x+20 and m ZA-2x-12, what is m&lt;L?b. If LE-y+14 and AF- 3y-4, how long is AF?c. The perimeter of the rectangle LEAF is 38cm. One side is 3cm less thanthe other side. What are its dimensions and how large is its area?2. Given: Quadrilateral STEM is an isosceles trapezoid with ST||ME.a. If SME=2x+15 AND ZSTE=3x-3, what is &lt;MST?3. Given: Quadrilateral ROSE is a kite with RO = RE and OS = ES,a. How long are the diagonals of the quadrilateral ROSE if themeasurement of its diagonal is 5cm more than the other andits area is 12cm2?pa help po ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jhonny-can-spend-at-mst-30-pesos-for-his-foods-during-recess-it-costs-him-10-pesos-for-a-snack-5-pesos-for-any-drinks-how-many-possible-combinations-of-snacks-and-drinks-can-be-bought">11.
+                                            Jhonny can spend at mst 30 pesos for his foods during recess. It costs him 10 pesos for a snack 5 pesos for any drinks. How many possible combinations of snacks and drinks can be bought?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ggiven-oe-oizset-e-zbigprove-stbgstatementreasonswrite-the-letter-only1-0-esoizset-zbig2-ino-e-mzset-mst-ino-i-mzbig-mbg3-mzset-m_big4-mst-mbg5-stebgchoices-to-complete-the-reasons-a">12.
+                                            GGiven: OE OIZSET E ZBIGProve: STBGStatementReasons(Write the letter only1.0 ESOIZSET ZBIG2. InO E, mZSET = mST.= .InO I, mZBIG = mBG3. MZSET= m_BIG4. mST= mBG5. STEBGChoices to complete the REASONS.A. From 2 &amp; 3, substitutionB. From 4, definition of congruent arcsC. GivenD. Definition of central angleE. From 1, definition of congruent anglesF. The degree measure of a minor arc isthe measure of the central angle whichintercepts the arc.G. Inscribed angle theorem.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#direction-classify-the-following-tools-and-equipment-in-food-preservation-as-to-their-usage-write-mxt-for-mixing-tools-ct-for-cutting-tools-mst-for-measuring-tools-andot-for-other-tools-and-equipme">13.
+                                            DIRECTION: Classify the following tools and equipment in food preservation as to their usage.Write MXT for Mixing Tools, CT for Cutting Tools, MST for Measuring Tools andOT for Other Tools and Equipment.6. Ladle -1. Peeler -2. Weighing scale -3. Tongs -4. Strainer-7. Measuring cups -8. Colander -9. Kitchen knives -5. Turner -10. Pots -​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#20-what-i-can-do-directions-study-the-puzzle-below-identify-the-words-that-enumerate-various-sources-of-income-write-your-answer-in-a-separate-sheet-of-paper-02-b-on-u-k-i-ng-piqru-pqp-t-s-%d0%b0">14.
+                                            20 What I Can Do Directions: Study the puzzle below. Identify the words that enumerate various sources of income. Write your answer in a separate sheet of paper. 02 B ON U K I NG PIQRU PQP T S А IP P L AU PQF KA F J I ALF А S T ER I L E Z A T I о N CIS S MGP ΟΙ ΟΙ Κ S J N S R L S V K KD ΟΙ Η HR DU I JF RS E Z I N GL L F I ΤΙΟ F RUHDN I ZIT COBM I SU RF E TY G F M OXY HEIT NIN TIJ E I ERT I G BINE U GDY OG Y MST SE S A LIA R Y 1 FICH P T T U NWU BWE HG S D C 0 MM I S S I N VRE G ERA FIRI ΤΙΙ ΟΙ Ν I I H B O​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#write-the-proof-of-the-following-statements-given-oe-01-stbg-prove-zset-big-proot-statement-reason-2-st-bg-in-e-mst-in-l-bg-reset-hist-mbg-m_set-big-set-big%e2%80%8b">15.
+                                            Write the proof of the following statements. Given: OE: 01 ST=BG Prove: ZSET BIG Proot: Statement Reason 2. ST - BG In - E mST In L-BG RESET HIST = mBG m_SET = BIG SET BIG​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#you-are-with-the-gwen-statement-and-words-buat-show-action-words-that-describe-who-cho-anh-your-friends-0-you-wher-emotional-1-2-3-4-s-6-7-b-9-10-words-that-imply-ho-where-and-when-11-12-13-14-5-megre">16.
+                                            you are with the gwen statement and Words buat show action Words that describe who cho anh your friends 0 You Wher emotional 1 2 3 4 S 6 7 B 9 10 Words that imply ho where and when 11 12 13 14 5 megression on somsone you mst con pesce you are about Wer harus mene you meet for the first time you have no problem sommes DAY to stop anothers to get the inte you make me you and to start using yoursell towere dedicated to sayour goals Socient au moyal to the ones you already know o Il Directions Respond and react to the given lines of the poem.Sesigna indicate coherence additive - also, moreover causative rasal consequently conditional concessional otherwise in case, however sequential to begin with, in conclusion: clar for instance, in fact, inaddition) in your sentences 2 Tes Dictionary the poem and classify the underlined words 1. have never known you, but your blood flows in my veins by Dave Diop 2 "Africa tol me Africa" mos hacestral Savannahs om my grandmother is Ooh hans of the disa Sub Zone in my hela Stood that gates the Tess The bloc of YOU SEE The Sofyour work wo of use 3. Your beautiful black blood that itigates the fields. The blood of your sweat, The sweat of your work. The work of your slavery, se your best surten This state or the weight of humiliation 4. "Thales over there splendidly alone amidst ishte and faded flowers, that is your Athoa soringing up anew And so to the one the midday sun Buprave VODE S me The thitha tree young and strong Sple ones white and sedes This is springmg upane som gutente atsinats whose fut by BOSS 5. This back trembling with red scars and saying no to the whip under the midday sun Pape​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-st-bisect-msa-if-mmsa-80%c2%b0-what-is-mmst-a-30%c2%b0-b-40%c2%b0-c-80%c2%b0-d-100%c2%b0%e2%80%8b">17.
+                                            8. ST bisect MSA, if m/MSA = 80°, what is m/MST? A. 30° B. 40° C. 80° D. 100°​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#in-om-below-diameter-it-bisects-chord-ch-if-mit-40-and-mst-8-find-tge-following%e2%80%8b">18.
+                                            In OM below, diameter IT bisects chord CH. If mIT = 40 and mST = 8, find tge following:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#can-you-find-the-mst-probable-solution-to-the-events-in-column-1-write-the-letter-of-your-chosen-answer-from-column-2-please-answer-this%e2%80%8b">19.
+                                            Can you find the mst probable solution to the events in Column 1? Write the letter of your chosen answer from Column 2.please answer this​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#given-quadrilateral-stuv-is-a-rhombusst-2x-3-cm-uv-3x-1-cmsuvfigure-46-what-is-the-value-of-x7-what-is-the-mst8-what-is-the-perimeter-of-quadrilateral-stuvplsss-help-i-need-it">20.
+                                            Given: Quadrilateral STUV is a rhombus
+ST = 2x + 3 cm, UV = 3x - 1 cm
+S
+U
+V
+Figure 4
+6. What is the value of x?
+7. What is the mST?
+8. What is the perimeter of quadrilateral STUV?
+Plsss help i need it now</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-3-playtime-modean-through-thederstand-whata-basketballb-volleyball1-the-players-must-wear-appropriate-attire-1-the-team-must-be-composed-ofsix-playerdirections-make-five-guidelines-in">21.
+                                            Activity 3: Playtime Mode!an through thederstand whatA. BasketballB. Volleyball1. The players must wear appropriate attire. 1. The team must be composed ofsix playerDirections: Make five guidelines in playing the sports identified below. Chooseonly one sport. Use the modals specified in the parenthesis (can, can't, mst,mastn't have to, don't have to). The first one is done for you.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-mst-love-to-do-of-albert-einstein-in-tagalog-explanaion">22.
+                                            what is the mst love to do of albert einstein in tagalog explanaion</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-in-the-same-circle-or-in-congruent-circle-two-congruent-angles-have-congruent-arcs-a-always-true-b-partially-true-c-sometimes-false-d-always-fal-4-theorem-the-measure-of-an-inscribed-angle">23.
+                                            3. In the same circle or in congruent circle, two congruent angles have congruent arcs. A. Always true B. Partially true C. Sometimes false D. Always fal 4. Theorem: The measure of an inscribed angle is one half of the measure of its intercepted a If ZSAT is an inscribed angle in a circle, what is the measure of ZSAT if mST= 100? A. 25 B. 50 C.75 D. 100 a​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-solve-each-problem-completely-and-accurately-on-a-sheet-of-papershow-your-solution-and-write-the-properties-you-applied-to-justifyeach-step-in-the-solution-process-you-may-illustrate-each">24.
+                                            Directions: Solve each problem completely and accurately on a sheet of paperShow your solution and write the properties you applied to justifyeach step in the solution process. You may illustrate each given,to serve as your guide.1. Given Quadrilateral LEAF is a parallelogram.a IfmL-x+ 20 and mA-2x 12, what is mL?b. I LE-y+14 and AF- 3y 4. how long is AF?c. The perimeter of the rectangle LEAF is 38cm. One side is 3cm less thanthe other side. What are its dimensions and how large is its area?2. Given: Quadrilateral STEM is an isosceles trapezoid with ST||ME.a 11 ZSME-2x+15 AND STE- 3x-3, what is MST?3. Given: Quadrilateral ROSE is a kite with RO = RE and Os = ES,a. How long are the diagonals of the quadrilateral ROSE if themeasurement of its diagonal is 5cm more than the other andits area is 12cm?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-ifley14-and-af-3y-4-how-long-is-afc-the-perimeter-of-the-rectangle-leaf-is-38cm-one-side-is-3cm-less-thanthe-other-side-what-are-its-dinensions-and-how-large-is-its-area2-given-quadrilat">25.
+                                            b. IfLE=y+14 and AF= 3y-4, how long is AF?c. The perimeter of the rectangle LEAF is 38cm. One side is 3cm less thanthe other side. What are its dinensions and how large is its area?2. Given: Quadrilateral STEM is an isosceles trapezoid with ST||ME.a. If &lt;SME=2x+15 AND STE= 3x-3, what is MST?3. Given Quadrilateral ROSE is a kite with RO = RE and OS = ES,a. How long are the diagonals of the quadrilateral POSE if themesurement of its diagonal is 5cm more than the other andits area is 12cm?​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="does-understanding-mst-in-this-time-of-pandemic-beneficial">
+                            1. Does understanding mst in this time of pandemic beneficial</h2><br />
+                        <p><strong>Answer:</strong></p><p>yed because it helps us know morr about what to do in terms of panic area</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-mst-sensitive-part-of-the-female-genitaliapasagot-plss%e2%80%8b">
+                            2. what is the mst sensitive part of the female genitalia?pasagot plss​</h2><br />
+                        <p><strong>Answer:</strong></p><p>the answer is in the picture i can't post my answer eh </p><p><strong>Explanation:</strong></p><strong>I</strong><strong> </strong><strong>h</strong><strong>o</strong><strong>p</strong><strong>e</strong><strong> </strong><strong>i</strong><strong>t</strong><strong> </strong><strong>h</strong><strong>e</strong><strong>l</strong><strong>p</strong><strong>s</strong><strong>S</strong><strong>t</strong><strong>u</strong><strong>d</strong><strong>y</strong><strong> </strong><strong>w</strong><strong>e</strong><strong>l</strong><strong>l</strong><strong> </strong><strong>g</strong><strong>u</strong><strong>y</strong><strong>s</strong><strong>!</strong><strong>!</strong><p></p><br />
+                                            <h2 class="ez-toc-section" id="if-msyu162%c2%b0and-mst38%c2%b0what-is-the-msru%e2%80%8b">
+                            3. if mSYU=162°and mST=38°,what is the m&lt;SRU?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>62°</p><p><strong>Step-by-step explanation:</strong></p><p>SRU = 1/2 (162°-38°)</p><p>SRU = 1/2 (124°)</p><p>SRU = 62°</p><br />
+                                            <h2 class="ez-toc-section" id="ano-ang-gagawin-ko-sa-bahaging-ito-ang-bagong-aralin-ay-pakikilala-sa-iyo-sa-pamamagitan-ng-isang-word-search-hanapin-at-bilugan-ang-mga-salitang-may-kinalaman-sa-salitang-kuwento-simulan-mo-na-at-g">
+                            4. Ano ang gagawin ko? Sa bahaging ito, ang bagong aralin ay pakikilala sa iyo sa pamamagitan ng isang Word Search Hanapin at bilugan ang mga salitang may kinalaman sa salitang KUWENTO Simulan mo na at galingan! K N BS KS UTTA K A S U SM MUY к 1 T 1 KIAT A PI 0 NATA A A A M GIB T AG PAL N MST T MA N A B OTUA AGIL HU N S MUTH A A ET KL AHA SU KID A T N N A N N A A AK ALL K GI YU N A T K SPIL S A GIO N G A S 1 MA N S WA N GI MA к AW A S M YIL SU A N G N B N N K A M D STA N S 1 US N SU KI AN OTA S D NA S - CDOUX OCZU 2xIxoko Iraz - ​</h2><br />
+                        <p>Picture ran mo nalang po yung sa word search kasi ang gulo ng pagkakatype mo</p><p></p><p><strong>Answer:</strong></p><p>di ko po gets :)</p><p><strong>Explanation:</strong></p><p>picture nyo nalang po para po may Maka sagot</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="in-om-below-diameter-it-bisects-chord-ch-if-mit-40-and-mst-8-find-the-following%e2%80%8b">
+                            5. In OM below, diameter IT bisects chord CH. If mIT = 40 and mST = 8, find the following:​</h2><br />
+                        <p>1. mSM</p><p>   mIT = mST + mSM</p><p>   (1/2)(40) = 8 + mSM  ---------------&gt; diameter kasi kaya i half mo</p><p>    20 = 8 +mSM</p><p>   mSM = 20 - 8</p><p>   mSM = 12 units</p><p></p><p>2. mSH</p><p>(mIT)^2 = (mSM)^2 + (mSH)^2</p><p>(mSH)^2 = 20^2 - 12^2</p><p>(mSH)^2 = 400 - 144</p><p>(mSH)^2 = 256</p><p>mSH = [tex]\sqrt 256[/tex]</p><p>mSH = 16 units</p><p></p><p>3. mCH</p><p>mIT = mST + mCH</p><p>40 = 8 + mCH</p><p>mCH = 40 - 8</p><p>mCH = 32 units</p><p></p><p>sana makatulong :)</p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-what-i-have-learneddirections-read-each-item-carefully-then-choose-the-letter-of-the-correct-answer-write-your-answer-on-a1-if-the-first-three-angles-of-a-quadrilateral-measures-54%c2%b0-86">
+                            6. a. What I have Learned?Directions: Read each item carefully, then choose the letter of the correct answer. Write your answer on a1. If the first three angles of a quadrilateral measures 54°, 86', and 70° respectively. What is the measureC. 1700of the fourth angle?a. 1500b. 160°d. 180°2. What is the sum of the measures of the interior angles of a coin,which is in the shape of an octagon?b. 980°c. 1,080°d. 1,180°a. 8800t3. In Figure 1, mar= 140° and mas = 155º. Find mst.140°ra. 25°155°b. 40°C. 650d. 90°Figure 14. What is the measure of each interior angle of a regular dodecagon?a. 120°b. 130°c. 140°d. 1505. If the measure of each interior angle of a regular polygon is 108°, which of the following is the measureof its exterior angles?a. 36°b. 72°c. 108°d. 1440​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.B</p><p>2.C</p><p>3.A</p><p>4.D</p><p>5.A</p><p><strong>Step-by-step explanation:</strong></p><p>i think lang po Sana makatulong :(</p><br />
+                                            <h2 class="ez-toc-section" id="mst-of-us-mis-out-on-lyfs-big-prizes-d-pulitzer-d-nobel-d-oscars-tonys-grammys-bt-we-rall-elligibi-4-lyfs-small-pleasures-a-pat-on-the-bk-a-gud-word-a-hug-a-full-moon-a-glorious-sunse">
+                            7. Mst of us mis out on lyf's big prizes... d Pulitzer, d Nobel, d Oscars, Tonys, Grammys, bt we rall elligibi 4 lyf's small pleasures... a pat on the bk, a gud word, a hug, a full moon, a glorious sunset, an empty parking space, a gr8 meal, a gud joke, a hot soup, a cold drink, an icecream, a inku, a gud frend. So don't fret about missing lyf's grandest rewards, enjoy its tiny delyts. Ders plenty 4 ol of usreflection​</h2><br />
+                        <p>picturan mopo para gets ko di ko kasi ma gets</p><p><strong>Answer:</strong></p><p>picture lang po PLEAsssee</p><br />
+                                            <h2 class="ez-toc-section" id="whats-new-activity-1-3-6-heres-your-order-encircle-the-words-which-relate-to-the-ethical-standards-in-writing-review-of-related-literature-the-words-can-be-read-horizontally-and-vertically-de-16-a">
+                            8. What's New Activity 1.3.6 Here's Your Order Encircle the words which relate to the ethical standards in writing review of related literature. The words can be read horizontally and vertically DE 16 A N S R T A E 1 MIN T RST LOI N IK а PLAGIA RIS MS EL MST H CHITOJ N HK RL Сут VESTYMO N DF AL S 1 FICATI O NY RUT HY HB CFR NYON U ATHA HOT RI YH N M MO DE LA D AN W DE T H Y N J MO MATE V E R T Y H GINJ UM KLU GAIS SIFA BRICA T 1 ONR R A S TY FETCV SRT IN F А A Y M T N Y CVT OG S M1 A T T R 1 ON B UIT KH OU J V P KL 1 B. N MIDEA O NE X E B BND UP LICATII OBOLLO GRF​</h2><br />
+                        <p></p><p><strong>Explanation:</strong></p><p>Pakiayos naman gulo gulo e</p><br />
+                                            <h2 class="ez-toc-section" id="direction-arranged-the-word-affar-the-space-provided-after-each-number-example-1-millecuso-obe-biomolecules-1-eeen-mst-2-eichmclas-3-oorinps-4-rnostune-5-tticaippeer-1%e2%80%8b">
+                            9. Direction: arranged the word Affar the space provided after each number. Example: 1. MILLECUSO OBE - BIOMOLECULES 1. EEEN MST 2. EICHMCLAS 3. OORINPS 4. RNOSTUNE 5. TTICAIPPEER 1​</h2><br />
+                        <p><strong>Answer:</strong></p><p>in KBS World TV youtube channel</p><br />
+                                            <h2 class="ez-toc-section" id="what-i-have-learnedon-a-sheet-of-paperdirections-solve-each-problem-completely-and-accuratelyshow-your-solution-and-write-the-properties-you-applied-to-justifycach-step-in-the-solution-process-you-ma">
+                            10. What I Have Learnedon a sheet of paperDirections Solve each problem completely and accuratelyShow your solution and write the properties you applied to justifycach step in the solution process. You may illustrate each given,1. Given Quadrilateral LEAF is a parallelogram.a. If m&lt;L= x+20 and m ZA-2x-12, what is m&lt;L?b. If LE-y+14 and AF- 3y-4, how long is AF?c. The perimeter of the rectangle LEAF is 38cm. One side is 3cm less thanthe other side. What are its dimensions and how large is its area?2. Given: Quadrilateral STEM is an isosceles trapezoid with ST||ME.a. If SME=2x+15 AND ZSTE=3x-3, what is &lt;MST?3. Given: Quadrilateral ROSE is a kite with RO = RE and OS = ES,a. How long are the diagonals of the quadrilateral ROSE if themeasurement of its diagonal is 5cm more than the other andits area is 12cm2?pa help po ​</h2><br />
+                        <p><strong>Step-by-step </strong><strong>explanation</strong><strong> </strong><strong>ganyan</strong><strong> </strong><strong>ba</strong><strong> </strong><strong>yon</strong></p><br />
+                                            <h2 class="ez-toc-section" id="jhonny-can-spend-at-mst-30-pesos-for-his-foods-during-recess-it-costs-him-10-pesos-for-a-snack-5-pesos-for-any-drinks-how-many-possible-combinations-of-snacks-and-drinks-can-be-bought">
+                            11. Jhonny can spend at mst 30 pesos for his foods during recess. It costs him 10 pesos for a snack 5 pesos for any drinks. How many possible combinations of snacks and drinks can be bought?</h2><br />
+                        <p><strong>Answer:</strong></p><p>2</p><p></p><p>Solution:</p><p>10 + 5 = 15</p><p>30 divided by 15 = <strong>2</strong></p><p><strong></strong></p><p><strong>HOPE IT HELP</strong></p><p><strong>#CARRYONLEARNING</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="ggiven-oe-oizset-e-zbigprove-stbgstatementreasonswrite-the-letter-only1-0-esoizset-zbig2-ino-e-mzset-mst-ino-i-mzbig-mbg3-mzset-m_big4-mst-mbg5-stebgchoices-to-complete-the-reasons-a">
+                            12. GGiven: OE OIZSET E ZBIGProve: STBGStatementReasons(Write the letter only1.0 ESOIZSET ZBIG2. InO E, mZSET = mST.= .InO I, mZBIG = mBG3. MZSET= m_BIG4. mST= mBG5. STEBGChoices to complete the REASONS.A. From 2 &amp; 3, substitutionB. From 4, definition of congruent arcsC. GivenD. Definition of central angleE. From 1, definition of congruent anglesF. The degree measure of a minor arc isthe measure of the central angle whichintercepts the arc.G. Inscribed angle theorem.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>5. B</p><p><strong>Step-by-step explanation:</strong></p><p>Hindi ko alma kong tama</p><br />
+                                            <h2 class="ez-toc-section" id="direction-classify-the-following-tools-and-equipment-in-food-preservation-as-to-their-usage-write-mxt-for-mixing-tools-ct-for-cutting-tools-mst-for-measuring-tools-andot-for-other-tools-and-equipme">
+                            13. DIRECTION: Classify the following tools and equipment in food preservation as to their usage.Write MXT for Mixing Tools, CT for Cutting Tools, MST for Measuring Tools andOT for Other Tools and Equipment.6. Ladle -1. Peeler -2. Weighing scale -3. Tongs -4. Strainer-7. Measuring cups -8. Colander -9. Kitchen knives -5. Turner -10. Pots -​</h2><br />
+                        <p><strong>Answer:</strong></p><p>mixing tools-padle</p><p></p><p>cutting tools-knivesturner</p><p></p><p>measuring tools-weighing scale,measuring cup</p><p></p><p>other tools-peeler,pots,colander,container,tongs,kitchen</p><p></p><p></p><p>I hope makatulong</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="20-what-i-can-do-directions-study-the-puzzle-below-identify-the-words-that-enumerate-various-sources-of-income-write-your-answer-in-a-separate-sheet-of-paper-02-b-on-u-k-i-ng-piqru-pqp-t-s-%d0%b0">
+                            14. 20 What I Can Do Directions: Study the puzzle below. Identify the words that enumerate various sources of income. Write your answer in a separate sheet of paper. 02 B ON U K I NG PIQRU PQP T S А IP P L AU PQF KA F J I ALF А S T ER I L E Z A T I о N CIS S MGP ΟΙ ΟΙ Κ S J N S R L S V K KD ΟΙ Η HR DU I JF RS E Z I N GL L F I ΤΙΟ F RUHDN I ZIT COBM I SU RF E TY G F M OXY HEIT NIN TIJ E I ERT I G BINE U GDY OG Y MST SE S A LIA R Y 1 FICH P T T U NWU BWE HG S D C 0 MM I S S I N VRE G ERA FIRI ΤΙΙ ΟΙ Ν I I H B O​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.Refrigeration</p><p>2.Sterilezation</p><p>3.Commision</p><p>4.Surf</p><p>5.King</p><p>6.Saprofitun</p><p>7.Salary</p><p>8.Pickling</p><p><strong>Explanation:</strong></p><p>Yan lang alam ko</p><p>Sana maka tulong</p><p></p><p>pa brainliest answer na lng po</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="write-the-proof-of-the-following-statements-given-oe-01-stbg-prove-zset-big-proot-statement-reason-2-st-bg-in-e-mst-in-l-bg-reset-hist-mbg-m_set-big-set-big%e2%80%8b">
+                            15. Write the proof of the following statements. Given: OE: 01 ST=BG Prove: ZSET BIG Proot: Statement Reason 2. ST - BG In - E mST In L-BG RESET HIST = mBG m_SET = BIG SET BIG​</h2><br />
+                        <p><strong>Answer:</strong></p><p>GOTTA FAST FAST FAST</p><p><strong>Step-by-step explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="you-are-with-the-gwen-statement-and-words-buat-show-action-words-that-describe-who-cho-anh-your-friends-0-you-wher-emotional-1-2-3-4-s-6-7-b-9-10-words-that-imply-ho-where-and-when-11-12-13-14-5-megre">
+                            16. you are with the gwen statement and Words buat show action Words that describe who cho anh your friends 0 You Wher emotional 1 2 3 4 S 6 7 B 9 10 Words that imply ho where and when 11 12 13 14 5 megression on somsone you mst con pesce you are about Wer harus mene you meet for the first time you have no problem sommes DAY to stop anothers to get the inte you make me you and to start using yoursell towere dedicated to sayour goals Socient au moyal to the ones you already know o Il Directions Respond and react to the given lines of the poem.Sesigna indicate coherence additive - also, moreover causative rasal consequently conditional concessional otherwise in case, however sequential to begin with, in conclusion: clar for instance, in fact, inaddition) in your sentences 2 Tes Dictionary the poem and classify the underlined words 1. have never known you, but your blood flows in my veins by Dave Diop 2 "Africa tol me Africa" mos hacestral Savannahs om my grandmother is Ooh hans of the disa Sub Zone in my hela Stood that gates the Tess The bloc of YOU SEE The Sofyour work wo of use 3. Your beautiful black blood that itigates the fields. The blood of your sweat, The sweat of your work. The work of your slavery, se your best surten This state or the weight of humiliation 4. "Thales over there splendidly alone amidst ishte and faded flowers, that is your Athoa soringing up anew And so to the one the midday sun Buprave VODE S me The thitha tree young and strong Sple ones white and sedes This is springmg upane som gutente atsinats whose fut by BOSS 5. This back trembling with red scars and saying no to the whip under the midday sun Pape​</h2><br />
+                        <p><strong>Answer:</strong></p><p>salamat po sa points hehe</p><br />
+                                            <h2 class="ez-toc-section" id="8-st-bisect-msa-if-mmsa-80%c2%b0-what-is-mmst-a-30%c2%b0-b-40%c2%b0-c-80%c2%b0-d-100%c2%b0%e2%80%8b">
+                            17. 8. ST bisect MSA, if m/MSA = 80°, what is m/MST? A. 30° B. 40° C. 80° D. 100°​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>B,  40 degrees.</strong></p><p><strong>Step-by-step explanation:</strong></p><p>m MST = 1/2 * 80 = 40</p><br />
+                                            <h2 class="ez-toc-section" id="in-om-below-diameter-it-bisects-chord-ch-if-mit-40-and-mst-8-find-tge-following%e2%80%8b">
+                            18. In OM below, diameter IT bisects chord CH. If mIT = 40 and mST = 8, find tge following:​</h2><br />
+                        <p><strong>Answer:</strong></p><p>answer</p><p>1.12</p><p>2.16</p><p>3.32</p><p>see the picture explanation</p><br />
+                                            <h2 class="ez-toc-section" id="can-you-find-the-mst-probable-solution-to-the-events-in-column-1-write-the-letter-of-your-chosen-answer-from-column-2-please-answer-this%e2%80%8b">
+                            19. Can you find the mst probable solution to the events in Column 1? Write the letter of your chosen answer from Column 2.please answer this​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.F</p><p>2.E</p><p>3.C</p><p>4.D</p><p>5.A</p><p><strong>Explanation:</strong></p><p>sana maka tulong to.</p><br />
+                                            <h2 class="ez-toc-section" id="given-quadrilateral-stuv-is-a-rhombusst-2x-3-cm-uv-3x-1-cmsuvfigure-46-what-is-the-value-of-x7-what-is-the-mst8-what-is-the-perimeter-of-quadrilateral-stuvplsss-help-i-need-it">
+                            20. Given: Quadrilateral STUV is a rhombus
+ST = 2x + 3 cm, UV = 3x - 1 cm
+S
+U
+V
+Figure 4
+6. What is the value of x?
+7. What is the mST?
+8. What is the perimeter of quadrilateral STUV?
+Plsss help i need it now</h2><br />
+                        <p><strong>Answer:</strong></p><p>6.) x = 4</p><p>7.) ST = 11 cm</p><p>8.) 44 cm</p><p><strong>Step-by-step explanation:</strong></p><p>2x + 3 = 3x - 1</p><p>3 + 1 = 3x - 2x</p><p><strong>4 = x</strong></p><p>ST = 2x + 3 cm</p><p>ST = 2(4) + 3 cm</p><p>ST = 8 + 3 cm</p><p><strong>ST = 11 cm</strong></p><p>11 cm x 4 = <strong>44 cm</strong></p><p><strong></strong></p><p>it's correct answer, hope it's help! pa brain liest po tysm</p><strong>carry </strong><strong>on</strong><strong> </strong><strong>learning</strong><br />
+                                            <h2 class="ez-toc-section" id="activity-3-playtime-modean-through-thederstand-whata-basketballb-volleyball1-the-players-must-wear-appropriate-attire-1-the-team-must-be-composed-ofsix-playerdirections-make-five-guidelines-in">
+                            21. Activity 3: Playtime Mode!an through thederstand whatA. BasketballB. Volleyball1. The players must wear appropriate attire. 1. The team must be composed ofsix playerDirections: Make five guidelines in playing the sports identified below. Chooseonly one sport. Use the modals specified in the parenthesis (can, can't, mst,mastn't have to, don't have to). The first one is done for you.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Both volleyball and baseball:</p><p>1.  All players must warm-up before playing</p><p>2. Win or lose players must accept the results and musn't blame anyone</p><p>3. The trophy is what you want to recieve , But having fun is must achive</p><p>4. You can't win without practicing</p><p>5. You don't have to depend all to yourself </p><p><strong>Explanation:</strong></p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-mst-love-to-do-of-albert-einstein-in-tagalog-explanaion">
+                            22. what is the mst love to do of albert einstein in tagalog explanaion</h2><br />
+                        <strong>Scientific investigation</strong>- Scientific investigation is the way in which scientists and researchers use a systematic approach to answer questions about the world around us. Read on to find out more. A quiz is provided to test your understanding.<br /><br />
+                                            <h2 class="ez-toc-section" id="3-in-the-same-circle-or-in-congruent-circle-two-congruent-angles-have-congruent-arcs-a-always-true-b-partially-true-c-sometimes-false-d-always-fal-4-theorem-the-measure-of-an-inscribed-angle">
+                            23. 3. In the same circle or in congruent circle, two congruent angles have congruent arcs. A. Always true B. Partially true C. Sometimes false D. Always fal 4. Theorem: The measure of an inscribed angle is one half of the measure of its intercepted a If ZSAT is an inscribed angle in a circle, what is the measure of ZSAT if mST= 100? A. 25 B. 50 C.75 D. 100 a​</h2><br />
+                        <p><strong>Answer:</strong></p><p>3. A. Always true</p><p>4. B. 50</p><br />
+                                            <h2 class="ez-toc-section" id="directions-solve-each-problem-completely-and-accurately-on-a-sheet-of-papershow-your-solution-and-write-the-properties-you-applied-to-justifyeach-step-in-the-solution-process-you-may-illustrate-each">
+                            24. Directions: Solve each problem completely and accurately on a sheet of paperShow your solution and write the properties you applied to justifyeach step in the solution process. You may illustrate each given,to serve as your guide.1. Given Quadrilateral LEAF is a parallelogram.a IfmL-x+ 20 and mA-2x 12, what is mL?b. I LE-y+14 and AF- 3y 4. how long is AF?c. The perimeter of the rectangle LEAF is 38cm. One side is 3cm less thanthe other side. What are its dimensions and how large is its area?2. Given: Quadrilateral STEM is an isosceles trapezoid with ST||ME.a 11 ZSME-2x+15 AND STE- 3x-3, what is MST?3. Given: Quadrilateral ROSE is a kite with RO = RE and Os = ES,a. How long are the diagonals of the quadrilateral ROSE if themeasurement of its diagonal is 5cm more than the other andits area is 12cm?​</h2><br />
+                        <p>Pa click nalang po </p><p>if Im wrong Correct me</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="b-ifley14-and-af-3y-4-how-long-is-afc-the-perimeter-of-the-rectangle-leaf-is-38cm-one-side-is-3cm-less-thanthe-other-side-what-are-its-dinensions-and-how-large-is-its-area2-given-quadrilat">
+                            25. b. IfLE=y+14 and AF= 3y-4, how long is AF?c. The perimeter of the rectangle LEAF is 38cm. One side is 3cm less thanthe other side. What are its dinensions and how large is its area?2. Given: Quadrilateral STEM is an isosceles trapezoid with ST||ME.a. If &lt;SME=2x+15 AND STE= 3x-3, what is MST?3. Given Quadrilateral ROSE is a kite with RO = RE and OS = ES,a. How long are the diagonals of the quadrilateral POSE if themesurement of its diagonal is 5cm more than the other andits area is 12cm?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>b.) same rin cla equal lang</p><p>y+14=3y-4</p><p>-2y=-18</p><p>y=9</p><p>c.) not sure</p><p></p><p>2.)</p><p>a.) 2x + 15= 3x-3</p><p>= -x=-18</p><p>= MST= 18</p><p></p><p>3.) x= the diagonal</p><p>a.) (5+x)(x)=12</p><p>=5x + x²=12</p><p>d q na alam huhu sorry</p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/z53nOW95dlM?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>science</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/gassed-up-meaning.html">Gassed Up Meaning</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/ohm-s-law-problem-solving.html">Ohm s Law Problem Solving</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/operations-and-sales-are-the-two-functions-in-businesses.html">Operations And Sales Are The Two Functions In Businesses</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/who-wrote-beethoven-s-silence.html">Who Wrote Beethoven s Silence</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/david-s-life-timeline.html">David s Life Timeline</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/simone-de-beauvoir-secondsummary.html">Simone De Beauvoir SecondSummary</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/social-responsibility-norm.html">Social Responsibility Norm</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/pollen-meaning.html">Pollen Meaning</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/coulomb-s-law-problems-worksheet-answers.html">Coulomb s Law Problems Worksheet Answers</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/dunnu.html">Dunnu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/waves-of-life-meaning.html">Waves Of Life Meaning</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/planar-density-fcc-100.html">Planar Density Fcc 100</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/problem-solving-pictures.html">Problem Solving Pictures</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/rpm-meaning-in-psychology.html">Rpm Meaning In Psychology</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/do-mushrooms-have-roots.html">Do Mushrooms Have Roots</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/antamin-tablet.html">Antamin Tablet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/difficult-projectile-motion-problems-pdf.html">Difficult Projectile Motion Problems Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/oa-poem.html">Oa Poem</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/40-binary.html">40 Binary</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/4-3x.html">4 3x</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://odoeduc.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://odoeduc.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

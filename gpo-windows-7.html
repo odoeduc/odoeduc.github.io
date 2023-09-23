@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gpo Windows 7 - QnA</title>
+    <meta name="description" content="Gpo Windows 7, Windows 7 How to Open Local Group Policy Editor, , , , MDTechVideos, 2017-10-20T00:34:25.000000Z, 20, In order to change a GPO, we will find the GPO as below. In this, www.poftut.com, 940 x 547, png, , 20, gpo-windows-7, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Gpo Windows 7 - QnA" />
+    <meta property="og:description" content="Gpo Windows 7, Windows 7 How to Open Local Group Policy Editor, , , , MDTechVideos, 2017-10-20T00:34:25.000000Z, 20, In order to change a GPO, we will find the GPO as below. In this, www.poftut.com, 940 x 547, png, , 20, gpo-windows-7, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gpo Windows 7 - QnA" />
+    <meta name="twitter:description" content="Gpo Windows 7, Windows 7 How to Open Local Group Policy Editor, , , , MDTechVideos, 2017-10-20T00:34:25.000000Z, 20, In order to change a GPO, we will find the GPO as below. In this, www.poftut.com, 940 x 547, png, , 20, gpo-windows-7, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://odoeduc.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://odoeduc.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://odoeduc.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://odoeduc.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://odoeduc.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Gpo Windows 7</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">clarissacalabines</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Gpo+Windows+7" alt="Gpo Windows 7">
+                    </div>
+                    <p></p>
+                    <p>method of deployment for GPO​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#method-of-deployment-for-gpo%e2%80%8b">1.
+                                            method of deployment for GPO​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-method-of-deplomet-gpo">2.
+                                            What is the method of deplomet GPO</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#p-a-sagot-gpo-please-thank-you">3.
+                                            p a sagot gpo please thank you</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#iyo-mga-gawain-sa-pagkatuto-sisimulan-mo-na-ngayong-makamit-ang-unang-layunin-sa-modyul-na-ito-maisagawa-ito-gawin-ang-gawain-sa-ibaba-gawain-1-subukin-at-tukuyin-mo-panuto-isaayos-ang-ginulong">4.
+                                            iyo. Mga Gawain sa Pagkatuto Sisimulan mo na ngayong makamit ang unang layunin sa modyul na ito maisagawa ito, gawin ang gawain sa ibaba. Gawain 1 - SUBUKIN AT TUKUYIN MO! Panuto: Isaayos ang ginulong letra sa loob ng kahon na siyang tinutuko makabuo ng konsepto na kinakailangan sa paghahating-heograpiko sa 1. Kabilang ang kapatagan, lambak, look, golpo at ilog. AARI PT GPO OY Sagot: 2. Tumutukoy sa kahulugan at paraan ng pamumuhay na naglalara lipunan​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-anekdotab-mitolohiyac-pagsasalaysayd-talambuhay6-sa-pagpili-ng-paksa-dapat-na-ito-ay-likas-na-napapanahon-may-mayamangdamdaming-pantao-may-kapana-panabik-na-kasukdulan-naiibang-tunggalian-a">5.
+                                            A anekdotaB. mitolohiyaC. pagsasalaysayD. talambuhay6. Sa pagpili ng paksa, dapat na ito ay likas na napapanahon, may mayamangdamdaming pantao, may kapana-panabik na kasukdulan, naiibang tunggalian, atkapagkarakau namnan aymak na pag-Irene atmay malinaw at maayos na paglalarawan sa mga tauhan at tagpuan. Ito aytumutukoy saA kawilihan ng paksaB sapat na kagamitanangC. kakayahang pansariliD. kilalanin ang mambabasaayo ng puu-alaran kayo7. Isa sa mapagkukunan ng paksa na sinasabing pinakamadali at pinakadetalyadongparaan ng pagsasalaysay ng isang tao sapagkat ito ay hango sa pangyayaringnaranasan mismo ng nagsasalaysay.A napanoodC. narinig sa ibaB. likhang-isipD. sariling karanasan8. Bahagi ito ng komiks kung saan isinusulat ang maikling salaysay.A kuwadroC. kahon ng salaysayB. lobo ng usapanD. pamagat ng kuwentoSino ang sinasabing kauna-unahang Pilipinong sumulat ng komiks?A Dr. Jose P. RizalC. Roderic P. UrgellesB. Virginia HamiltonD. Consolation P. Conde10. Isang grapikong midyum na binubuo ng diyalogo, mga salita, at larawan na siyangnagsasalaysay sa diwa ng kuwento.A Anekdota B. komiks C. magasin D. mitolohiyasanggpos at​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gawain-5panuto-piliin-at-bilugan-ang-mga-salitang-ginagamit-sa-social-media-mpalioliqftsgb-hjdkycbno-latst%d0%bc%d1%96%d0%b2fikdjo-0-tyrsf-hm-cfj0-mmje-flth%d1%81%d1%82%d0%b0timi-hinto-yibgeg-hojhjb">6.
+                                            GAWAIN 5Panuto: Piliin at bilugan ang mga salitang ginagamit sa social media.MPALIOLIQFTSGB HJDKYCBNO LATSTМІВFIKDJO 0| TYRSF HM CFJ0 MMJE FLTHСТАTIMI HINTO YIBGEG HOJHJBN MKCLM FHSFJIDHMZSEPTAINIXIHFG DU V EUWIGCGIOOVFUT0 ITIXEYAETGPOTSIILTLIGOTWH HJ RUUFАΟΙ ΚΙ ΗHIPРІР2FTVKTPHCFIA WT SUW ВА ALJDAEoERY SBH YGTDIOJRLOM2TJRVPETM ALU DFEOXSHERYGVUDNIOD NLS​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#epoklipagpalihan-mungkahing-oras-1-craspoklipegowain-sa-pagkatuto-bilang-3-tukoy-salitatukuyin-ang-mga-salitang-inilalarawan-sa-sumusunod-na-pangungusap-1-ito-ay-ang-sektor-ng-lipunan-na-binub">7.
+                                            Epoklipagpalihan mungkahing Oras: 1 cras)
+poklipe
+Gowain sa Pagkatuto Bilang 3: Tukoy-Salita
+Tukuyin ang mga salitang inilalarawan sa sumusunod na pangungusap.
+1. ito ay ang sektor ng lipunan na binubuo ng mga nakikilahok sa mga kilos protesto, mga punong pages of
+mga boluntaryong organisasyon.
+2. Ang samahang ito ay naglalayong protektahan ang interes ng mga miyembro nito
+3. Nilalayon ng samahang ito no suportahan ang mga programa ng mga grassroots organization
+4. Ipinckikita ng batas na ito ang kahalagahan ng papel na ginagampanan ng mga NGO GPO
+5. Ito ang uri ng NGO na nagbibigay ng tulong pinansyal sa mga POS para tumulong sa mga nangangakongor
+6. Ito ang nagbibigay suporta sa mga komunidad sa pamamagitan ng pagbibigay ng galat med og
+serbisyo
+7. Ito ay binubuo ng mga propesyoncl at ng mga galing sa sidor ng oderno
+8. Ito ang tawag sa mga PO na binuo ng pamahaloon
+9. Ang layunin ng konsehong ito ay bumuo ng isang plano para makamit ang kanion ng mga
+pamahalaan.
+10. Dito kobilang ang mga sectoral group na kinabibilangan ng kababaihan at kalon</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#patulong-lan-gpo-sana-po-nay-sumagot%e2%80%8b">8.
+                                            patulong lan gpo sana po nay sumagot​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pa-tulon-gpo-dito-plss%e2%80%8b">9.
+                                            pa tulon gpo dito plss​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-the-datagathering-toolsappropriate-to-use-inyour-studygpotot-fors%e2%80%8b">10.
+                                            Identify the datagathering toolsappropriate to use inyour studygpoTot fors​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-importance-of-implementing-gpo-aside-from-security%e2%80%8b">11.
+                                            What are the importance of implementing GPO aside from Security?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#paano-mo-maipapakita-ang-pagig-ing-maagap-sa-pag-iwas-at-pagsu-gpo-sa-sakita-umiwas-sa-pagkain-ng-masusta-nsiya-at-piliin-ang-uminom-ng-alak-araw-araw-b-kakain-nang-matatamis-at-maal-at-na-pagkain-c">12.
+                                            Paano mo maipapakita ang pagig-ing maagap sa pag-iwas at pagsu-gpo sa sakit?A.Umiwas sa pagkain ng masusta-nsiya at piliin ang uminom ng alak araw-araw.B.Kakain nang matatamis at maal-at na pagkain.C.Kumain nang gulay,prutas at ug-aliin ang pag-eehersisyo araw-ar-aw.D.Pagliban sa pagkain sa tamang oras.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-write-t-if-the-statement-is-true-and-f-if-it-is-false-write-your-answers-on-a-separate-sheet-1-a-gpo-has-a-unique-name-such-as-a-guid-2-a-firewall-cannot-be-configured-to-block-or-allo">13.
+                                            Directions: Write T if the statement is true and F if it is false. Write your answers on a separate sheet.1. A GPO has a unique name, such as a GUID.2. A firewall cannot be configured to block or allow traffic based on defined criteria (ACLs).3. Network Testing tools are used to perform checking of various aspects of a network. These tools range from ping, SNP ping, traceroute to WMI query tool, and more.4. One of the importance of Network Testing tools is to check proper configuration and verify network stability.5. Remote Desktop shares control of its mouse and keyboard only.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#give-the-diagram-that-shown-the-procedures-on-how-to-configure-software-deployment-using-gpo%e2%80%8b">14.
+                                            Give the diagram that shown the procedures on how to configure software deployment (using GPO​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-c-direction-evaluate-each-expression-show-your-complete-solution-12-2-p2-3-gpo-4-4-p-5-5-p%e2%80%8b">15.
+                                             Learning Task C. Direction: Evaluate each expression Show your complete solution 12 2. P2 3 GPO 4-4+ P 5.5. P:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#we-have-learned-that-group-policy-object-gpo-has-some-benefits-and-limitations-briefly-discuss-some-of-them-%e2%80%8b">16.
+                                            We have learned that Group Policy Object (GPO) has some benefits and limitations briefly discuss some of them.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-kabilang-ang-kapatagan-lambak-look-golpo-at-ilog-aari-pt-gpo-oysagot%e2%80%8b">17.
+                                            1. Kabilang ang kapatagan, lambak, look, golpo at ilog.AARI PT GPO OYSagot:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#paki-sagot-lang-gpo-ng-maayos-para-po-sa-ate-kopo-plss%e2%80%8b">18.
+                                            Paki sagot lang gpo ng maayos para po sa ate kopo plss​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-kabilang-ang-kapatagan-lambak-look-golpo-at-ilog-aari-pt-gpo-oysagot">19.
+                                            1. Kabilang ang kapatagan, lambak, look, golpo at ilog.
+AARI PT GPO OY
+Sagot:</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-disabling-the-gpo-will-prevent-it-from-being-applied-entirely-on-thedomain%e2%80%8b">20.
+                                            1 Disabling the GPO will prevent it from being applied entirely on thedomain​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#we-une-letter-of-the-correct-answer-1-it-is-the-feeling-of-harmony-between-all-parts-of-the-artwork-creating-a-sense-of-completeness-b-unitya-rhythmd-repetitionc-proportiontexaswer-1-unity">21.
+                                            We une letter of the correct answer.1. It is the feeling of harmony between all parts of the artwork creating a sense of completeness.B. UnityA RhythmD. RepetitionC. Proportion[tex]aswer \: 1).unity[/tex]yan po ang answer  pa follow na lng gpo Jan at I papa low back ko kayo salamat po :) (/^, ^) ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#il-panuto-isaayos-ang-ginulong-letra-sa-loob-ng-kahon-na-siyang-kinakailangan-sa-paghahating-heograpiko-sa-asya-2-puntos-1-kabilang-ang-kapatagan-lambak-look-golpo-at-ilog-aari-pt-gpo-oy">22.
+                                            Il-Panuto: Isaayos ang ginulong letra sa loob ng kahon na siyang kinakailangan sa paghahating-heograpiko sa Asya. (2 puntos) 1. Kabilang ang kapatagan, lambak, look, golpo at ilog. AARI PT GPO OY​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#paano-mo-maipapakita-ang-pagig-ing-maagap-sa-pag-iwas-at-pagsu-gpo-sa-sakita-umiwas-sa-pagkain-ng-masusta-nsiya-at-piliin-ang-uminom-ng-alak-araw-araw-b-kakain-nang-matatamis-at-maal-at-na-pagkain">23.
+                                            Paano mo maipapakita ang pagig-ing maagap sa pag-iwas at pagsu-gpo sa sakit?
+A.Umiwas sa pagkain ng masusta-nsiya at piliin ang uminom ng alak araw-araw.
+B.Kakain nang matatamis at maal-at na pagkain.
+C.Kumain nang gulay,prutas at ug-aliin ang pag-eehersisyo araw-ar-aw.
+D.Pagliban sa pagkain sa tamang oras.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#in-2-to-3-sentencesexplain-the-importance-of-gpo-%e2%80%8b">24.
+                                            In 2 to 3 sentences,explain the importance of GPO.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-method-of-deployment-of-group-policy-objectgpo">25.
+                                            What is the method of deployment of group policy object(GPO)</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="method-of-deployment-for-gpo%e2%80%8b">
+                            1. method of deployment for GPO​</h2><br />
+                        Step 1: Create a new GPO.<br />Step 2: Give it a name. <br />Step 3: Edit this policy. <br />Step 4: Right-click Software installation.<br />Step 5: Specify a network path. <br />Step 6: Select deployment method. <br />Step 7: Use default settings. ...<br />Step 8: Deployment set up.<br />Step 9: To remove the application <br />Step 10: Select removal method<br />
+                                            <h2 class="ez-toc-section" id="what-is-the-method-of-deplomet-gpo">
+                            2. What is the method of deplomet GPO</h2><br />
+                        <p></p>Step-by-step explanation<p></p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="p-a-sagot-gpo-please-thank-you">
+                            3. p a sagot gpo please thank you</h2><br />
+                        <p><strong>Answer:</strong></p><p>22.c</p><p>23.d</p><p>24.a </p><p>25.c</p><p>26.d</p><p>27.d</p><p>28.b</p><p>29.c</p><p>39.a</p><p><strong>Step-by-step explanation:</strong></p><p>correct me if im rong</p><br />
+                                            <h2 class="ez-toc-section" id="iyo-mga-gawain-sa-pagkatuto-sisimulan-mo-na-ngayong-makamit-ang-unang-layunin-sa-modyul-na-ito-maisagawa-ito-gawin-ang-gawain-sa-ibaba-gawain-1-subukin-at-tukuyin-mo-panuto-isaayos-ang-ginulong">
+                            4. iyo. Mga Gawain sa Pagkatuto Sisimulan mo na ngayong makamit ang unang layunin sa modyul na ito maisagawa ito, gawin ang gawain sa ibaba. Gawain 1 - SUBUKIN AT TUKUYIN MO! Panuto: Isaayos ang ginulong letra sa loob ng kahon na siyang tinutuko makabuo ng konsepto na kinakailangan sa paghahating-heograpiko sa 1. Kabilang ang kapatagan, lambak, look, golpo at ilog. AARI PT GPO OY Sagot: 2. Tumutukoy sa kahulugan at paraan ng pamumuhay na naglalara lipunan​</h2><br />
+                        <p><strong>Answer:</strong></p><p>TOPOGRAPIYA</p><p><strong>Explanation:</strong></p><p></p><p><strong>Answer:</strong></p><p>i dont know po</p><p><strong>Explanation:</strong></p><p>diko po alam ang sagot sorry</p><br />
+                                            <h2 class="ez-toc-section" id="a-anekdotab-mitolohiyac-pagsasalaysayd-talambuhay6-sa-pagpili-ng-paksa-dapat-na-ito-ay-likas-na-napapanahon-may-mayamangdamdaming-pantao-may-kapana-panabik-na-kasukdulan-naiibang-tunggalian-a">
+                            5. A anekdotaB. mitolohiyaC. pagsasalaysayD. talambuhay6. Sa pagpili ng paksa, dapat na ito ay likas na napapanahon, may mayamangdamdaming pantao, may kapana-panabik na kasukdulan, naiibang tunggalian, atkapagkarakau namnan aymak na pag-Irene atmay malinaw at maayos na paglalarawan sa mga tauhan at tagpuan. Ito aytumutukoy saA kawilihan ng paksaB sapat na kagamitanangC. kakayahang pansariliD. kilalanin ang mambabasaayo ng puu-alaran kayo7. Isa sa mapagkukunan ng paksa na sinasabing pinakamadali at pinakadetalyadongparaan ng pagsasalaysay ng isang tao sapagkat ito ay hango sa pangyayaringnaranasan mismo ng nagsasalaysay.A napanoodC. narinig sa ibaB. likhang-isipD. sariling karanasan8. Bahagi ito ng komiks kung saan isinusulat ang maikling salaysay.A kuwadroC. kahon ng salaysayB. lobo ng usapanD. pamagat ng kuwentoSino ang sinasabing kauna-unahang Pilipinong sumulat ng komiks?A Dr. Jose P. RizalC. Roderic P. UrgellesB. Virginia HamiltonD. Consolation P. Conde10. Isang grapikong midyum na binubuo ng diyalogo, mga salita, at larawan na siyangnagsasalaysay sa diwa ng kuwento.A Anekdota B. komiks C. magasin D. mitolohiyasanggpos at​</h2><br />
+                        <p><strong>Answer:</strong></p><p>6.A</p><p>7.D</p><p>8.B</p><p>9.C salaysay</p><p>10.A rizal</p><br />
+                                            <h2 class="ez-toc-section" id="gawain-5panuto-piliin-at-bilugan-ang-mga-salitang-ginagamit-sa-social-media-mpalioliqftsgb-hjdkycbno-latst%d0%bc%d1%96%d0%b2fikdjo-0-tyrsf-hm-cfj0-mmje-flth%d1%81%d1%82%d0%b0timi-hinto-yibgeg-hojhjb">
+                            6. GAWAIN 5Panuto: Piliin at bilugan ang mga salitang ginagamit sa social media.MPALIOLIQFTSGB HJDKYCBNO LATSTМІВFIKDJO 0| TYRSF HM CFJ0 MMJE FLTHСТАTIMI HINTO YIBGEG HOJHJBN MKCLM FHSFJIDHMZSEPTAINIXIHFG DU V EUWIGCGIOOVFUT0 ITIXEYAETGPOTSIILTLIGOTWH HJ RUUFАΟΙ ΚΙ ΗHIPРІР2FTVKTPHCFIA WT SUW ВА ALJDAEoERY SBH YGTDIOJRLOM2TJRVPETM ALU DFEOXSHERYGVUDNIOD NLS​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>logging </strong>lang nakita ko sa may bandang gilid pahiga sya</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="epoklipagpalihan-mungkahing-oras-1-craspoklipegowain-sa-pagkatuto-bilang-3-tukoy-salitatukuyin-ang-mga-salitang-inilalarawan-sa-sumusunod-na-pangungusap-1-ito-ay-ang-sektor-ng-lipunan-na-binub">
+                            7. Epoklipagpalihan mungkahing Oras: 1 cras)
+poklipe
+Gowain sa Pagkatuto Bilang 3: Tukoy-Salita
+Tukuyin ang mga salitang inilalarawan sa sumusunod na pangungusap.
+1. ito ay ang sektor ng lipunan na binubuo ng mga nakikilahok sa mga kilos protesto, mga punong pages of
+mga boluntaryong organisasyon.
+2. Ang samahang ito ay naglalayong protektahan ang interes ng mga miyembro nito
+3. Nilalayon ng samahang ito no suportahan ang mga programa ng mga grassroots organization
+4. Ipinckikita ng batas na ito ang kahalagahan ng papel na ginagampanan ng mga NGO GPO
+5. Ito ang uri ng NGO na nagbibigay ng tulong pinansyal sa mga POS para tumulong sa mga nangangakongor
+6. Ito ang nagbibigay suporta sa mga komunidad sa pamamagitan ng pagbibigay ng galat med og
+serbisyo
+7. Ito ay binubuo ng mga propesyoncl at ng mga galing sa sidor ng oderno
+8. Ito ang tawag sa mga PO na binuo ng pamahaloon
+9. Ang layunin ng konsehong ito ay bumuo ng isang plano para makamit ang kanion ng mga
+pamahalaan.
+10. Dito kobilang ang mga sectoral group na kinabibilangan ng kababaihan at kalon</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>1. CIVIL SOCIETY</strong></p><p><strong>2. KOOPERATIBA (NOT SURE)</strong></p><p><strong>3. NGOs</strong></p><p><strong>4. LOCAL GOVERNMENT CODE OF 1991</strong></p><p><strong>5. FUNDANGOs</strong></p><p><strong>6. DJANGOs</strong></p><p><strong>7. PACO</strong></p><p><strong>8. GRIPO</strong></p><p><strong>9. LGU</strong></p><p><strong>10. PEOPLE'S ORGANIZATION</strong></p><p><strong>Explanation:</strong></p><p>SANA MAKATULONG...</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="patulong-lan-gpo-sana-po-nay-sumagot%e2%80%8b">
+                            8. patulong lan gpo sana po nay sumagot​</h2><br />
+                        <p><strong>Answer:</strong></p><p>sagutan ko yan BRAINLY molng toh comment ko sagot</p><p><strong>Answer:</strong></p><p>P-pananalig sa diyos ang kailangan upang mas mapalalim.</p><p>A-ang pananampalataya.</p><p>N-nanganga ilangan tayo ng tulong ng diyos </p><p>A-ang diyos lamang ang kayang sumagot sa kahit anong problema.</p><p>N-nanalig ang iba sa diyos dahil sila ay mababait.</p><p>A-ang iba ay nagdarasal upang magpasalamat sa diyos.</p><p>L-lahat ng tao ay kailangan manalig sa diyos.</p><p>I-to ang kailangan nila upang masagot ang problema nila.</p><p>G-ginagabayan lagi tayo ng diyos sa kahit ano mang problema. </p><p></p><p><strong>Explanation:</strong></p><p>pa brainlest po</p><br />
+                                            <h2 class="ez-toc-section" id="pa-tulon-gpo-dito-plss%e2%80%8b">
+                            9. pa tulon gpo dito plss​</h2><br />
+                        <p><strong>Answer:</strong></p><p>IV. LEARNING PHASES AND LEARNING ACTIVITIES D. Development (Time Frame: Day 2) Learning Task 1: Answer each question based on the pie graph below. Total Profit Earned in Sale eating plates 38% glasses cooking pots and pens E Engagement (Time Frame: Day 3) 1. Which item gave the store about % of its profit? 2. If the profits from eating and cooking utensils were combined, would it be exceeding the profit earned from plates? Explain 3. Which two kinds of items gave the store half of its total profit? 4. If the total profit eamed was P45,000, how much profit was earned from pots and pans? 5. Which three categories gave a combined profit that is the same as that earned from the plates? The graph below shows the number of students per grade level enrolled in an art:pasagot nalang po thnk u</p><br />
+                                            <h2 class="ez-toc-section" id="identify-the-datagathering-toolsappropriate-to-use-inyour-studygpotot-fors%e2%80%8b">
+                            10. Identify the datagathering toolsappropriate to use inyour studygpoTot fors​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Here are 7 top data collection methods and tools for Academic, Opinion or Product Research</p><p>The following are the top 7 data collection methods for Academic, Opinion-based or product research. Also discussed in detail is the nature, pros and cons of each one. At the end of this segment, you will be best informed about which method best suits your research. </p><p></p><p>INTERVIEW</p><p>An interview is a face-to-face conversation between two individuals with the sole purpose of collecting relevant information to satisfy a research purpose. Interviews are of different types namely; Structured, Semi-structured and unstructured with each having a slight variation from the other.</p><p></p><p>Use this interview consent form template to let interviewee give you consent to use data gotten from your interviews for investigative research purpose.</p><p></p><p>Structured Interviews - Simply put, it is a verbally administered questionnaire. In terms of depth, it is surface level and is usually completed within a short period. For speed and efficiency, it is highly recommendable, but it lacks depth. </p><p>Semi-structured Interviews - In this method, there subsist several key questions which cover the scope of the areas to be explored. It allows a little more leeway for the researcher to explore the subject matter.</p><p>Unstructured Interviews - It is an in-depth interview that allows the researcher to collect a wide range of information with a purpose. An advantage of this method is the freedom it gives a researcher to combine structure with flexibility even though it is more time-consuming. </p><p>Pros </p><p></p><p>In-depth information</p><p>Freedom of flexibility</p><p>Accurate data.</p><p>Cons </p><p></p><p>Time-consuming</p><p>Expensive to collect.</p><p>What are the best Data Collection Tools for Interviews? </p><p>For collecting data through interviews, here are a few tools you can use to easily collect data.</p><p></p><p>Audio Recorder</p><p>An audio recorder is used for recording sound on disc, tape, or film. Audio information can meet the needs of a wide range of people, as well as provide alternatives to print data collection tools.</p><p></p><p>Digital Camera</p><p>An advantage of a digital camera is that it can be used for transmitting those images to a monitor screen when the need arises.</p><p></p><p>Camcorder</p><p>A camcorder is used for collecting data through interviews. It provides a combination of both an audio recorder and a video camera. The data provided is qualitative in nature and allows the respondents to answer questions asked exhaustively. If you need to collect sensitive information during an interview, a camcorder might not work for you as you would need to maintain your subject’s privacy.</p><br />
+                                            <h2 class="ez-toc-section" id="what-are-the-importance-of-implementing-gpo-aside-from-security%e2%80%8b">
+                            11. What are the importance of implementing GPO aside from Security?​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>Group Policy allows you to centralize the management of computers on your network without having to physically go to and configure each computer individually. If you need to manage computers in a large company, it is almost impossible without using Group Policy.</p><p></p><strong>#BRAINLIESTPLEASE</strong><strong> </strong><br />
+                                            <h2 class="ez-toc-section" id="paano-mo-maipapakita-ang-pagig-ing-maagap-sa-pag-iwas-at-pagsu-gpo-sa-sakita-umiwas-sa-pagkain-ng-masusta-nsiya-at-piliin-ang-uminom-ng-alak-araw-araw-b-kakain-nang-matatamis-at-maal-at-na-pagkain-c">
+                            12. Paano mo maipapakita ang pagig-ing maagap sa pag-iwas at pagsu-gpo sa sakit?A.Umiwas sa pagkain ng masusta-nsiya at piliin ang uminom ng alak araw-araw.B.Kakain nang matatamis at maal-at na pagkain.C.Kumain nang gulay,prutas at ug-aliin ang pag-eehersisyo araw-ar-aw.D.Pagliban sa pagkain sa tamang oras.</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>The answer it's letter C and I'm very sure about that</p><p></p><p><strong>Answer:</strong></p><p>c</p><p><strong>Explanation:</strong></p><p>halata Naman eh basahin mo lang yan</p><br />
+                                            <h2 class="ez-toc-section" id="directions-write-t-if-the-statement-is-true-and-f-if-it-is-false-write-your-answers-on-a-separate-sheet-1-a-gpo-has-a-unique-name-such-as-a-guid-2-a-firewall-cannot-be-configured-to-block-or-allo">
+                            13. Directions: Write T if the statement is true and F if it is false. Write your answers on a separate sheet.1. A GPO has a unique name, such as a GUID.2. A firewall cannot be configured to block or allow traffic based on defined criteria (ACLs).3. Network Testing tools are used to perform checking of various aspects of a network. These tools range from ping, SNP ping, traceroute to WMI query tool, and more.4. One of the importance of Network Testing tools is to check proper configuration and verify network stability.5. Remote Desktop shares control of its mouse and keyboard only.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.TRUE</p><p>2.TRUE</p><p>3.FALSE</p><p>4.FALSE</p><p>5.TRUE</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="give-the-diagram-that-shown-the-procedures-on-how-to-configure-software-deployment-using-gpo%e2%80%8b">
+                            14. Give the diagram that shown the procedures on how to configure software deployment (using GPO​</h2><br />
+                        <p>A process flow diagram (PFD), also known as a flowsheet, is a type of flowchart used by chemical and process engineers to illustrate high-level processes. You should create your process flow diagram so that it focuses on major plant processes and not show minor details. </p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-c-direction-evaluate-each-expression-show-your-complete-solution-12-2-p2-3-gpo-4-4-p-5-5-p%e2%80%8b">
+                            15.  Learning Task C. Direction: Evaluate each expression Show your complete solution 12 2. P2 3 GPO 4-4+ P 5.5. P:​</h2><br />
+                        <p><strong>Answer:</strong></p><p>gulo gulo po kasi eh sorry</p><br />
+                                            <h2 class="ez-toc-section" id="we-have-learned-that-group-policy-object-gpo-has-some-benefits-and-limitations-briefly-discuss-some-of-them-%e2%80%8b">
+                            16. We have learned that Group Policy Object (GPO) has some benefits and limitations briefly discuss some of them.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Types of GPOs</p><p>There are three types of GPOs: local, non-local and starter. </p><p></p><p>- Local Group Policy Objects. A local Group Policy Objectrefers to the collection of group policy settings that only apply to the local computer and to the users who log on to that computer. Local GPOs are used when policy settings need to apply to a single Windows computer or user. Local GPOs exist by default on all Windows computers. </p><p>- Non-local Group Policy Objects. A non-local group policy objectis used when policy settings have to apply to one or more Windows computers or users. Non-local GPOs apply to Windows computers or users once they’re linked to Active Directory objects, such as sites, domains or organizational units.</p><p>- Starter Group Policy Objects. Introduced in Windows Server 2008, starter GPOs are templates for Group Policy settings. These objects enable an administrator to create and have a pre-configured group of settings that represent a baseline for any future policy to be created.</p><p></p><p><strong>THANKS ME ;]</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-kabilang-ang-kapatagan-lambak-look-golpo-at-ilog-aari-pt-gpo-oysagot%e2%80%8b">
+                            17. 1. Kabilang ang kapatagan, lambak, look, golpo at ilog.AARI PT GPO OYSagot:​</h2><br />
+                        Mga anyong lupa at tubig<br />
+                                            <h2 class="ez-toc-section" id="paki-sagot-lang-gpo-ng-maayos-para-po-sa-ate-kopo-plss%e2%80%8b">
+                            18. Paki sagot lang gpo ng maayos para po sa ate kopo plss​</h2><br />
+                        <p>1.Napadadali ang gawain,napararami ang mga produksyon.</p><p>2.India</p><br />
+                                            <h2 class="ez-toc-section" id="1-kabilang-ang-kapatagan-lambak-look-golpo-at-ilog-aari-pt-gpo-oysagot">
+                            19. 1. Kabilang ang kapatagan, lambak, look, golpo at ilog.
+AARI PT GPO OY
+Sagot:</h2><br />
+                        <p>I didint gets </p><p><strong>Explanation:</strong></p><p><strong>Give</strong><strong> </strong><strong>An</strong><strong> </strong><strong>beautiful </strong><strong>explain</strong></p><br />
+                                            <h2 class="ez-toc-section" id="1-disabling-the-gpo-will-prevent-it-from-being-applied-entirely-on-thedomain%e2%80%8b">
+                            20. 1 Disabling the GPO will prevent it from being applied entirely on thedomain​</h2><br />
+                        <p></p><p>Don't disable GPOs</p><p>Disabling the GPO will stop it from being applied entirely on the domain, which could cause problems because if you use this Group Policy in another OU, it will no longer work there.</p><br />
+                                            <h2 class="ez-toc-section" id="we-une-letter-of-the-correct-answer-1-it-is-the-feeling-of-harmony-between-all-parts-of-the-artwork-creating-a-sense-of-completeness-b-unitya-rhythmd-repetitionc-proportiontexaswer-1-unity">
+                            21. We une letter of the correct answer.1. It is the feeling of harmony between all parts of the artwork creating a sense of completeness.B. UnityA RhythmD. RepetitionC. Proportion[tex]aswer \: 1).unity[/tex]yan po ang answer  pa follow na lng gpo Jan at I papa low back ko kayo salamat po :) (/^, ^) ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>answer :</p><p> B.  unity </p><p><strong>Explanation:</strong></p><p>carrying on learning</p><p></p><p>what grade are you na po</p><br />
+                                            <h2 class="ez-toc-section" id="il-panuto-isaayos-ang-ginulong-letra-sa-loob-ng-kahon-na-siyang-kinakailangan-sa-paghahating-heograpiko-sa-asya-2-puntos-1-kabilang-ang-kapatagan-lambak-look-golpo-at-ilog-aari-pt-gpo-oy">
+                            22. Il-Panuto: Isaayos ang ginulong letra sa loob ng kahon na siyang kinakailangan sa paghahating-heograpiko sa Asya. (2 puntos) 1. Kabilang ang kapatagan, lambak, look, golpo at ilog. AARI PT GPO OY​</h2><br />
+                        <p><strong>Answer:</strong></p><p>TOPOGRAPIYA -kung saan kabilang ang kapatagan, lambak, look, golpo at ilog. </p><br />
+                                            <h2 class="ez-toc-section" id="paano-mo-maipapakita-ang-pagig-ing-maagap-sa-pag-iwas-at-pagsu-gpo-sa-sakita-umiwas-sa-pagkain-ng-masusta-nsiya-at-piliin-ang-uminom-ng-alak-araw-araw-b-kakain-nang-matatamis-at-maal-at-na-pagkain">
+                            23. Paano mo maipapakita ang pagig-ing maagap sa pag-iwas at pagsu-gpo sa sakit?
+A.Umiwas sa pagkain ng masusta-nsiya at piliin ang uminom ng alak araw-araw.
+B.Kakain nang matatamis at maal-at na pagkain.
+C.Kumain nang gulay,prutas at ug-aliin ang pag-eehersisyo araw-ar-aw.
+D.Pagliban sa pagkain sa tamang oras.</h2><br />
+                        <p><strong>Answer:</strong></p><p>c</p><p><strong>Explanation:</strong></p><p>pa follow at pa heart nalang po</p><br />
+                                            <h2 class="ez-toc-section" id="in-2-to-3-sentencesexplain-the-importance-of-gpo-%e2%80%8b">
+                            24. In 2 to 3 sentences,explain the importance of GPO.​</h2><br />
+                        <strong>Explain the importance of GPO.​</strong><p></p><p>A <strong>Group </strong>Policy object (GPO) is a collection of <strong>Group </strong>Policy settings that govern the appearance and behavior of a system for a certain <strong>group </strong>of users. A user configuration and a computer configuration are the two sections, or nodes, of every GPO.</p><p>It essentially gives administrators a consolidated location to manage and modify operating systems, programs, and user preferences. When implemented effectively, <strong>Group </strong>Policies may help you strengthen the security of your users' PCs and guard against both insider and external threats.</p><p>Better password policy enforcement — To keep a company's network safe, <strong>Group </strong>Policy Object's specify password length, reuse limits, and other criteria for passwords. <strong>Group </strong>Policy Object's let enterprises to ensure that key company files are kept on a centralized and monitored storage system by configuring folder redirection.</p><p></p><p></p><p>What are the importance of implementing GPO aside from Security?​ brainly.ph/question/11589665</p><p>#LETSSTUDY</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-method-of-deployment-of-group-policy-objectgpo">
+                            25. What is the method of deployment of group policy object(GPO)</h2><br />
+                        <p><strong>Answer:</strong></p><p>Methods of deployment. Group Policy supports two methods of deploying an MSI package: </p><p>Create a distribution point. </p><p>Create a Group Policy Object. </p><p>Assign an MSI package. </p><p>Publish an MSI package. </p><p>Troubleshooting Active Directory/GPO deployments.</p><p></p><p></p><p></p><p>Hope it Helps</p><p><strong>Answer:</strong></p><p>-Methods of deployment. Group Policy supports two methods of deploying an MSI package: ...</p><p></p><p>-Create a distribution point. ...</p><p></p><p>-Create a Group Policy Object. ...</p><p></p><p>-Assign an MSI package. ...</p><p></p><p>-Publish an MSI package. ...</p><p></p><p>-Troubleshooting Active Directory/GPO deployments.</p><p></p><p></p><p>hope it helps</p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/L1fTCE-xaUE?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>computer_science</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/consider-the-lengths-of-stay-at-a-hospital-s-emergency-department.html">Consider The Lengths Of Stay At A Hospital s Emergency Department</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/what-is-samemarriage-essay.html">What Is SameMarriage Essay</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/las-pronunciation.html">Las Pronunciation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/bloom-s-taxonomy-sample-questions.html">Bloom s Taxonomy Sample Questions</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/every-teacher-s-guide-to-assessment.html">Every Teacher s Guide To Assessment</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/points-lines-and-planes-geometry-worksheet-answers.html">Points Lines And Planes Geometry Worksheet Answers</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/aqueduct-drawing.html">Aqueduct Drawing</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/i-hear-america-singing-full-poem.html">I Hear America Singing Full Poem</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/track-and-field-oval-drawing.html">Track And Field Oval Drawing</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/x-2-121.html">X 2 121</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/electric-potential-energy-calculator.html">Electric Potential Energy Calculator</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/positive-ion-watch.html">Positive Ion Watch</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/examples-of-man-made-ecosystem.html">Examples Of Man Made Ecosystem</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/summarization-tagalog.html">Summarization Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/which-of-the-following-best-describes-a-hypothesis.html">Which Of The Following Best Describes A Hypothesis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/20-c-to-k.html">20 C To K</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/reflection-about-understanding-the-self.html">Reflection About Understanding The Self</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/note-prime.html">Note Prime</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/5-pints-to-cups.html">5 Pints To Cups</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/durbin-watson-test-sas.html">Durbin Watson Test Sas</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://odoeduc.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://odoeduc.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

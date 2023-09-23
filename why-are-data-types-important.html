@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Why Are Data Types Important - QnA</title>
+    <meta name="description" content="Why Are Data Types Important, What Are Data Types, , , , Jabrils, 2019-07-09T09:52:48.000000Z, 20, What are Data Types and Why are They Important?, dataled.academy, 1024 x 594, jpeg, , 20, why-are-data-types-important, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Why Are Data Types Important - QnA" />
+    <meta property="og:description" content="Why Are Data Types Important, What Are Data Types, , , , Jabrils, 2019-07-09T09:52:48.000000Z, 20, What are Data Types and Why are They Important?, dataled.academy, 1024 x 594, jpeg, , 20, why-are-data-types-important, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Why Are Data Types Important - QnA" />
+    <meta name="twitter:description" content="Why Are Data Types Important, What Are Data Types, , , , Jabrils, 2019-07-09T09:52:48.000000Z, 20, What are Data Types and Why are They Important?, dataled.academy, 1024 x 594, jpeg, , 20, why-are-data-types-important, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://odoeduc.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://odoeduc.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://odoeduc.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://odoeduc.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://odoeduc.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://odoeduc.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Why Are Data Types Important</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">mjuliannebarayoga</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Why+Are+Data+Types+Important" alt="Why Are Data Types Important">
+                    </div>
+                    <p></p>
+                    <p>1. What are the categories and classification of a DATA TYPE.2. Is the data type important in variable declarations? Why?​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-are-the-categories-and-classification-of-a-data-type-2-is-the-data-type-important-in-variable-declarations-why%e2%80%8b">1.
+                                            1. What are the categories and classification of a DATA TYPE.2. Is the data type important in variable declarations? Why?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-is-it-important-to-choose-the-correct-data-type-for-your-variable%e2%80%8b">2.
+                                            why is it important to choose the correct data type for your variable?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-is-it-important-to-choose-the-correct-data-type-for-your-variable%e2%80%8b">3.
+                                            why is it  important to choose the correct data type for your variable?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-what-are-the-examples-of-a-factuai-text-typea-factual-recountb-information-reportc-explanationd-all-of-the-above7-which-of-the-following-is-typically-part-of-a-correctly-formatted-memoa-wit">4.
+                                            6. What are the examples of a factuai text type?a. Factual recountb. Information reportc. Explanationd. All of the above7. Which of the following is typically part of a correctly formatted memo?a. With marginb. With emojic. With id pictured. All of the above.8. Memo is a shortened word derived from what word?a. Memoryb. Memoirc. Memorandumd. Memorandaum9. Why are memorandums importanta. Because they inform and instruct to address solution for issuesb. Because they gather data.c. Because they affect one's ability to interpret rules and regulationsd. Because they are not something we should abide to​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#topic-search-engineswhere-are-you-going-to-enter-url-if-you-want-to-emphasize-a-certain-topic-in-your-searcha-dash-or-minus-signb-quotation-marksc-fewer-wordsd-andorwhat-should-a-user-type-in-t">5.
+                                            Topic: Search EnginesWhere are you going to enter URL if you want to emphasize a certain topic in your search?A. dash or minus signB. quotation marksC. fewer wordsD. and/orWhat should a user type in the search bar in order to recieve a list of websites, images, videos or other data?A. KeywordsB. QueryC. SubjectD. TopicWhere are you going to type URL if your searching for specific topic?A. Insert TabB. Address BarC. Return KeyD. Search BarWhy are Electronic Search  Engines important?A. You can narrow your search down to the exact information you need with a search engine. B. Makes it easier to find information rather that linking it to yourself.C. They sort through information; kind of a library card catalog.D. All of the above. (Pakisagutan po ng maayos)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-graphical-representation-is-used-to-find-similarities-and-differences-between-concepts-a-concept-map-b-circle-map-c-venn-diagram-d-t-chart-2-is-structured-for-organizing-and-displaying-i">6.
+                                            1. What graphical representation is used to find similarities and differences between concepts? a. concept map b. circle map c. Venn Diagram d. t-chart 2. is structured for Organizing and displaying informatin, with data arranged in columns and rows. a, graph b. chart c. table d.Information map 3. Which of the following is not true about histogram? a. it represents cntinuous data b. there are no gaps between bars c.it summarizes large data sets graphically d.it compares data among different categories 4. What type of non-linear text is shown below? a. bar graph b. histogram c. line graph d. pictograph 5. Which of the follwing signal words is used t show similarities of ideas? a.both b. On the contrary c. yet d.otherwise 6. why is it important to learn how to compare and cOntrast? a. to present Only the Opposite ideas b. to highlight the important points in a text c. to understand fully the issues being raised in the text d. to emphasize the One-sided point of view 7. Which of the following phrases shows an Opinion? a.According to research b.it shows that c. I believe d. I therefore conclude ...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-why-is-research-important-to-lifea-research-has-the-potential-for-providing-quality-life-b-research-assesses-individuals-or-groups-plan-of-actions-as-basis-for-accurate-inventions-and-decisionsi">7.
+                                            1. Why is research important to life?A. Research has the potential for providing quality life.B. Research assesses individuals or groups plan of actions as basis for accurate inventions and decisionsin lifeC. Research helps professionals deliver quality education servicesD. All of the above2. Which of the following describes a qualitative research?A. It examines the context of situation of an individual's lifeB. It explores a phenomenon to better understand itC. It requires non-numerical dataD. All of the above3. Which is the correct process of conducting a research?I - Reviewing Related Literature11 - Designing ResearchIII - Collecting and Analyzing DataIV - Formulating HypothesisV - Defining ProblemVI - Reporting ResultsA. I-II-II-IV-V-VIC. V-I-IV-11-III-VB. V-IV-1-1-U-VID. IV-V-11-1-11-VI4. Researchers who focus on the study of culture take which type of qualitative research?A. Grounded theoryC. PhenomenologyB. Case StudyD. Ethnography5. In which type of qualitative research do the researchers intend to generate a theory that is based on datasystematically gathered and analyzed?A. PhenomenologyC. HistoricalB. Grounded TheoryD. Case Study6. Researchers study just one individual, classroom, school, or program in which type of qualitative research?A. Case StudyC. EthnographyB. HistoricalD. Phenomenology7. Researchers who study various reactions to or perceptions of a particular phenomenon take which type ofqualitative research?A GroundedC. HistoricalB. PhenomenologyD. Case Study​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-is-it-important-to-understand-the-importance-of-constants-and-variables-in-programming-do-you-think-understanding-the-concept-of-data-types-and-the-use-of-data-structure-would-be-a-good-foundat">8.
+                                            -Why is it important to understand the importance of constants and variables in programming?
+-Do you think understanding the concept of data types and the use of data structure would be a good foundation for a programmer? Why?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#osileguide-questions1-what-type-of-annuity-is-being-described-by-the-cash-flow-time-diagram-inexercise-1-a2-what-type-of-annuity-is-being-described-by-the-cash-flow-time-diagramin-exercise-1-b3">9.
+                                            osileGuide Questions:1. What type of annuity is being described by the cash flow time diagram inExercise 1.a?2. What type of annuity is being described by the cash flow time diagramin Exercise 1.b?3. What are the important data that you need in illustrating annuity?Exercise 2: Study and illustrate the cash flow time diagram of the annuitybeing referred to by the following problem:a. Peier started to deposit P5,000 monthly in a fund that pays 1%compounded monthly. How much will be in the fund after 8 months?b. Ann's parents are planning for a house lease agreement. How muchmoney will they prepare in a house that has 6% inierest rate compoundedannually in order to pay P30,000 semi-annually for 5 years?Guide Question:1. What is your first step in illustrating an annuity problem?2. What steps did you come up with to illustrate either the fuiure value orpresent value in the problem?3. Which of the following showed simple annuity? general annuity?ReflectionInstruction. Reflect on the following questions and write your response onyour journal.1. Why is it necessary to illustrate annuity structure or arrangements?2. What is the importance of knowing whether the problem or situation issimple annuity or general annuity?3. What values have been embedded to you by the process of illustratingannuity?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-which-idea-should-be-included-when-summarizing-a-classification-text-typea-dates-of-events-b-groupings-mentioned-c-important-eventsd-number-data7-which-statement-describes-classificationa-w">10.
+                                            6. Which idea should be included when summarizing a classification text type?A. dates of events B. groupings mentioned C. important eventsD. number data7. Which statement describes classification?A. writers sort ideas into common categories.B. tells how or why things or events work or happen.C. lists the ways of a thing or subject.D. arranges ideas according to the sequence of events​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-what-are-the-examples-of-a-factual-text-typesa-factual-recountb-information-reportc-explanationd-all-of-the-above7-which-of-the-following-is-typically-part-of-a-correctly-formatta-with-margin">11.
+                                            6. What are the examples of a factual text typesa. Factual recountb. Information reportc. Explanationd. All of the above7. Which of the following is typically part of a correctly formatta. With marginb. With emojic. With id pictured. All of the above.8. Memo is a shortened word derived from what word?a. Memoryb. MemoirC. Memorandumd. Memorandaum9. Why are memorandums important?a. Because they inform and instruct to address solub. Because they gather data.c. Because they affect one's ability to interpret ruled. Because they are not something we should abi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-what-do-you-think-would-be-the-final-question-for-the-researcher-at-the-end-of-each-researchwork-explain-your-answer-with-examplewhat-topic-would-i-work-onwhat-are-my-recommendationswho-will-ben">12.
+                                            2.What do you think would be the final question for the researcher at the end of each researchwork? Explain your answer with example,What topic would I work on?What are my recommendations?Who will benefit from my study?How will i organize the data gathered?Iron is a very popular and useful metal but could not be used as material for jewelry orreplacement for human body part. Why is this so?Give at least two important elements in our human body, and explain why it is important.Also, Name at least two important compounds found at home, and explain its importance.5. Amidst this pandemic, we need to boost our immune system. There are mixtures that we canprepare to keep us healthy. Give an example of a healthy mixture, and explain why it isconsidered as mixture, and what makes it different from a substance?6. Suppose you put a teaspoon of sugar in a glass of water. You stir it and it dissolves.You continue to add sugar until it no longer dissolves regardless how much you stir it.What type of solution have you formod Explain why?7. Due to pandemic the Department of Health advice people to use alcohol as disinfectant toprevent the spread of corona virus. Which is effective as disinfectant 70% solution or 40%solution of rubbing alcohol? Explain why?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-is-it-important-to-learn-the-proper-way-of-declaring-and-using-data-types-and-variables-%e2%80%8b">13.
+                                            Why is it important to learn the proper way of declaring and using data types and variables ?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apply-directions-able-to-complete-the-box-below-1-what-is-the-title-of-the-info-graph-why-infographics-are-effective-ways-to-communicate-2-what-pieces-of-information-are-found-here-3-who-would-f">14.
+                                            Apply Directions. able to complete the box below. 1. What is the title of the Info Graph? Why Infographics are EFFECTIVE WAYS TO COMMUNICATE 2. What pieces of information are found here? 3.Who would find the information here useful? 90 HUMANS ARE VISUAL CREATURES % of information transmitted to the tara sua 4.What type of graph is used here? THEY ARE PR FRIENDLY Use them to your bandera Campaigns, presentation, Sean DonewsLetters and website 5. Make a conclusion based on the information IC WE HAVE SHRINKING ATTENTION SPANS +7 min HIGH PROBABILITY OF GOING VIRAL Combine 24 bilden internet volumes you and Region e shaleu INFOGRAPHICS HAVE HIGH DATA DENSITY Allows you to focus on the important information by trang ALL sual elements mane page​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-answer-the-following-questions-below-1-what-is-the-importance-of-multimedia-2-what-are-the-functions-of-multimedia-3-what-are-the-guidelines-that-you-should-follow-in-choosing-an-appropriate">15.
+                                            A. Answer the following questions below. 1. What is the importance of multimedia? 2. What are the functions of multimedia? 3. What are the guidelines that you should follow in choosing an appropriate multimedia in presenting your data? 4. How multimedia can help you in your studies? 5. Why is it important to know the different types of multimedia?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-write-a-short-response-test-on-the-following-questions-1-what-are-the-types-of-data-in-ms-access2-what-is-the-function-of-the-primary-key3-why-is-important-to-keep-integrity-of-data-t">16.
+                                            Directions: Write a short-response test on the following questions.1. What are the types of data in MS Access?2. What is the function of the primary key?3. Why is important to keep integrity of data that are store and entered in the database?4. What are the types of relationship in MS Access? Describe each relationship?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#leaming-task-3-engagementdirections-answer-the-following-questions-carefully-1-what-is-a-primary-storage-how-it-is-organized-and-how-is-data-represented-inprimary-storage2-what-are-the-importan">17.
+                                            Leaming Task 3: EngagementDirections: Answer the following questions carefully.1. What is a primary storage? How it is organized, and how is data represented inprimary storage?2. What are the importance of having an expansion card in your computer?3. Based on what have you learned about the different types of memory cards, storagedevices and computer processor used in CSS how can you apply this in real life situationespecially if you want to buy a new computer / upgrade a computer? What are the thingsthat you need to consider first? Why?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-using-a-venn-diagram-compare-and-contrast-the-following-data-typea-boolenb-setc-dictionary2-why-is-it-very-important-to-understand-the-use-of-data-types-in-python-programming%e2%80%8b">18.
+                                            1.using a Venn diagram compare and contrast the following data typea.boolenb.setc.dictionary2.why is it very important to understand the use of data types in python programming?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#8-in-which-step-of-the-scientific-method-do-we-use-graphs-a-analyze-data-b-asking-questions-c-making-a-hypothesis-d-communicate-results-9-which-of-the-following-describes-an-element-a-the-sim">19.
+                                            8. In which step of the scientific method do we use graphs? A. Analyze data B. Asking questions C. Making a hypothesis D. Communicate results 9. Which of the following describes an element? A. The simplest substance. B. It can be broken down into other types of substances. C. It can be separated through a chemical process. D. It is composed of two or more types of atoms. 10. Why is it important to be familiar with elements and compounds? A. To classify them accordingly. C. To enumerate elements and compounds. B.To tell others you know them. D. To be praised by others of knowing the 11. Which of the following substance composed of one type of atom?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-is-it-important-to-identify-data-types-of-our-database-ort%e2%80%8b">20.
+                                            Why is it important to identify data types of our database? ORT​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#computer-71-this-adds-chart-elements-like-title-label-table-legend-a-quick-layoutb-chart-stylesc-add-chart-elementd-edit-data2-this-swaps-the-data-over-the-axis-a-change-colors-b-select-data">21.
+                                            Computer 71.) this adds chart elements like title label table legend.a. quick layoutb. chart stylesc. add chart elementd. edit data2.) this swaps the data over the axis.a. change colors b. select datac. refresh datad. switch row/column 3.) this refreshes the chart to show updated data.a. edit datab. quick layout c. refresh data d. select data4.) this changes do a different type of chart.a. change chart typeb. quick layoutc. select data d. edit data5.) this chart tools design command shows the data this chart is based on.a. shape outlineb. change shape c. change chart type d. edit data6.) of the following which command belongs to word art styles group.a. text fill b. format selection c. shape fill d. object position7.) this command adds a visual style to shape.a. group b. chart elements c. shape styled. shape fill12.) this command specifies the color width and the line style.a. bring forwardb. text outlinec. send backwardd. bring forward15.) among the following belongs to size group.a. text effects b. groupc. shape fill d. shape heightdo you think it is essential to know the basic commands of chart tools and why it is important in your studies? state the importance of it.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#activity-1-3-now-that-youve-leaned-a-lot-from-the-start-of-our-lesson-let-us-summarize-our-lesson-by-filling-in-he-blanks-with-appropriate-words-and-answer-the-questions-below-write-your-answers-on">22.
+                                            Activity 1.3 Now that you've leaned a lot from the start of our lesson, let us summarize our lesson by filling in he blanks with appropriate words and answer the questions below. Write your answers on your answer sheet. 1. ___________is a systematic investigation and study of materials and sources to establisha facts and reach new conclusion, 2.__________ is a direct language, denotative or usual meaning of a word. 3.___________is a part of research that describes the data gathered usually presented in tables and graphs. 4.____________ is a text type that is used to tell the step-by-step process of data gathering. 5. The statement "Plot the reading enhancement program to meet the reading needs of the grade threepupils” is an example a/an_________ text type. 6-10. What is the characteristic of language used in research? 11-15. Why is it important to observe appropriate language in writing a research report? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#identify-the-type-of-formsperson-describe-in-the-sentence-choose-the-letter-of-the-correct-answer-1-it-is-a-small-paper-form-that-a-person-includes-with-a-bank-deposit-to-show-how-much-money-he-or">23.
+                                            Identify the type of forms/person describe in the sentence. Choose the letter of the correct answer. 1. It is a small paper form that a person includes with a bank deposit to show how much money he or she is putting in a bank account. It contains the deposit date, name and bank account of the depositor, and the amount to be a deposited in the form of checks or cash, and the signature of the depositors. a withdrawal slip b. deposit slip C. School form d. none of these 2. It is a small paper form which has to be filled out before making a withdrawal of money from a bank. After filling out the bank slip, a person signs on it in the presence of a bank teller. a withdrawal slip b. deposit slip C. School form d. none of these 3. There are particular forms that you have to fill out as a requirement for admission to a school. a withdrawal slip b. deposit slip C. School form d. none of these 4. After filling out any of the type of forms, it is necessary to affix your_ over your printed name found on the lower part of the form. a address b. cell phone number c. signature d. ID picture 5. A is an employee of the bank whose job is to help bank customers in their banking need, such as depositing checks or cash or making a withdrawal. a depositor b. security guard c. bank teller d. bank manager 6. A is a person who deposits or places money in a bank account. a. depositor b. security guard c. bank teller d. bank manager 7. Why is it important to fill out forms accurately? a. It is important to fill out forms accurately because it contains necessary data. b. It is important to fill out forms accurately so that the data that we are going to write is true and correct. c. His important to fill out forms accurately so that the transaction will be process quickly and no errors can be found. d. All of the above.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-are-some-typessources-of-innovative-finishing-materials-that-canenhance-finished-products-made-of-wood-bamboo-and-metal2-why-do-artisans-and-entrepreneurs-need-to-be-aware-and-updated-on-n">24.
+                                            1.What are some types/sources of innovative finishing materials that canenhance finished products made of wood, bamboo, and metal?2. Why do artisans and entrepreneurs need to be aware and updated on newand innovative methods of enhancing and decorating wood, bamboo, andmetal craft?3. Why is it important to conduct simple survey using technology and otherdata-gathering method?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-have-learnedanswer-the-following-guide-questions-to-further-enrich-your-learning-1-what-are-some-typessources-of-innovative-finishing-materials-that-canenhance-finished-products-made-of-wood">25.
+                                            What I Have LearnedAnswer the following guide questions to further enrich your learning.1. What are some types/sources of innovative finishing materials that canenhance finished products made of wood, bamboo, and metal?2. Why do artisans and entrepreneurs need to be aware and updated on newand innovative methods of enhancing and decorating wood, bamboo, andmetal craft?3. Why is it important to conduct simple survey using technology and otherdata-gathering method.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-what-are-some-typessources-of-innovative-finishing-materials-that-can-enhance-finished-products-made-of-wood-bamboo-and-metal2-why-do-artisans-and-entrepreneurs-need-to-be-aware-and-updated-on">26.
+                                            1. What are some types/sources of innovative finishing materials that can enhance finished products made of wood, bamboo, and metal?2. Why do artisans and entrepreneurs need to be aware and updated on new and innovative methods of enhancing and decorating wood, bamboo, and metal craft?3. Why is it important to conduct simple survey using technology and other data-gathering method.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-explain-concepts-following-answer-the-questions-below-limit-your-from-3-5-response-sentences-only-how-do-you-choose-the-type-of-sampling-method-to-be-used-in-selecting-the-respondents-are-the-r">27.
+                                            B. EXPLAIN CONCEPTS. following Answer the questions below. Limit your from 3-5 response sentences only. How do you choose the type of sampling method to be used in selecting the respondents? Are the respondents vital in a research study? Is it important to plan the procedures ahead of the actual gathering of data? Why? When is the time when the researchers make their own research instrument which will be administered to the respondents? After making the research instrument, survey questionnaire for example, what are the things to be done before it reaches the respondents?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#13-why-is-frequency-distribution-table-important-i-it-is-useful-in-describing-the-number-of-occurrences-of-a-particular-type-of-datum-within-the-dataset-ii-it-is-one-of-the-most-basic-tool-for-di">28.
+                                            13. Why is frequency distribution table important? I. It is useful in describing the number of occurrences of a particular type of datum within the dataset, II. It is one of the most basic tool for displaying inference statistics. III. It represent raw data in an organized, easy-to-read format. a. I and III b. II and III c. I and II d. all of the above​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#responses22-what-is-the-practice-of-protecting-participants-personal-identities-and-answers-by-ensuring-theircannot-be-linked-back-to-thema-anonymityc-privacyb-confidentialityd-legality23-what-t">29.
+                                            responses22. What is the practice of protecting participants' personal identities and answers by ensuring theircannot be linked back to them?a. Anonymityc. Privacyb. Confidentialityd Legality23 What type of research is reflected in the title: COVD 19 Pandemic: A Documentary?a Exploratory Researchc. Historical Researchb. Correlational Researchd. Action Research24. When a researcher does not follow the ethical standards in research, what is animportant ethical disadvantage?a. Ir can damage the professional reputation of the researcher and their disciplineb. It makes it more difficult to gain access to different populationsc It means that records of personal data about the participants cannot be made anonymousd. None of the above25. Which of the following is not a quantitative data collection method?a surveysc. online pollsb. website interceptorsd interviews26. Why is it important that personal data about research participants are kept within secure,confidential records?a. So that the participants cannot find out what has been written about themb. So that individuals, places, or organizations can't be harm through disclosure of personal dataof personal informationc. So that government officials, teachers, and other people in authority can have easy access to the datad. None of the above27. In conducting research, which stage comes first?a Collecting datac. Reviewing literatureb. Analyzing datad. Defining research problem28. The researcher designs an experiment to test how variables interact to influence job-seeking behaviorsThe main purpose of the study is:a Descriptionc. Explorationb. Predictiond Explanation29. Cyber bullying is a growing threat to people. Researchers want to find out why peopledo this and how they feel about it. The primary purpose of the study is:a. Descriptionc. Explorationb. Predictiond. Explanation30. The key defining characteristic of experimental research is :a The independent variable is manipulated.b. The hypotheses are proven.c. The positive correlation exists.d. The samples are large31. In which qualitative research design is a teacher likely to be the researcher?a. Historical study c Ethnographic studyb. Action researchd. Grounded theory32. In which qualitative research approach is the primary goal to gain access to individuals'inner worlds of experience?a. Phenomenologyc. Grounded theoryb. Ethnographyd. Case study33. The type of qualitative research that describes the culture of a group of people is,a. Phenomenologyc. Grounded theoryb. Ethnographyd. Case study34. Which of the following research methods relies on analyzing data?a Quantitative research c. Mixed methodb. Qualitative research d. All of the above35. All findings are logically based on data which are based on real life situations. Whatcharacteristic of research is being described?a. Empiricalc. Objectiveb. Analyticald. Systematic36. When you repeat research design and procedures for you to arrive at valid and conclusive results,what characteristics of research is reflected?a. Original workc. Analyticalb. Replicabilityd. Objective37. What type of research is reflected in the title: "The Fall of Bataan: A Documentary"?a Phenomenological Research c. Correlational Researchb. Historical Researchd. Ethnographic Research​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#i-fundamentalswhat-are-considered-media-files-in-powerpoint________________________________________________________________________levelswhy-do-you-think-it-is-important-to-know-the-kinds-of-c">30.
+                                            I.
+*FUNDAMENTALS
+What are considered media files in PowerPoint?
+________________________________________________________________________
+*LEVELS
+Why do you think it is important to know the kinds of chart for data
+presentation?
+________________________________________________________________________
+*OUTPUTS
+Where can you use SmartArt Graphic in presentations?
+________________________________________________________________________
+*WINDOWS
+How do we add and format tables in presentation?
+________________________________________________________________________
+II.
+*FUNDAMENTALS
+List five types of charts and
+media files.
+*LEVELS
+Write a short description or
+purpose of each chart and media file
+type you have listed.
+III.
+*FUNDAMENTALS
+What kind of chart did you use to represent your data?
+________________________________________________________________________
+*LEVELS
+Why did you chose that specific chart to represent the data that you have
+gathered?
+________________________________________________________________________
+*OUPUTS
+Where can we change the elements of graph?
+________________________________________________________________________
+*WINDOWS
+How did you insert media files?
+________________________________________________________________________
+sorry if its long.. please answer it, don't answer it for points..</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="1-what-are-the-categories-and-classification-of-a-data-type-2-is-the-data-type-important-in-variable-declarations-why%e2%80%8b">
+                            1. 1. What are the categories and classification of a DATA TYPE.2. Is the data type important in variable declarations? Why?​</h2><br />
+                        <p>Answer:</p><p></p><p>Explanation:</p><p>Well in my opinion without breaking the opinion of others and of course their matter of capability to derive hypothetical analysis in a situation because we have different matter of perspective and individual ideas of how we deal things in any ways but I would just like to humbly say to everyone who's here in the benevolences of the universal catastrophe and in the Philippine Archipelago within the most bottom of my heart and my cells that I'm going to say is sauna all.</p><br />
+                                            <h2 class="ez-toc-section" id="why-is-it-important-to-choose-the-correct-data-type-for-your-variable%e2%80%8b">
+                            2. why is it important to choose the correct data type for your variable?​</h2><br />
+                        <p><strong>Answer: </strong><strong>Choosing the right data types for your</strong> tables, stored procedures, and <strong>variables</strong> not only improves performance by ensuring <strong>a correct</strong> execution plan, but it also improves <strong>data</strong> integrity by ensuring that the correct data is stored within <strong>a database</strong>.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="why-is-it-important-to-choose-the-correct-data-type-for-your-variable%e2%80%8b">
+                            3. why is it  important to choose the correct data type for your variable?​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>choosing the right data types for your tables, stored procedures,and variables not only improves performance by ensuring a correct execution plan, but its also improves data integrity by ensuring that the correct data is stored with a databased.</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="6-what-are-the-examples-of-a-factuai-text-typea-factual-recountb-information-reportc-explanationd-all-of-the-above7-which-of-the-following-is-typically-part-of-a-correctly-formatted-memoa-wit">
+                            4. 6. What are the examples of a factuai text type?a. Factual recountb. Information reportc. Explanationd. All of the above7. Which of the following is typically part of a correctly formatted memo?a. With marginb. With emojic. With id pictured. All of the above.8. Memo is a shortened word derived from what word?a. Memoryb. Memoirc. Memorandumd. Memorandaum9. Why are memorandums importanta. Because they inform and instruct to address solution for issuesb. Because they gather data.c. Because they affect one's ability to interpret rules and regulationsd. Because they are not something we should abide to​</h2><br />
+                        <p><strong>Answer:</strong></p><p>6.)  C</p><p></p><p>7.)   B</p><p></p><p>8.)   A</p><p></p><p>9.)   C</p><p></p><p></p><p></p><p><strong>Explanation:</strong></p><p>Hope is help godblessss</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="topic-search-engineswhere-are-you-going-to-enter-url-if-you-want-to-emphasize-a-certain-topic-in-your-searcha-dash-or-minus-signb-quotation-marksc-fewer-wordsd-andorwhat-should-a-user-type-in-t">
+                            5. Topic: Search EnginesWhere are you going to enter URL if you want to emphasize a certain topic in your search?A. dash or minus signB. quotation marksC. fewer wordsD. and/orWhat should a user type in the search bar in order to recieve a list of websites, images, videos or other data?A. KeywordsB. QueryC. SubjectD. TopicWhere are you going to type URL if your searching for specific topic?A. Insert TabB. Address BarC. Return KeyD. Search BarWhy are Electronic Search  Engines important?A. You can narrow your search down to the exact information you need with a search engine. B. Makes it easier to find information rather that linking it to yourself.C. They sort through information; kind of a library card catalog.D. All of the above. (Pakisagutan po ng maayos)​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.c</p><p>2.a</p><p>3.b</p><p>4.d</p><p><strong>Explanation:</strong></p><p>search nyo nalang po kung tama</p><br />
+                                            <h2 class="ez-toc-section" id="1-what-graphical-representation-is-used-to-find-similarities-and-differences-between-concepts-a-concept-map-b-circle-map-c-venn-diagram-d-t-chart-2-is-structured-for-organizing-and-displaying-i">
+                            6. 1. What graphical representation is used to find similarities and differences between concepts? a. concept map b. circle map c. Venn Diagram d. t-chart 2. is structured for Organizing and displaying informatin, with data arranged in columns and rows. a, graph b. chart c. table d.Information map 3. Which of the following is not true about histogram? a. it represents cntinuous data b. there are no gaps between bars c.it summarizes large data sets graphically d.it compares data among different categories 4. What type of non-linear text is shown below? a. bar graph b. histogram c. line graph d. pictograph 5. Which of the follwing signal words is used t show similarities of ideas? a.both b. On the contrary c. yet d.otherwise 6. why is it important to learn how to compare and cOntrast? a. to present Only the Opposite ideas b. to highlight the important points in a text c. to understand fully the issues being raised in the text d. to emphasize the One-sided point of view 7. Which of the following phrases shows an Opinion? a.According to research b.it shows that c. I believe d. I therefore conclude ...​</h2><br />
+                        <p> </p>1.a2c.<p></p><p></p><p>HAHA yan lang muna</p><br />
+                                            <h2 class="ez-toc-section" id="1-why-is-research-important-to-lifea-research-has-the-potential-for-providing-quality-life-b-research-assesses-individuals-or-groups-plan-of-actions-as-basis-for-accurate-inventions-and-decisionsi">
+                            7. 1. Why is research important to life?A. Research has the potential for providing quality life.B. Research assesses individuals or groups plan of actions as basis for accurate inventions and decisionsin lifeC. Research helps professionals deliver quality education servicesD. All of the above2. Which of the following describes a qualitative research?A. It examines the context of situation of an individual's lifeB. It explores a phenomenon to better understand itC. It requires non-numerical dataD. All of the above3. Which is the correct process of conducting a research?I - Reviewing Related Literature11 - Designing ResearchIII - Collecting and Analyzing DataIV - Formulating HypothesisV - Defining ProblemVI - Reporting ResultsA. I-II-II-IV-V-VIC. V-I-IV-11-III-VB. V-IV-1-1-U-VID. IV-V-11-1-11-VI4. Researchers who focus on the study of culture take which type of qualitative research?A. Grounded theoryC. PhenomenologyB. Case StudyD. Ethnography5. In which type of qualitative research do the researchers intend to generate a theory that is based on datasystematically gathered and analyzed?A. PhenomenologyC. HistoricalB. Grounded TheoryD. Case Study6. Researchers study just one individual, classroom, school, or program in which type of qualitative research?A. Case StudyC. EthnographyB. HistoricalD. Phenomenology7. Researchers who study various reactions to or perceptions of a particular phenomenon take which type ofqualitative research?A GroundedC. HistoricalB. PhenomenologyD. Case Study​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. B </p><p>2. A </p><p>3. C</p><p>4. A</p><p>5. C</p><p>6. A</p><p>7. B</p><br />
+                                            <h2 class="ez-toc-section" id="why-is-it-important-to-understand-the-importance-of-constants-and-variables-in-programming-do-you-think-understanding-the-concept-of-data-types-and-the-use-of-data-structure-would-be-a-good-foundat">
+                            8. -Why is it important to understand the importance of constants and variables in programming?
+-Do you think understanding the concept of data types and the use of data structure would be a good foundation for a programmer? Why?</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.Declaring a constant means that you can use the same identifier throughout a program, for example, the name 'PI' instead of the value 3.14. This keeps the program code consistent, which makes it easier to read and debug a program.</p><p>2.Data structure provides efficiency, reusability and abstraction. It plays an important role in enhancing the performance of a program because the main function of the program is to store and retrieve the user's data as fast as possible</p><p><strong>Answer:</strong></p><p>Declaring a constant means that you can use the same identifier throughout a program, for example, the name 'PI' instead of the value 3.14. This keeps the program code consistent, which makes it easier to read and debug a program.</p><p>Data structure provides efficiency, reusability and abstraction. It plays an important role in enhancing the performance of a program because the main function of the program is to store and retrieve the user's data as fast as possible.</p><br />
+                                            <h2 class="ez-toc-section" id="osileguide-questions1-what-type-of-annuity-is-being-described-by-the-cash-flow-time-diagram-inexercise-1-a2-what-type-of-annuity-is-being-described-by-the-cash-flow-time-diagramin-exercise-1-b3">
+                            9. osileGuide Questions:1. What type of annuity is being described by the cash flow time diagram inExercise 1.a?2. What type of annuity is being described by the cash flow time diagramin Exercise 1.b?3. What are the important data that you need in illustrating annuity?Exercise 2: Study and illustrate the cash flow time diagram of the annuitybeing referred to by the following problem:a. Peier started to deposit P5,000 monthly in a fund that pays 1%compounded monthly. How much will be in the fund after 8 months?b. Ann's parents are planning for a house lease agreement. How muchmoney will they prepare in a house that has 6% inierest rate compoundedannually in order to pay P30,000 semi-annually for 5 years?Guide Question:1. What is your first step in illustrating an annuity problem?2. What steps did you come up with to illustrate either the fuiure value orpresent value in the problem?3. Which of the following showed simple annuity? general annuity?ReflectionInstruction. Reflect on the following questions and write your response onyour journal.1. Why is it necessary to illustrate annuity structure or arrangements?2. What is the importance of knowing whether the problem or situation issimple annuity or general annuity?3. What values have been embedded to you by the process of illustratingannuity?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>the type of annuity is being described by the cash flow time diagram and exercise 1.a is immediately annuity</p><p></p><p>the type of annuity is being described by the cash flow time diagram and exercise 1.b is deferred annuity</p><br />
+                                            <h2 class="ez-toc-section" id="6-which-idea-should-be-included-when-summarizing-a-classification-text-typea-dates-of-events-b-groupings-mentioned-c-important-eventsd-number-data7-which-statement-describes-classificationa-w">
+                            10. 6. Which idea should be included when summarizing a classification text type?A. dates of events B. groupings mentioned C. important eventsD. number data7. Which statement describes classification?A. writers sort ideas into common categories.B. tells how or why things or events work or happen.C. lists the ways of a thing or subject.D. arranges ideas according to the sequence of events​</h2><br />
+                        <p><strong>Answer:</strong></p><p>6.C</p><p>7A. writers sort ideas into common categories.</p><br />
+                                            <h2 class="ez-toc-section" id="6-what-are-the-examples-of-a-factual-text-typesa-factual-recountb-information-reportc-explanationd-all-of-the-above7-which-of-the-following-is-typically-part-of-a-correctly-formatta-with-margin">
+                            11. 6. What are the examples of a factual text typesa. Factual recountb. Information reportc. Explanationd. All of the above7. Which of the following is typically part of a correctly formatta. With marginb. With emojic. With id pictured. All of the above.8. Memo is a shortened word derived from what word?a. Memoryb. MemoirC. Memorandumd. Memorandaum9. Why are memorandums important?a. Because they inform and instruct to address solub. Because they gather data.c. Because they affect one's ability to interpret ruled. Because they are not something we should abi​</h2><br />
+                        <p><strong>Answer:</strong></p><p>6.c 7. a 8. d 9. c</p><p></p><p><strong>Explanation:</strong></p><p> sna mktulong </p><br />
+                                            <h2 class="ez-toc-section" id="2-what-do-you-think-would-be-the-final-question-for-the-researcher-at-the-end-of-each-researchwork-explain-your-answer-with-examplewhat-topic-would-i-work-onwhat-are-my-recommendationswho-will-ben">
+                            12. 2.What do you think would be the final question for the researcher at the end of each researchwork? Explain your answer with example,What topic would I work on?What are my recommendations?Who will benefit from my study?How will i organize the data gathered?Iron is a very popular and useful metal but could not be used as material for jewelry orreplacement for human body part. Why is this so?Give at least two important elements in our human body, and explain why it is important.Also, Name at least two important compounds found at home, and explain its importance.5. Amidst this pandemic, we need to boost our immune system. There are mixtures that we canprepare to keep us healthy. Give an example of a healthy mixture, and explain why it isconsidered as mixture, and what makes it different from a substance?6. Suppose you put a teaspoon of sugar in a glass of water. You stir it and it dissolves.You continue to add sugar until it no longer dissolves regardless how much you stir it.What type of solution have you formod Explain why?7. Due to pandemic the Department of Health advice people to use alcohol as disinfectant toprevent the spread of corona virus. Which is effective as disinfectant 70% solution or 40%solution of rubbing alcohol? Explain why?​</h2><br />
+                        disinfectant 70% solution or 40% solution of rubbing of alchol is<br />
+                                            <h2 class="ez-toc-section" id="why-is-it-important-to-learn-the-proper-way-of-declaring-and-using-data-types-and-variables-%e2%80%8b">
+                            13. Why is it important to learn the proper way of declaring and using data types and variables ?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Data types are especially important in Java because it is a strongly typed language. This means that all operations are type-checked by the compiler for type compatibility. Illegal operations will not be compiled. Thus, strong type checking helps prevent errors and enhances reliability. To enable strong type checking, all variables, expressions, and values have a type. There is no concept of a “type-less” variable, for example. Furthermore, the type of a value determines what operations are allowed on it. An operation allowed on one type might not be allowed on another.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apply-directions-able-to-complete-the-box-below-1-what-is-the-title-of-the-info-graph-why-infographics-are-effective-ways-to-communicate-2-what-pieces-of-information-are-found-here-3-who-would-f">
+                            14. Apply Directions. able to complete the box below. 1. What is the title of the Info Graph? Why Infographics are EFFECTIVE WAYS TO COMMUNICATE 2. What pieces of information are found here? 3.Who would find the information here useful? 90 HUMANS ARE VISUAL CREATURES % of information transmitted to the tara sua 4.What type of graph is used here? THEY ARE PR FRIENDLY Use them to your bandera Campaigns, presentation, Sean DonewsLetters and website 5. Make a conclusion based on the information IC WE HAVE SHRINKING ATTENTION SPANS +7 min HIGH PROBABILITY OF GOING VIRAL Combine 24 bilden internet volumes you and Region e shaleu INFOGRAPHICS HAVE HIGH DATA DENSITY Allows you to focus on the important information by trang ALL sual elements mane page​</h2><br />
+                        <p>Never gonna give you up
+</p><p>Never gonna let you down
+</p><p>Never gonna run around and desert you
+</p><p>Never gonna make you cry
+</p><p>Never gonna say goodbye
+</p><p>Never gonna tell a lie and hurt you</p><p>this is the answer</p><br />
+                                            <h2 class="ez-toc-section" id="a-answer-the-following-questions-below-1-what-is-the-importance-of-multimedia-2-what-are-the-functions-of-multimedia-3-what-are-the-guidelines-that-you-should-follow-in-choosing-an-appropriate">
+                            15. A. Answer the following questions below. 1. What is the importance of multimedia? 2. What are the functions of multimedia? 3. What are the guidelines that you should follow in choosing an appropriate multimedia in presenting your data? 4. How multimedia can help you in your studies? 5. Why is it important to know the different types of multimedia?​</h2><br />
+                        <p> </p><p>This is important because more people use it </p><p>This is use to send important picture</p><p></p><p> </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="directions-write-a-short-response-test-on-the-following-questions-1-what-are-the-types-of-data-in-ms-access2-what-is-the-function-of-the-primary-key3-why-is-important-to-keep-integrity-of-data-t">
+                            16. Directions: Write a short-response test on the following questions.1. What are the types of data in MS Access?2. What is the function of the primary key?3. Why is important to keep integrity of data that are store and entered in the database?4. What are the types of relationship in MS Access? Describe each relationship?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>In a relational database, relationships enable you to prevent redundant data. For example, if you are designing a database that will track information about books, you might have a table named "Titles" that stores information about each book, such as the book's title, date of publication, and publisher. There is also information that you might want to store about the publisher, such as the publisher's telephone number, address, and ZIP Code/Postal Code. If you were to store all this information in the "Titles" table, the publisher's telephone number would be duplicated for each title that the publisher prints.</p><p></p><p></p><p>A better solution is to store the publisher's information only one time, in a separate table that we will call "Publishers." You would then put a pointer in the "Titles" table that references an entry in the "Publishers" table.</p><p></p><p></p><p>To make sure that you data stays synchronized, you can enforce referential integrity between tables. Referential integrity relationships help make sure that information in one table matches information in another. For example, each title in the "Titles" table must be associated with a specific publisher in the "Publishers" table. A title cannot be added to the database for a publisher that does not exist in the database.</p><p></p><p></p><p>Logical relationships in a database enable you to efficiently query data and create reports.</p><p><strong>Explanation:</strong></p><p>That,s it</p><p> </p><p>Can you mark me pls gonna need it</p><br />
+                                            <h2 class="ez-toc-section" id="leaming-task-3-engagementdirections-answer-the-following-questions-carefully-1-what-is-a-primary-storage-how-it-is-organized-and-how-is-data-represented-inprimary-storage2-what-are-the-importan">
+                            17. Leaming Task 3: EngagementDirections: Answer the following questions carefully.1. What is a primary storage? How it is organized, and how is data represented inprimary storage?2. What are the importance of having an expansion card in your computer?3. Based on what have you learned about the different types of memory cards, storagedevices and computer processor used in CSS how can you apply this in real life situationespecially if you want to buy a new computer / upgrade a computer? What are the thingsthat you need to consider first? Why?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.Primary storage (also known as main memory, internal memory, or prime memory), often referred to simply as memory, is the only one directly accessible to the CPU. The CPU continuously reads instructions stored there and executes them as required. </p><p></p><p>2.The purpose of adding an expansion card or board to a computer's motherboard is to add or expand some sort of functionality to the computer that it did not have before</p><p></p><p></p><p>3.Whether you're buying a laptop, desktop or tablet computer, it's essential that you take the time to consider the device's processor, hard drive, memory, graphics card and operating system before making your purchase. </p><p><strong>Explanation:</strong></p><p>godbless</p><br />
+                                            <h2 class="ez-toc-section" id="1-using-a-venn-diagram-compare-and-contrast-the-following-data-typea-boolenb-setc-dictionary2-why-is-it-very-important-to-understand-the-use-of-data-types-in-python-programming%e2%80%8b">
+                            18. 1.using a Venn diagram compare and contrast the following data typea.boolenb.setc.dictionary2.why is it very important to understand the use of data types in python programming?​</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p>1. <strong>BOOLE</strong><strong>A</strong><strong>N</strong><strong>–</strong><strong> </strong>In computer science, a Boolean is a logical data type that can have only the values true or false.</p><p></p><p>  <strong>SET</strong><strong>–</strong> In mathematics, a set is a collection of elements. The elements that make up a set can be any kind of mathematical objects: numbers, symbols, points in space, lines, other geometrical shapes, variables, or even other sets. The set with no element is the empty set; a set with a single element is a singleton. A set may have a finite number of elements or be an infinite set. Two sets are equal if and only if they have precisely the same elements.</p><p></p><p><strong> </strong><strong> </strong><strong>DICTIONARY</strong><strong>–</strong><strong> </strong>A dictionary is a listing of lexemes from the lexicon of one or more specific languages, often arranged alphabetically (or by radical and stroke for ideographic languages), which may include information on definitions, usage, etymologies, pronunciations, translation, etc.. It is a lexicographical reference that shows inter-relationships among the data.A dictionary is a listing of lexemes from the lexicon of one or more specific languages, often arranged alphabetically (or by radical and stroke for ideographic languages), which may include information on definitions, usage, etymologies, pronunciations, translation, etc.. It is a lexicographical reference that shows inter-relationships among the data.</p><p></p><p></p><p>2. In Python, like in all programming languages, data types are used to classify one particular type of data. This is important because the specific data type you use will determine what values you can assign to it and what you can do to it (including what operations you can perform on it).</p><br />
+                                            <h2 class="ez-toc-section" id="8-in-which-step-of-the-scientific-method-do-we-use-graphs-a-analyze-data-b-asking-questions-c-making-a-hypothesis-d-communicate-results-9-which-of-the-following-describes-an-element-a-the-sim">
+                            19. 8. In which step of the scientific method do we use graphs? A. Analyze data B. Asking questions C. Making a hypothesis D. Communicate results 9. Which of the following describes an element? A. The simplest substance. B. It can be broken down into other types of substances. C. It can be separated through a chemical process. D. It is composed of two or more types of atoms. 10. Why is it important to be familiar with elements and compounds? A. To classify them accordingly. C. To enumerate elements and compounds. B.To tell others you know them. D. To be praised by others of knowing the 11. Which of the following substance composed of one type of atom?​</h2><br />
+                        <p>answer:</p><p>8.A </p><p>9.A</p><p>10.A</p><p>11.Element</p><p></p><p><strong>Explanation:</strong></p><p>hope it helps.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="why-is-it-important-to-identify-data-types-of-our-database-ort%e2%80%8b">
+                            20. Why is it important to identify data types of our database? ORT​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Choosing the right data types for your tables, stored procedures, and variables not only improves performance by ensuring a correct execution plan, but it also improves data integrity by ensuring that the correct data is stored within a database.</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="computer-71-this-adds-chart-elements-like-title-label-table-legend-a-quick-layoutb-chart-stylesc-add-chart-elementd-edit-data2-this-swaps-the-data-over-the-axis-a-change-colors-b-select-data">
+                            21. Computer 71.) this adds chart elements like title label table legend.a. quick layoutb. chart stylesc. add chart elementd. edit data2.) this swaps the data over the axis.a. change colors b. select datac. refresh datad. switch row/column 3.) this refreshes the chart to show updated data.a. edit datab. quick layout c. refresh data d. select data4.) this changes do a different type of chart.a. change chart typeb. quick layoutc. select data d. edit data5.) this chart tools design command shows the data this chart is based on.a. shape outlineb. change shape c. change chart type d. edit data6.) of the following which command belongs to word art styles group.a. text fill b. format selection c. shape fill d. object position7.) this command adds a visual style to shape.a. group b. chart elements c. shape styled. shape fill12.) this command specifies the color width and the line style.a. bring forwardb. text outlinec. send backwardd. bring forward15.) among the following belongs to size group.a. text effects b. groupc. shape fill d. shape heightdo you think it is essential to know the basic commands of chart tools and why it is important in your studies? state the importance of it.​</h2><br />
+                        <p><strong>Right now and I have to do it was a little too much</strong></p><br />
+                                            <h2 class="ez-toc-section" id="activity-1-3-now-that-youve-leaned-a-lot-from-the-start-of-our-lesson-let-us-summarize-our-lesson-by-filling-in-he-blanks-with-appropriate-words-and-answer-the-questions-below-write-your-answers-on">
+                            22. Activity 1.3 Now that you've leaned a lot from the start of our lesson, let us summarize our lesson by filling in he blanks with appropriate words and answer the questions below. Write your answers on your answer sheet. 1. ___________is a systematic investigation and study of materials and sources to establisha facts and reach new conclusion, 2.__________ is a direct language, denotative or usual meaning of a word. 3.___________is a part of research that describes the data gathered usually presented in tables and graphs. 4.____________ is a text type that is used to tell the step-by-step process of data gathering. 5. The statement "Plot the reading enhancement program to meet the reading needs of the grade threepupils” is an example a/an_________ text type. 6-10. What is the characteristic of language used in research? 11-15. Why is it important to observe appropriate language in writing a research report? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.Research</p><p>2.Literal</p><p>3.Chapter 4</p><p>4.Narrative</p><p>5.Persuasive</p><p></p><p>6-10.To become proficient in research, one needs to know the language. Several terms have been introduced that are important to mastering research as a language. The main terms include theory, concept, operationalize, variables, hypothesis, and sample. There are two types of variables: independent and dependent.</p><p></p><p>11-15.It is very important to use language that fits your audience and matches purpose. Inappropriate language uses can damage your credibility, undermine your argument, or alienate your audience.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="identify-the-type-of-formsperson-describe-in-the-sentence-choose-the-letter-of-the-correct-answer-1-it-is-a-small-paper-form-that-a-person-includes-with-a-bank-deposit-to-show-how-much-money-he-or">
+                            23. Identify the type of forms/person describe in the sentence. Choose the letter of the correct answer. 1. It is a small paper form that a person includes with a bank deposit to show how much money he or she is putting in a bank account. It contains the deposit date, name and bank account of the depositor, and the amount to be a deposited in the form of checks or cash, and the signature of the depositors. a withdrawal slip b. deposit slip C. School form d. none of these 2. It is a small paper form which has to be filled out before making a withdrawal of money from a bank. After filling out the bank slip, a person signs on it in the presence of a bank teller. a withdrawal slip b. deposit slip C. School form d. none of these 3. There are particular forms that you have to fill out as a requirement for admission to a school. a withdrawal slip b. deposit slip C. School form d. none of these 4. After filling out any of the type of forms, it is necessary to affix your_ over your printed name found on the lower part of the form. a address b. cell phone number c. signature d. ID picture 5. A is an employee of the bank whose job is to help bank customers in their banking need, such as depositing checks or cash or making a withdrawal. a depositor b. security guard c. bank teller d. bank manager 6. A is a person who deposits or places money in a bank account. a. depositor b. security guard c. bank teller d. bank manager 7. Why is it important to fill out forms accurately? a. It is important to fill out forms accurately because it contains necessary data. b. It is important to fill out forms accurately so that the data that we are going to write is true and correct. c. His important to fill out forms accurately so that the transaction will be process quickly and no errors can be found. d. All of the above.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. B</p><p>2. A</p><p>3. C</p><p>4. C</p><p>5. C</p><p>6. A</p><p>7. D</p><p><strong>Explanation:</strong></p><p>Hope it help. </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-what-are-some-typessources-of-innovative-finishing-materials-that-canenhance-finished-products-made-of-wood-bamboo-and-metal2-why-do-artisans-and-entrepreneurs-need-to-be-aware-and-updated-on-n">
+                            24. 1.What are some types/sources of innovative finishing materials that canenhance finished products made of wood, bamboo, and metal?2. Why do artisans and entrepreneurs need to be aware and updated on newand innovative methods of enhancing and decorating wood, bamboo, andmetal craft?3. Why is it important to conduct simple survey using technology and otherdata-gathering method?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1) varnish </p><p>2) they should, to earn more extra income and profit in their business/ businesses. </p><p>3) it helps others to know what your opinion or more often trusted product or whatever the situation is, it is also often based on your answers as a responsible person. </p><p><strong>Explanation:</strong></p><p>I hope it helps. </p><p>Welcome me later. </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-i-have-learnedanswer-the-following-guide-questions-to-further-enrich-your-learning-1-what-are-some-typessources-of-innovative-finishing-materials-that-canenhance-finished-products-made-of-wood">
+                            25. What I Have LearnedAnswer the following guide questions to further enrich your learning.1. What are some types/sources of innovative finishing materials that canenhance finished products made of wood, bamboo, and metal?2. Why do artisans and entrepreneurs need to be aware and updated on newand innovative methods of enhancing and decorating wood, bamboo, andmetal craft?3. Why is it important to conduct simple survey using technology and otherdata-gathering method.​</h2><br />
+                        <p>Answer:</p><p>1. Varnish</p><p>2. To earn more extra income and profit in their business</p><p>3. To determine the market trends, customer's preference of products and types of innovative finishing materials accessories and designs. </p><p></p><p>Explanation: pls correct me if I'm wrong po</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-what-are-some-typessources-of-innovative-finishing-materials-that-can-enhance-finished-products-made-of-wood-bamboo-and-metal2-why-do-artisans-and-entrepreneurs-need-to-be-aware-and-updated-on">
+                            26. 1. What are some types/sources of innovative finishing materials that can enhance finished products made of wood, bamboo, and metal?2. Why do artisans and entrepreneurs need to be aware and updated on new and innovative methods of enhancing and decorating wood, bamboo, and metal craft?3. Why is it important to conduct simple survey using technology and other data-gathering method.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.metal jose</p><p>2.long noose pliers</p><p>3.slresources</p><p><strong>Explanation:</strong></p><p>hope it helps</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="b-explain-concepts-following-answer-the-questions-below-limit-your-from-3-5-response-sentences-only-how-do-you-choose-the-type-of-sampling-method-to-be-used-in-selecting-the-respondents-are-the-r">
+                            27. B. EXPLAIN CONCEPTS. following Answer the questions below. Limit your from 3-5 response sentences only. How do you choose the type of sampling method to be used in selecting the respondents? Are the respondents vital in a research study? Is it important to plan the procedures ahead of the actual gathering of data? Why? When is the time when the researchers make their own research instrument which will be administered to the respondents? After making the research instrument, survey questionnaire for example, what are the things to be done before it reaches the respondents?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The choice of sampling method in selecting respondents depends on the research question, the population of interest, and the available resources. Common sampling methods include simple random sampling, stratified sampling, cluster sampling, and purposive sampling.</p><p>Yes, respondents are vital in a research study because they provide the data needed to answer the research questions. The selection of appropriate respondents can affect the validity and reliability of the study.</p><p>Yes, it is important to plan the procedures ahead of the actual gathering of data to ensure that the research is conducted efficiently and effectively. Planning can also help to identify potential problems and address them before they occur.</p><p>Researchers make their own research instrument after they have defined the research questions and objectives. They then select the appropriate method of data collection, design the instrument, and pilot test it to ensure that it is valid and reliable.</p><p>Before the research instrument is administered to the respondents, researchers should ensure that it is clear, easy to understand, and free of bias. They should also obtain ethical approval, select appropriate respondents, and decide on the method of administration (e.g. online, in-person, telephone).</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="13-why-is-frequency-distribution-table-important-i-it-is-useful-in-describing-the-number-of-occurrences-of-a-particular-type-of-datum-within-the-dataset-ii-it-is-one-of-the-most-basic-tool-for-di">
+                            28. 13. Why is frequency distribution table important? I. It is useful in describing the number of occurrences of a particular type of datum within the dataset, II. It is one of the most basic tool for displaying inference statistics. III. It represent raw data in an organized, easy-to-read format. a. I and III b. II and III c. I and II d. all of the above​</h2><br />
+                        <p><strong>Answer:</strong></p><p> for me its D </p><p><strong>Step-by-step explanation:</strong></p><p>because all of them are good aswers</p><p><strong>C</strong><strong>O</strong><strong>R</strong><strong>R</strong><strong>E</strong><strong>C</strong><strong>T</strong><strong> </strong><strong>M</strong><strong>E</strong><strong> </strong><strong>I</strong><strong>F</strong><strong> </strong><strong>I</strong><strong>M</strong><strong> </strong><strong>W</strong><strong>R</strong><strong>O</strong><strong>N</strong><strong>G</strong></p><p><strong>P</strong><strong>A</strong><strong> </strong><strong>B</strong><strong>R</strong><strong>A</strong><strong>I</strong><strong>N</strong><strong>L</strong><strong>E</strong><strong>S</strong><strong>S</strong><strong> </strong><strong>P</strong><strong>L</strong><strong>S</strong></p><br />
+                                            <h2 class="ez-toc-section" id="responses22-what-is-the-practice-of-protecting-participants-personal-identities-and-answers-by-ensuring-theircannot-be-linked-back-to-thema-anonymityc-privacyb-confidentialityd-legality23-what-t">
+                            29. responses22. What is the practice of protecting participants' personal identities and answers by ensuring theircannot be linked back to them?a. Anonymityc. Privacyb. Confidentialityd Legality23 What type of research is reflected in the title: COVD 19 Pandemic: A Documentary?a Exploratory Researchc. Historical Researchb. Correlational Researchd. Action Research24. When a researcher does not follow the ethical standards in research, what is animportant ethical disadvantage?a. Ir can damage the professional reputation of the researcher and their disciplineb. It makes it more difficult to gain access to different populationsc It means that records of personal data about the participants cannot be made anonymousd. None of the above25. Which of the following is not a quantitative data collection method?a surveysc. online pollsb. website interceptorsd interviews26. Why is it important that personal data about research participants are kept within secure,confidential records?a. So that the participants cannot find out what has been written about themb. So that individuals, places, or organizations can't be harm through disclosure of personal dataof personal informationc. So that government officials, teachers, and other people in authority can have easy access to the datad. None of the above27. In conducting research, which stage comes first?a Collecting datac. Reviewing literatureb. Analyzing datad. Defining research problem28. The researcher designs an experiment to test how variables interact to influence job-seeking behaviorsThe main purpose of the study is:a Descriptionc. Explorationb. Predictiond Explanation29. Cyber bullying is a growing threat to people. Researchers want to find out why peopledo this and how they feel about it. The primary purpose of the study is:a. Descriptionc. Explorationb. Predictiond. Explanation30. The key defining characteristic of experimental research is :a The independent variable is manipulated.b. The hypotheses are proven.c. The positive correlation exists.d. The samples are large31. In which qualitative research design is a teacher likely to be the researcher?a. Historical study c Ethnographic studyb. Action researchd. Grounded theory32. In which qualitative research approach is the primary goal to gain access to individuals'inner worlds of experience?a. Phenomenologyc. Grounded theoryb. Ethnographyd. Case study33. The type of qualitative research that describes the culture of a group of people is,a. Phenomenologyc. Grounded theoryb. Ethnographyd. Case study34. Which of the following research methods relies on analyzing data?a Quantitative research c. Mixed methodb. Qualitative research d. All of the above35. All findings are logically based on data which are based on real life situations. Whatcharacteristic of research is being described?a. Empiricalc. Objectiveb. Analyticald. Systematic36. When you repeat research design and procedures for you to arrive at valid and conclusive results,what characteristics of research is reflected?a. Original workc. Analyticalb. Replicabilityd. Objective37. What type of research is reflected in the title: "The Fall of Bataan: A Documentary"?a Phenomenological Research c. Correlational Researchb. Historical Researchd. Ethnographic Research​</h2><br />
+                        <p><strong>Answer:</strong></p>Paki lagay po picture <p><strong>Explanation:</strong></p>#yan po (thank you) <p><strong>Answer:</strong></p><p>22.b</p><p>23.c</p><p>24.c</p><p>25.c</p><p>26.b</p><p>27.d</p><p>28.a</p><p>29.b</p><p>30.b</p><p>31.a</p><p>32.b</p><p>33.c</p><p>34.d</p><p>35.b</p><p>36.b</p><p>37.b</p><p><strong>Explanation:</strong></p><p>Hope it helps "right now I need 4 more brainliest answer please help me as I help you answering" </p><p></p><p></p><p>Good Luck</p><br />
+                                            <h2 class="ez-toc-section" id="i-fundamentalswhat-are-considered-media-files-in-powerpoint________________________________________________________________________levelswhy-do-you-think-it-is-important-to-know-the-kinds-of-c">
+                            30. I.
+*FUNDAMENTALS
+What are considered media files in PowerPoint?
+________________________________________________________________________
+*LEVELS
+Why do you think it is important to know the kinds of chart for data
+presentation?
+________________________________________________________________________
+*OUTPUTS
+Where can you use SmartArt Graphic in presentations?
+________________________________________________________________________
+*WINDOWS
+How do we add and format tables in presentation?
+________________________________________________________________________
+II.
+*FUNDAMENTALS
+List five types of charts and
+media files.
+*LEVELS
+Write a short description or
+purpose of each chart and media file
+type you have listed.
+III.
+*FUNDAMENTALS
+What kind of chart did you use to represent your data?
+________________________________________________________________________
+*LEVELS
+Why did you chose that specific chart to represent the data that you have
+gathered?
+________________________________________________________________________
+*OUPUTS
+Where can we change the elements of graph?
+________________________________________________________________________
+*WINDOWS
+How did you insert media files?
+________________________________________________________________________
+sorry if its long.. please answer it, don't answer it for points..</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.file type  Extens</p><p>2.on the insert tab,in the media group, click the arrow under the video.</p><p>3</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/A37-3lflh8I?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>computer_science</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/tita-s-duty-quotes.html">Tita s Duty Quotes</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/mother-s-day-message-for-a-mother-in-law.html">Mother s Day Message For A Mother In Law</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/256-32-16.html">256 32 16</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/how-can-darwin-s-theory-influence-the-agriculture.html">How Can Darwin s Theory Influence The Agriculture</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/clark-s-rule.html">Clark s Rule</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/describe-modifications-to-mendel-s-classic-ratios-gene-interaction.html">Describe Modifications To Mendel s Classic Ratios Gene Interaction</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/lessons-from-noah-s-ark.html">Lessons From Noah s Ark</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/modern-dance-ppt.html">Modern Dance Ppt</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/air-pollution-worksheet-for-kids.html">Air Pollution Worksheet For Kids</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/yellow-moon-meaning.html">Yellow Moon Meaning</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/explain-the-concept-aspects-and-changes-of-culture-and-society.html">Explain The Concept Aspects And Changes Of Culture And Society</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/element-that-has-20-protons.html">Element That Has 20 Protons</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/i-hear-america-singing-full-poem.html">I Hear America Singing Full Poem</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/palita-tools.html">Palita Tools</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/voltaire-jean-jacques-rousseau.html">Voltaire Jean Jacques Rousseau</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/bibliography-for-school-project.html">Bibliography For School Project</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/circular-modulo-art.html">Circular Modulo Art</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/acetaminophen-melting-point.html">Acetaminophen Melting Point</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/arete-clothing.html">Arete Clothing</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://odoeduc.github.io/bunsen-burner-barrel-function.html">Bunsen Burner Barrel Function</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://odoeduc.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://odoeduc.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://odoeduc.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
